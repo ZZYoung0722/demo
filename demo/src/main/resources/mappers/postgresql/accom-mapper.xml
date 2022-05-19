@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.prj.dao.AccomDao">
+
+    <!--dto와 db column 값 같게 해주기 위해서-->
+    <resultMap id="map" type="com.prj.dto.UserDto">
+        <result column="user_no" property="userNo"/>
+        <result column="user_name" property="userName"/>
+        <result column="user_id" property="userId"/>
+        <result column="user_pw" property="userPw"/>
+        <result column="user_birth" property="userBirth"/>
+        <result column="user_tel" property="userTel"/>
+        <result column="user_email" property="userEmail"/>
+        <result column="user_addr" property="userAddr"/>
+    </resultMap>
+
+    <resultMap id="notice" type="com.prj.dto.NoticeDto">
+        <result column="notice_title" property="title"/>
+        <result column="notice_content" property="content"/>
+        <result column="notice_date" property="noticeDate"/>
+        <result column="notice_no" property="noticeNo"/>
+        <result column="notice_delete" property="noticeDelete"/>
+    </resultMap>
+
+    <select id="idCheck" parameterType="userdto" resultType="int">
+        select count (*)
+        from tb_user
+        where user_id=#{userId}
+    </select>
+
+    <insert id="signUp" parameterType="userdto">
+        <selectKey keyProperty="userNo" resultType="int" order="BEFORE">
+            select nextval('user_seq')
+        </selectKey>
+        insert into tb_user (user_no, user_name, user_id, user_pw, user_birth, user_tel, user_email, user_addr, salt)
+        values (#{userNo}, #{userName}, #{userId}, #{userPw}, #{userBirth}, #{userTel}, #{userEmail}, #{userAddr}, #{salt})
+    </insert>
+
+    <select id="login" parameterType="userdto" resultMap="map">
+        select user_name
+        from tb_user
+        where user_id=#{userId} and user_pw=#{userPw}
+    </select>
+    
+    <select id="getUserById" parameterType="String" resultMap="map">
+        select *
+        from tb_user
+        where user_id=#{userId}
+    </select>
+
+
+
+    <!--공지사항-->
+    <select id="search" parameterType="criteria" resultMap="notice">
+        select notice_no, notice_title, notice_content, notice_date, notice_delete
+        from
+        (
+        select ROW_NUMBER() over (order by notice_no desc) as row, *
+        from tb_notice
+        <where>
+            <if test="value != null">
+              notice_title like '%' || #{value} || '%'
+            </if>
+            and notice_delete = false
+        </where>
+        ) n
+        where row between #{beginIndex} and #{endIndex}
+    </select>
+
+    <select id="totalCount" parameterType="criteria" resultType="int">
+        select count(*)
+        from tb_notice
+        <where>
+            <if test="value != null">
+                notice_title like '%' || #{value} || '%'
+            </if>
+            and notice_delete = false
+        </where>
+    </select>
+
+    <insert id="registration" parameterType="noticedto">
+        <selectKey keyProperty="noticeNo" resultType="int" order="BEFORE">
+            select nextval('notice_seq')
+        </selectKey>
+        INSERT INTO tb_notice(notice_no, notice_title, notice_content, notice_date)
+        VALUES (#{noticeNo}, #{title}, #{content}, now())
+    </insert>
+
+    <select id="detail" parameterType="int" resultMap="notice">
+        select notice_title, notice_content, notice_no
+        from tb_notice
+        where notice_no = #{noticeNo}
+    </select>
+
+    <update id="update" parameterType="noticedto">
+        UPDATE tb_notice
+        SET notice_title=#{title}, notice_content=#{content}, notice_date=now()
+        WHERE notice_no=#{noticeNo}
+    </update>
+
+    <update id="delete" parameterType="noticedto">
+        update tb_notice
+        set notice_delete = true
+        where notice_no = #{noticeNo}
+    </update>
+    
+
+</mapper>
+
