@@ -26,9 +26,9 @@
             width: 50%;
             height: 88%;
             float: right;
-            box-sizing: border-box;
-            float: left;
-            background-color: black;
+        }
+        #search {
+            margin: auto;
         }
     </style>
 
@@ -37,34 +37,29 @@
 
 <%@ include file="nav.jsp" %>
 
-<div class="container">
-    <form class="d-flex">
-        <div class="col-md-4" id="search">
-            <input type="search" class="form-control me-2" placeholder="Search">
-        </div>
-        <div class="col-md-2">
-            <button class="btn btn-outline-dark" type="submit">Search</button>
-        </div>
-    </form>
-</div>
+<form>
+    <div class="input-group mb-3" id="search" style="width: 500px;">
+        <input type="search" class="form-control" placeholder="Search" aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Search</button>
+    </div>
+</form>
+
 
 <div>
     <div class="list">
         dfsafasdfasdf
     </div>
-    <div id="map">
-        sdasdfasdfasdfs
-    </div>
+    <div id="map"></div>
 </div>
 
 
 <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a71e33e6909a61dbb04de7d82451c92f"></script>
 <script>
-    var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+    var mapContainer = document.getElementById('map'),
         mapOption = {
-            center: new kakao.maps.LatLng(37.559721, 126.83873), // 지도의 중심좌표
-            level: 5, // 지도의 확대 레벨
-            mapTypeId: kakao.maps.MapTypeId.ROADMAP // 지도종류
+            center: new kakao.maps.LatLng(37.559721, 126.83873),
+            level: 5,
+            mapTypeId: kakao.maps.MapTypeId.ROADMAP
         };
 
     // 지도를 생성한다
@@ -76,8 +71,8 @@
         // GeoLocation을 이용해서 접속 위치를 얻어옵니다
         navigator.geolocation.getCurrentPosition(function (position) {
 
-            var lat = position.coords.latitude, // 위도
-                lon = position.coords.longitude; // 경도
+            var lat = position.coords.latitude,
+                lon = position.coords.longitude;
 
             var locPosition = new kakao.maps.LatLng(lat, lon)
 
@@ -86,13 +81,18 @@
 
         });
 
-    } else { // HTML5의 GeoLocation을 사용할 수 없을때 마커 표시 위치와 인포윈도우 내용을 설정합니다
-
-        var locPosition = new kakao.maps.LatLng(33.450701, 126.570667)
     }
 
-</script>
+    function createMark(lat, lon) {
+        var markerPosition  = new kakao.maps.LatLng(lat, lon);
 
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
+        marker.setMap(map);
+    }
+</script>
 
 </body>
 </html>
