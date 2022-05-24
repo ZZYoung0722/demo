@@ -1,6 +1,7 @@
 package com.prj.service;
 
 import com.prj.dao.AccomDao;
+import com.prj.dto.AccomDto;
 import com.prj.dto.NoticeDto;
 import com.prj.dto.UserDto;
 import com.prj.exception.LoginErrorException;
@@ -10,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class AccomServiceImpl implements AccomService {
@@ -88,4 +90,19 @@ public class AccomServiceImpl implements AccomService {
     public void delete(Integer noticeNo) {
         accomDao.delete(noticeNo);
     }
+
+
+    /*숙소*/
+    @Override
+    public List<AccomDto> accomMapList() {
+        List<AccomDto> dto = accomDao.accomMapList();
+        return dto;
+    }
+
+    @Override
+    public List<AccomDto> mapListByExtent(Map<String, String> param) {
+        List<AccomDto> dto = accomDao.mapListByExtent(param);
+        return dto;
+    }
+
 }

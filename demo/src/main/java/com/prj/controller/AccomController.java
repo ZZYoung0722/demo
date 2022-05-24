@@ -1,11 +1,13 @@
 package com.prj.controller;
 
 import com.common.CustomJsonView;
+import com.prj.dto.AccomDto;
 import com.prj.dto.NoticeDto;
 import com.prj.dto.UserDto;
 import com.prj.dto.Salt;
 import com.prj.service.AccomService;
 import com.utill.*;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
@@ -13,6 +15,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @Controller
 public class AccomController {
@@ -54,12 +57,12 @@ public class AccomController {
         return "noticeInsert";
     }
 
-    //숙소리스트 화면
-    @RequestMapping("/accomlist")
-    public String accomlist() {
+    /*//숙소리스트 화면
+    @RequestMapping("/accomlistform")
+    public String accomlistform() {
         return "accomList";
     }
-
+*/
     //ajax idCheck
     @RequestMapping("/idCheck")
     public @ResponseBody
@@ -194,13 +197,20 @@ public class AccomController {
         return "redirect:/noticelist";
     }
 
+    //숙소 다 가져오기
+    @RequestMapping("/accomlistform")
+    public String accomMapList(Model model) {
+        List<AccomDto> list =  accomService.accomMapList();
 
+        model.addAttribute("list", list);
 
+        return "accomList";
+    }
 
+    //지도에 영역별 마커 띄우기
+    @RequestMapping("/mapListByExtent")
+    public @ResponseBody List<AccomDto> mapListByExtent(@RequestParam Map<String, String> param) {
 
-
-
-
-
-
+        return accomService.mapListByExtent(param);
+    }
 }

@@ -23,6 +23,18 @@
         <result column="notice_delete" property="noticeDelete"/>
     </resultMap>
 
+    <resultMap id="accom" type="com.prj.dto.AccomDto">
+        <result column="accom_no" property="accomNo"/>
+        <result column="accom_name" property="accomName"/>
+        <result column="accom_tel" property="accomTel"/>
+        <result column="accom_location" property="accomLocation"/>
+        <result column="accom_info" property="accomInfo"/>
+        <result column="accom_pay" property="accomPay"/>
+        <result column="latitude" property="lat"/>
+        <result column="longitude" property="lon"/>
+    </resultMap>
+
+
     <select id="idCheck" parameterType="userdto" resultType="int">
         select count (*)
         from tb_user
@@ -42,7 +54,7 @@
         from tb_user
         where user_id=#{userId} and user_pw=#{userPw}
     </select>
-    
+
     <select id="getUserById" parameterType="String" resultMap="map">
         select *
         from tb_user
@@ -104,7 +116,26 @@
         set notice_delete = true
         where notice_no = #{noticeNo}
     </update>
-    
+
+
+    <!--지도-->
+    <!--숙소전체-->
+    <select id="accomMapList" resultMap="accom" parameterType="accomdto">
+        select accom_name, accom_info, accom_location
+        from tb_accom
+    </select>
+
+    <!--숙소 영역별-->
+    <select id="mapListByExtent" resultMap="accom" parameterType="hashMap">
+        select *
+        from tb_accom
+        where  <![CDATA[ cast(#{minX} as numeric) < longitude and longitude < cast(#{maxX} as numeric) and
+        cast(#{minY} as numeric) < latitude and latitude < cast(#{maxY} as numeric)
+        ]]>
+    </select>
 
 </mapper>
+
+
+
 

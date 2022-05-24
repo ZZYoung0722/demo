@@ -1,5 +1,6 @@
 package com.prj.dao;
 
+import com.prj.dto.AccomDto;
 import com.prj.dto.NoticeDto;
 import com.prj.dto.UserDto;
 import com.utill.Criteria;
@@ -8,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Map;
 
 @Repository
 public class AccomDao {
@@ -58,7 +60,11 @@ public class AccomDao {
     public void delete(Integer noticeNo) { sql.update("delete", noticeNo); }
 
 
+    /*숙소*/
+    public List<AccomDto> accomMapList() { return sql.selectList("accomMapList");}
 
-
+    public List<AccomDto> mapListByExtent(Map<String, String> param) {
+        return sql.selectList("mapListByExtent", param);
+    }
 
 }

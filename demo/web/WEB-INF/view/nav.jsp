@@ -21,7 +21,7 @@
         <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/accomlist">숙박</a>
+                    <a class="nav-link active" aria-current="page" href="/accomlistform">숙박</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/main">HOME</a>
