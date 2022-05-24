@@ -19,22 +19,45 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
     <style>
-        div.list {
+        .list {
             width: 50%;
             float: left;
             box-sizing: border-box;
-            float: left;
+            float: right;
+            /*overflow-y: scroll;*/
         }
 
-        div#map {
+        #map {
             width: 50%;
             height: 88%;
-            float: right;
+            float: left;
+            position: sticky;
         }
 
         #search {
             margin: auto;
         }
+
+        /*!* 스크롤바 전체 영역 *!
+        .list::-webkit-scrollbar {
+            width: 10px;
+        }
+        !* 스크롤이 움직이는 영역  *!
+        .list::-webkit-scrollbar-track {
+            background-color: #f9f9f9;
+        }
+        !*  스크롤  *!
+        .list::-webkit-scrollbar-thumb {
+            background-color: gold;
+            border-radius:30px;
+        }
+        !*  스크롤의 화살표가 포함된 영역   *!
+        .list::-webkit-scrollbar-button:start:decrement,
+        .list::-webkit-scrollbar-button:end:increment {
+            display:block;
+            height:8px;
+            background-color: #000;
+        }*/
     </style>
 
 </head>
@@ -42,9 +65,9 @@
 
 <%@ include file="nav.jsp" %>
 
-<form>
+<form onsubmit="searchPlace(); return false;">
     <div class="input-group mb-3" id="search" style="width: 500px;">
-        <input type="search" class="form-control" placeholder="Search" aria-describedby="button-addon2">
+        <input id="keyword" type="search" class="form-control" placeholder="Search" aria-describedby="button-addon2">
         <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Search</button>
     </div>
 </form>
@@ -85,7 +108,9 @@
             </div>
         </div>
     </div>
+
     <div id="map"></div>
+
 </div>
 
 
@@ -136,6 +161,8 @@
         }
     }
 
+    var $tbody = $('.list').find('tbody');
+
     //영역별 지도리스트
     function mapListByExtent(swLatlng, neLatlng) {
         var locations = [];
@@ -145,17 +172,26 @@
             dataType: "json",
             data: {minX: swLatlng.La, minY: swLatlng.Ma, maxX: neLatlng.La, maxY: neLatlng.Ma},
             success: function (data) {
-                //서버로부터 정상적으로 응답이 왔을 때 실행
-                $('.list').find('tbody tr').remove();
+                //비우기
+                $tbody.empty();
+                /*$('.list').find('tbody tr').remove();*/
 
-                for (var i = 0; i < data.length; i++) {
-                    locations.push(data[i]);
-                    printAccomList(data[i]);
+                if (data.length == 0) {
+                    var str = '';
+                    str += '<tr>';
+                    str += '<td colspan="3" style="text-align:center">지도안에 숙소가 존재하지 않습니다.</td>';
+                    str += '</tr>';
+                    $tbody.append(str);
+
+                } else {
+                    for (var i = 0; i < data.length; i++) {
+                        locations.push(data[i]);
+                        printAccomList(data[i]);
+                    }
+                    createMark(locations);
                 }
-                createMark(locations);
             },
             error: function (err) {
-                //서버로부터 응답이 정상적으로 처리되지 못햇을 때 실행
             }
         });
     }
@@ -167,7 +203,7 @@
         str += '<td>' + accom.accomLocation + '</td>';
         str += '<td>' + accom.accomInfo + '</td>';
         str += '</tr>';
-        $('.list').find('tbody').append(str);
+        $tbody.append(str);
     }
 
     kakao.maps.event.addListener(map, 'bounds_changed', function () {
@@ -185,21 +221,48 @@
 
     });
 
-    /*function mapList() {
-        $.ajax({
-            url: '/accomlistform',
-            type: 'get',
-            dataType: "json",
-            data: {accomName: accomName, accomLocation: accomLocation, accomInfo: accomInfo},
-            success: function (data) {
-                //서버로부터 정상적으로 응답이 왔을 때 실행
 
-            },
-            error: function (err) {
-                //서버로부터 응답이 정상적으로 처리되지 못햇을 때 실행
-            }
-        });
-    }*/
+
+
+    // 키워드로 장소를 검색합니다
+    searchPlace();
+
+    function searchPlace() {
+
+        var keyword = $('#keyword').val();
+        var markers = [];
+
+        // 장소 검색 객체를 생성합니다
+        var ps = new kakao.maps.services.Places();
+
+        if (!keyword.replace(/^\s+|\s+$/g, '')) {
+            alert('키워드를 입력해주세요!');
+            return false;
+        }
+
+        ps.keywordSearch(keyword, placesSearchCB);
+    }
+
+    // 장소검색이 완료됐을 때 호출되는 콜백함수 입니다
+    function placesSearchCB(data, status) {
+        if (status === kakao.maps.services.Status.OK) {
+
+            // 정상적으로 검색이 완료됐으면
+            // 검색 목록과 마커를 표출합니다
+            mapListByExtent(data);
+
+        } else if (status === kakao.maps.services.Status.ZERO_RESULT) {
+
+            alert('검색 결과가 존재하지 않습니다.');
+            return;
+
+        } else if (status === kakao.maps.services.Status.ERROR) {
+
+            alert('검색 결과 중 오류가 발생했습니다.');
+            return;
+
+        }
+    }
 
 </script>
 
