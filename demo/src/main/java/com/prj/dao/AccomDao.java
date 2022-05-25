@@ -1,6 +1,7 @@
 package com.prj.dao;
 
 import com.prj.dto.AccomDto;
+import com.prj.dto.AccomImg;
 import com.prj.dto.NoticeDto;
 import com.prj.dto.UserDto;
 import com.utill.Criteria;
@@ -66,5 +67,7 @@ public class AccomDao {
     public List<AccomDto> mapListByExtent(Map<String, String> param) {
         return sql.selectList("mapListByExtent", param);
     }
+
+    public List<AccomImg> getImgList(Integer accomNo) { return sql.selectList("getImgList", accomNo);}
 
 }

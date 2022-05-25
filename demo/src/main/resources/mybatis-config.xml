@@ -8,6 +8,7 @@
 		<typeAlias alias="noticedto" type="com.prj.dto.NoticeDto"/>
 		<typeAlias alias="criteria" type="com.utill.Criteria"/>
 		<typeAlias alias="accomdto" type="com.prj.dto.AccomDto"/>
+		<typeAlias alias="accomimg" type="com.prj.dto.AccomImg"/>
 	</typeAliases>
 </configuration>
 

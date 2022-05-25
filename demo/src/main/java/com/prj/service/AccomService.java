@@ -1,9 +1,9 @@
 package com.prj.service;
 
 import com.prj.dto.AccomDto;
+import com.prj.dto.AccomImg;
 import com.prj.dto.NoticeDto;
 import com.prj.dto.UserDto;
-import com.sun.javafx.binding.StringFormatter;
 import com.utill.Criteria;
 
 import java.util.List;
@@ -31,7 +31,10 @@ public interface AccomService {
 
     public List<AccomDto> accomMapList();
 
+    public List<AccomImg> getImgList(Integer accomNo);
+
     public List<AccomDto> mapListByExtent(Map<String, String> param);
+
 
 
 }

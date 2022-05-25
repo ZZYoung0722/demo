@@ -2,6 +2,7 @@ package com.prj.service;
 
 import com.prj.dao.AccomDao;
 import com.prj.dto.AccomDto;
+import com.prj.dto.AccomImg;
 import com.prj.dto.NoticeDto;
 import com.prj.dto.UserDto;
 import com.prj.exception.LoginErrorException;
@@ -105,4 +106,9 @@ public class AccomServiceImpl implements AccomService {
         return dto;
     }
 
+    @Override
+    public List<AccomImg> getImgList(Integer accomNo) {
+        List<AccomImg> accomImgs = accomDao.getImgList(accomNo);
+        return accomImgs;
+    }
 }

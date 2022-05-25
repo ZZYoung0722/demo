@@ -1,10 +1,7 @@
 package com.prj.controller;
 
 import com.common.CustomJsonView;
-import com.prj.dto.AccomDto;
-import com.prj.dto.NoticeDto;
-import com.prj.dto.UserDto;
-import com.prj.dto.Salt;
+import com.prj.dto.*;
 import com.prj.service.AccomService;
 import com.utill.*;
 import org.apache.ibatis.annotations.Param;
@@ -202,6 +199,10 @@ public class AccomController {
     public String accomMapList(Model model) {
         List<AccomDto> list =  accomService.accomMapList();
 
+        for (AccomDto dto : list) {
+            dto.setAccomImg(accomService.getImgList(dto.getAccomNo()));
+        }
+
         model.addAttribute("list", list);
 
         return "accomList";
@@ -210,7 +211,12 @@ public class AccomController {
     //지도에 영역별 마커 띄우기
     @RequestMapping("/mapListByExtent")
     public @ResponseBody List<AccomDto> mapListByExtent(@RequestParam Map<String, String> param) {
+        List<AccomDto> list = accomService.mapListByExtent(param);
 
-        return accomService.mapListByExtent(param);
+        for (AccomDto dto : list) {
+            dto.setAccomImg(accomService.getImgList(dto.getAccomNo()));
+        }
+
+        return list;
     }
 }

@@ -121,8 +121,14 @@
     <!--지도-->
     <!--숙소전체-->
     <select id="accomMapList" resultMap="accom" parameterType="accomdto">
-        select accom_name, accom_info, accom_location
+        select accom_name, accom_info, accom_location, accom_no
         from tb_accom
+    </select>
+
+    <select id="getImgList" parameterType="int" resultType="accomimg">
+        select accom_no as accomNo, img_name as imgName
+        from tb_accom_img
+        where accom_no = #{accomNo}
     </select>
 
     <!--숙소 영역별-->

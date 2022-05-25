@@ -65,17 +65,15 @@
 
 <%@ include file="nav.jsp" %>
 
-<form onsubmit="searchPlace(); return false;">
-    <div class="input-group mb-3" id="search" style="width: 500px;">
-        <input id="keyword" type="search" class="form-control" placeholder="Search" aria-describedby="button-addon2">
-        <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Search</button>
-    </div>
-</form>
+<div class="input-group mb-3" id="search" style="width: 500px;">
+    <input id="keyword" type="search" class="form-control" placeholder="Search" aria-describedby="button-addon2">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="searchClick()">Search</button>
+</div>
 
 
 <div>
-    <div class="list">
-        <div class="container">
+    <div class="list" style=" height: 88%; overflow:auto">
+        <%--<div class="container">
             <div class="row">
                 <table class="table table-striped">
                     <thead>
@@ -86,35 +84,48 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <%--<c:forEach var="list" items="${list}">--%>
-                    <%--<tr>--%>
-                    <%--<td>${list.accomName}</td>--%>
-                    <%--<td>${list.accomLocation}</td>--%>
-                    <%--<td>${list.accomInfo}</td>--%>
-                    <%--</tr>--%>
-                    <%--<tr>--%>
-                    <%--<td>${list.accomName}</td>--%>
-                    <%--<td>${list.accomLocation}</td>--%>
-                    <%--<td>${list.accomInfo}</td>--%>
-                    <%--</tr>--%>
-                    <%--<tr>--%>
-                    <%--<td>${list.accomName}</td>--%>
-                    <%--<td>${list.accomLocation}</td>--%>
-                    <%--<td>${list.accomInfo}</td>--%>
-                    <%--</tr>--%>
-                    <%--</c:forEach>--%>
+                    <c:forEach var="list" items="${list}">
+                    <tr>
+                    <td>${list.accomName}</td>
+                    <td>${list.accomLocation}</td>
+                    <td>${list.accomInfo}</td>
+                    </tr>
+                    <tr>
+                    <td>${list.accomName}</td>
+                    <td>${list.accomLocation}</td>
+                    <td>${list.accomInfo}</td>
+                    </tr>
+                    <tr>
+                    <td>${list.accomName}</td>
+                    <td>${list.accomLocation}</td>
+                    <td>${list.accomInfo}</td>
+                    </tr>
+                    </c:forEach>
                     </tbody>
                 </table>
-            </div>
+            </div>--%>
+
+        <div class="row">
+            <%--<div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="/resources/img/accom1.jpg" class="card-img-top">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        &lt;%&ndash;<a href="#" class="btn btn-primary">Go somewhere</a>&ndash;%&gt;
+                    </div>
+                </div>
+            </div>--%>
         </div>
     </div>
-
-    <div id="map"></div>
-
 </div>
 
+<div id="map"></div>
 
-<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a71e33e6909a61dbb04de7d82451c92f"></script>
+
+<script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a71e33e6909a61dbb04de7d82451c92f&libraries=services,clusterer,drawing"></script>
+
 <script>
     var mapContainer = document.getElementById('map'),
         mapOption = {
@@ -125,6 +136,7 @@
 
     // 지도를 생성한다
     var map = new kakao.maps.Map(mapContainer, mapOption);
+
 
     // HTML5의 geolocation으로 사용할 수 있는지 확인합니다
     if (navigator.geolocation) {
@@ -161,9 +173,10 @@
         }
     }
 
-    var $tbody = $('.list').find('tbody');
+    /*var $tbody = $('.list').find('tbody');*/
+    var $row = $('.list').find('.row');
 
-    //영역별 지도리스트
+    //영역별 지도리스트 (목록과 마커 표시)
     function mapListByExtent(swLatlng, neLatlng) {
         var locations = [];
         $.ajax({
@@ -172,16 +185,23 @@
             dataType: "json",
             data: {minX: swLatlng.La, minY: swLatlng.Ma, maxX: neLatlng.La, maxY: neLatlng.Ma},
             success: function (data) {
-                //비우기
-                $tbody.empty();
                 /*$('.list').find('tbody tr').remove();*/
+                /* $tbody.empty();*/
+                $row.empty();
 
                 if (data.length == 0) {
                     var str = '';
-                    str += '<tr>';
+                    /*str += '<tr>';
                     str += '<td colspan="3" style="text-align:center">지도안에 숙소가 존재하지 않습니다.</td>';
                     str += '</tr>';
-                    $tbody.append(str);
+                    $tbody.append(str);*/
+
+                    str += '<div class="card">';
+                    str += '<div class="card-body">';
+                    str += '<h5 class="card-title" style="text-align: center">지도안에 숙소가 존재하지 않습니다.</h5>';
+                    str += '</div>';
+                    str += '</div>';
+                    $row.append(str);
 
                 } else {
                     for (var i = 0; i < data.length; i++) {
@@ -196,7 +216,7 @@
         });
     }
 
-    function printAccomList(accom) {
+    /*function printAccomList(accom) {
         var str = '';
         str += '<tr>';
         str += '<td>' + accom.accomName + '</td>';
@@ -204,6 +224,20 @@
         str += '<td>' + accom.accomInfo + '</td>';
         str += '</tr>';
         $tbody.append(str);
+    }*/
+
+    function printAccomList(accom) {
+        var str = '';
+        str += '<div class="col-sm-4">';
+        str += '<div class="card">';
+        str += '<div class="card-body">';
+        str += '<img src="/resources/img/' + accom.accomImg[0].imgName + '.jpg" class="card-img-top">';
+        str += '<h5 class="card-title">' + accom.accomName + '</h5>';
+        str += '<p class="card-text">' + accom.accomLocation + '</p>';
+        str += '</div>';
+        str += '</div>';
+        str += '</div>';
+        $row.append(str);
     }
 
     kakao.maps.event.addListener(map, 'bounds_changed', function () {
@@ -222,18 +256,8 @@
     });
 
 
-
-
-    // 키워드로 장소를 검색합니다
-    searchPlace();
-
-    function searchPlace() {
-
+    function searchClick() {
         var keyword = $('#keyword').val();
-        var markers = [];
-
-        // 장소 검색 객체를 생성합니다
-        var ps = new kakao.maps.services.Places();
 
         if (!keyword.replace(/^\s+|\s+$/g, '')) {
             alert('키워드를 입력해주세요!');
@@ -243,15 +267,27 @@
         ps.keywordSearch(keyword, placesSearchCB);
     }
 
-    // 장소검색이 완료됐을 때 호출되는 콜백함수 입니다
+
+    var ps = new kakao.maps.services.Places();
+
+    // 키워드 검색 완료 시 호출되는 콜백함수 입니다
     function placesSearchCB(data, status) {
+
         if (status === kakao.maps.services.Status.OK) {
 
-            // 정상적으로 검색이 완료됐으면
-            // 검색 목록과 마커를 표출합니다
-            mapListByExtent(data);
+            // 검색된 장소 위치를 기준으로 지도 범위를 재설정하기위해
+            // LatLngBounds 객체에 좌표를 추가합니다
+            var bounds = new kakao.maps.LatLngBounds();
 
-        } else if (status === kakao.maps.services.Status.ZERO_RESULT) {
+            for (var i = 0; i < data.length; i++) {
+                bounds.extend(new kakao.maps.LatLng(data[i].y, data[i].x));
+            }
+
+            // 검색된 장소 위치를 기준으로 지도 범위를 재설정합니다
+            map.setBounds(bounds);
+        }
+
+        else if (status === kakao.maps.services.Status.ZERO_RESULT) {
 
             alert('검색 결과가 존재하지 않습니다.');
             return;
@@ -262,7 +298,10 @@
             return;
 
         }
+
+
     }
+
 
 </script>
 
