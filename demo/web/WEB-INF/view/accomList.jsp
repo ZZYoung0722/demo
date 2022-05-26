@@ -12,11 +12,16 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <script type="text/javascript" src="/js/bootstrap.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
     <style>
         .list {
@@ -24,7 +29,6 @@
             float: left;
             box-sizing: border-box;
             float: right;
-            /*overflow-y: scroll;*/
         }
 
         #map {
@@ -38,26 +42,6 @@
             margin: auto;
         }
 
-        /*!* 스크롤바 전체 영역 *!
-        .list::-webkit-scrollbar {
-            width: 10px;
-        }
-        !* 스크롤이 움직이는 영역  *!
-        .list::-webkit-scrollbar-track {
-            background-color: #f9f9f9;
-        }
-        !*  스크롤  *!
-        .list::-webkit-scrollbar-thumb {
-            background-color: gold;
-            border-radius:30px;
-        }
-        !*  스크롤의 화살표가 포함된 영역   *!
-        .list::-webkit-scrollbar-button:start:decrement,
-        .list::-webkit-scrollbar-button:end:increment {
-            display:block;
-            height:8px;
-            background-color: #000;
-        }*/
     </style>
 
 </head>
@@ -136,7 +120,6 @@
 
     // 지도를 생성한다
     var map = new kakao.maps.Map(mapContainer, mapOption);
-
 
     // HTML5의 geolocation으로 사용할 수 있는지 확인합니다
     if (navigator.geolocation) {
@@ -227,17 +210,63 @@
     }*/
 
     function printAccomList(accom) {
+        var testName = accom.accomName;
         var str = '';
         str += '<div class="col-sm-4">';
         str += '<div class="card">';
         str += '<div class="card-body">';
-        str += '<img src="/resources/img/' + accom.accomImg[0].imgName + '.jpg" class="card-img-top">';
+        str += '<div id="' + testName + '"' + 'class="carousel slide" data-bs-ride="carousel">';
+        str += '<div class="carousel-inner">';
+
+        for (var i = 0; i < accom.accomImg.length; i++) {
+            if (i == 0) {
+                str += '<div class="carousel-item active">';
+            } else {
+                str += '<div class="carousel-item">';
+            }
+
+            str += '<img src="/resources/img/' + accom.accomImg[i].imgName + '.jpg" class="d-block w-100">';
+            str += '</div>';
+        }
+
+        str += '</div>';
+        str += '</div>';
+        str += '<button id="' + testName + '_prev' + '" class="carousel-control-prev" type="button" data-bs-target="' + testName + '" data-bs-slide="prev">';
+        str += '<span class="carousel-control-prev-icon" aria-hidden="true"></span>';
+        str += '<span class="visually-hidden">Previous</span>';
+        str += '</button>';
+        str += '<button id="' + testName + '_next' + '" class="carousel-control-next" type="button" data-bs-target="' + testName + '" data-bs-slide="next">';
+        str += '<span class="carousel-control-next-icon" aria-hidden="true"></span>';
+        str += '<span class="visually-hidden">Next</span>';
+        str += '</button>';
+        str += '</div>';
         str += '<h5 class="card-title">' + accom.accomName + '</h5>';
         str += '<p class="card-text">' + accom.accomLocation + '</p>';
         str += '</div>';
         str += '</div>';
         str += '</div>';
         $row.append(str);
+
+        $('#' + testName).carousel({
+            // 슬리아딩 자동 순환 지연 시간
+            // false면 자동 순환하지 않는다.
+            interval: 3000,
+            // hover를 설정하면 마우스를 가져대면 자동 순환이 멈춘다.
+            pause: "hover",
+            // 순환 설정, true면 1 -> 2가면 다시 1로 돌아가서 반복
+            wrap: true,
+            // 키보드 이벤트 설정 여부(?)
+            keyboard: true
+        });
+
+        // 이미지 슬라이드 전 페이지 이동
+        $('#' + testName + '_prev').on("click", function () {
+            $('#' + testName).carousel('prev');
+        });
+        // 이미지 슬라이드 다음 페이지 이동
+        $('#' + testName + '_next').on("click", function () {
+            $('#' + testName).carousel('next');
+        });
     }
 
     kakao.maps.event.addListener(map, 'bounds_changed', function () {
@@ -255,7 +284,6 @@
 
     });
 
-
     function searchClick() {
         var keyword = $('#keyword').val();
 
@@ -266,7 +294,6 @@
 
         ps.keywordSearch(keyword, placesSearchCB);
     }
-
 
     var ps = new kakao.maps.services.Places();
 
@@ -298,7 +325,6 @@
             return;
 
         }
-
 
     }
 

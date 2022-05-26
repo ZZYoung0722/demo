@@ -213,6 +213,7 @@ public class AccomController {
     public @ResponseBody List<AccomDto> mapListByExtent(@RequestParam Map<String, String> param) {
         List<AccomDto> list = accomService.mapListByExtent(param);
 
+        //이미지 다르게 띄우기
         for (AccomDto dto : list) {
             dto.setAccomImg(accomService.getImgList(dto.getAccomNo()));
         }
