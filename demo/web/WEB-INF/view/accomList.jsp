@@ -33,13 +33,20 @@
 
         #map {
             width: 50%;
-            height: 88%;
+            height: 85.5%;
             float: left;
             position: sticky;
         }
 
         #search {
             margin: auto;
+            position: relative;
+            z-index: 10;
+        }
+
+        .card-img-top {
+            height: 15rem;
+            object-fit: cover;
         }
 
     </style>
@@ -48,15 +55,15 @@
 <body>
 
 <%@ include file="nav.jsp" %>
+<br>
 
 <div class="input-group mb-3" id="search" style="width: 500px;">
     <input id="keyword" type="search" class="form-control" placeholder="Search" aria-describedby="button-addon2">
     <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="searchClick()">Search</button>
 </div>
 
-
 <div>
-    <div class="list" style=" height: 88%; overflow:auto">
+    <div class="list" style=" height: 85.5%; overflow:auto">
         <%--<div class="container">
             <div class="row">
                 <table class="table table-striped">
@@ -111,6 +118,20 @@
         src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a71e33e6909a61dbb04de7d82451c92f&libraries=services,clusterer,drawing"></script>
 
 <script>
+    $('.open-button').click(function(){
+        $('.search').addClass('active');
+        $('.overlay').removeClass('hidden');
+        $('input').focus(); // If there are multiple inputs on the page you might want to use an ID
+    });
+
+    $('.overlay').click(function() {
+        $('.search').removeClass('active');
+        $(this).addClass('hidden');
+    });
+
+
+
+
     var mapContainer = document.getElementById('map'),
         mapOption = {
             center: new kakao.maps.LatLng(37.5597, 126.8309),
@@ -225,7 +246,7 @@
                 str += '<div class="carousel-item">';
             }
 
-            str += '<img src="/resources/img/' + accom.accomImg[i].imgName + '.jpg" class="d-block w-100">';
+            str += '<img src="/resources/img/' + accom.accomImg[i].imgName + '.jpg" class="d-block card-img-top">';
             str += '</div>';
         }
 
@@ -255,8 +276,6 @@
             pause: "hover",
             // 순환 설정, true면 1 -> 2가면 다시 1로 돌아가서 반복
             wrap: true,
-            // 키보드 이벤트 설정 여부(?)
-            keyboard: true
         });
 
         // 이미지 슬라이드 전 페이지 이동
@@ -323,7 +342,6 @@
 
             alert('검색 결과 중 오류가 발생했습니다.');
             return;
-
         }
 
     }

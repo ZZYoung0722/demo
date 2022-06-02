@@ -54,7 +54,7 @@
     <div id="inner">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h4 class="panel-title">회원가입</h4>
+                <h3 class="panel-title">회원가입</h3>
             </div>
             <div class="panel-body">
                 <div class="form-group row">
@@ -66,7 +66,7 @@
                     <label for="userId" class="col-md-2">아이디</label>
                     <input type="text" id="userId" name="userId" required="required" class="form-control"
                            style="width: 300px; margin-right: 8px;">
-                    <input type="button" value="ID 중복확인" class="btn btn-secondary" id="idcheck"
+                    <input type="button" value="ID 중복확인" class="btn btn-outline-warning" id="idcheck"
                            style=" width:150px;"><br>
                 </div>
                 <div class="form-group row">
@@ -89,7 +89,7 @@
                 <div class="form-group row">
                     <label for="userEmail" class="col-md-2">이메일</label>
                     <input type="email" id="userEmail" name="userEmail" class="form-control col-md-2"
-                           placeholder="ex)ddd@naver.com" style="width:200px;"/>
+                           placeholder="ex)abc@naver.com" style="width:200px;"/>
                 </div>
                 <div class="form-group row">
                     <label for="userAddr" class="col-md-2">주소</label>
@@ -97,8 +97,8 @@
                            style="width: 300px; margin-right: 8px">
                 </div>
                 <div style="text-align: center;">
-                    <button type="button" id="signupBtn" class="btn btn-secondary">회원가입</button>
-                    <button type="button" id="cancelBtn" class="btn btn-danger">취소</button>
+                    <button type="button" id="signupBtn" class="btn btn-outline-secondary">회원가입</button>
+                    <button type="button" id="cancelBtn" class="btn btn-outline-danger">취소</button>
                 </div>
             </div>
         </div>

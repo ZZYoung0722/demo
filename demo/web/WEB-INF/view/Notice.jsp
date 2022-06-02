@@ -25,15 +25,21 @@
     <style type="text/css">
         #writingBtn {
             width: 100px;
-            margin-top: 10px;
-            margin: auto;
+        }
+
+        .a {
+            text-decoration: none;
+        }
+        .a:hover {
+            color: #ffb03b;
         }
     </style>
 
 </head>
 <body>
 <%@ include file="nav.jsp" %>
-<div style="text-align: center; margin-top: 80px;">
+<br>
+<div style="text-align: center;">
     <h1>공지사항</h1>
 </div>
 
@@ -41,7 +47,7 @@
     <div class="row">
         <form action="/noticelist" id="form-search-list" method="post">
             <input type="hidden" name="page" value="1"/>
-            <table>
+            <table class="table">
                 <tr>
                     <td>
                         <select class="form-select" name="opt">
@@ -55,15 +61,18 @@
                     <td>
                         <button type="submit" class="btn btn-outline-primary btn-m" id="btn-search">검색</button>
                     </td>
+                    <td>
+                        <input type="button" id="writingBtn" class="btn btn-outline-secondary" value="글쓰기" style="float: right">
+                    </td>
                 </tr>
             </table>
         </form>
     </div>
 </div>
-<br>
+
 <div class="container">
     <div class="row">
-        <table class="table table-striped" style="margin-top: 80px;">
+        <table class="table table-hover" style="margin-top: 80px;">
             <thead>
             <tr>
                 <th>번호</th>
@@ -75,14 +84,14 @@
             <c:forEach var="list" items="${list}" varStatus="loop">
                 <tr>
                     <td>${total - (pagination.rowsPerPage * (pagination.currentPageNo - 1)) - loop.count + 1}</td>
-                    <td><a href="detail?no=${list.noticeNo}">${list.title}</a></td>
+                    <td><a class="a" href="detail?no=${list.noticeNo}">${list.title}</a></td>
                     <td><fmt:formatDate value="${list.noticeDate}"/></td>
                 </tr>
             </c:forEach>
             </tbody>
         </table>
 
-        <input type="button" id="writingBtn" class="btn btn-secondary" value="글쓰기">
+
 
         <c:if test="${pagination.totalRecords gt 0 }">
             <!-- 페이지 내비게이션 표시 -->
@@ -92,8 +101,8 @@
                     <nav>
                         <ul class="pagination justify-content-center">
                             <li class="page-item ${pagination.existPrev ? '' : 'disabled' }">
-                                <a class="page-link" href="/noticelist?page=${pagination.prevPage }"
-                                   data-page="${pagination.prevPage }">이전</a>
+                                <a class="page-link" href="/noticelist?page=${pagination.prevPage }" aria-label="Previous"
+                                   data-page="${pagination.prevPage }"><span aria-hidden="true">&laquo;</span></a>
                             </li>
 
                             <c:forEach var="num" begin="${pagination.beginPage }" end="${pagination.endPage }">
@@ -103,8 +112,8 @@
                             </c:forEach>
 
                             <li class="page-item ${pagination.existNext ? '' : 'disabled' }">
-                                <a class="page-link" href="/noticelist?page=${pagination.nextPage }"
-                                   data-page="${pagination.nextPage }">다음</a>
+                                <a class="page-link" href="/noticelist?page=${pagination.nextPage }" aria-label="Next"
+                                   data-page="${pagination.nextPage }"><span aria-hidden="true">&raquo;</span></a>
                             </li>
                         </ul>
                     </nav>

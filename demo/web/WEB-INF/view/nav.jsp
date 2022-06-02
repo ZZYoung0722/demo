@@ -18,11 +18,6 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
     <div class="container-fluid">
-        <div class="nav-item">
-            <a href="/main">
-                <img src="/resources/img/accom.png" style="height: 42px;">
-            </a>
-        </div>
         <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -30,6 +25,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/main">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/experience">체험</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/noticelist">공지사항</a>

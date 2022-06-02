@@ -1,0 +1,626 @@
+/*메인 페이지*/
+/*슬라이드*/
+#hero {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(39, 37, 34, 0.8);
+    overflow: hidden;
+    padding: 0;
+}
+
+#hero .carousel-item {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#hero .carousel-item::before {
+    content: "";
+    background-color: rgba(12, 11, 10, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#hero .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#hero .carousel-content {
+    text-align: center;
+}
+
+#hero h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#hero h2 span {
+    color: #ffb03b;
+}
+
+#hero p {
+    width: 80%;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    margin: 0 auto 30px auto;
+    color: #fff;
+}
+
+#hero .carousel-inner .carousel-item {
+    transition-property: opacity;
+    background-position: center top;
+}
+
+#hero .carousel-inner .carousel-item,
+#hero .carousel-inner .active.carousel-item-start,
+#hero .carousel-inner .active.carousel-item-end {
+    opacity: 0;
+}
+
+#hero .carousel-inner .active,
+#hero .carousel-inner .carousel-item-next.carousel-item-start,
+#hero .carousel-inner .carousel-item-prev.carousel-item-end {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#hero .carousel-inner .carousel-item-next,
+#hero .carousel-inner .carousel-item-prev,
+#hero .carousel-inner .active.carousel-item-start,
+#hero .carousel-inner .active.carousel-item-end {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+}
+
+#hero .carousel-control-next-icon, #hero .carousel-control-prev-icon {
+    background: none;
+    font-size: 30px;
+    line-height: 0;
+    width: auto;
+    height: auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0.5);
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero .carousel-control-next-icon:hover, #hero .carousel-control-prev-icon:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#hero .carousel-indicators li {
+    cursor: pointer;
+}
+
+#hero .btn-menu, #hero .btn-book {
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 0 10px;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    color: #fff;
+    border: 2px solid #ffb03b;
+}
+
+#hero .btn-menu:hover, #hero .btn-book:hover {
+    background: #ffb03b;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    #hero h2 {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #hero p {
+        width: 50%;
+    }
+
+    #hero .carousel-control-prev, #hero .carousel-control-next {
+        width: 5%;
+    }
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .test {
+     width: auto;
+     height: auto;
+     min-width: 1500px;
+     max-height: 500px;
+     margin-bottom: 30px;
+ }
+
+ .test-img {
+     height: 500px;
+     margin-bottom: 30px;
+ }
+
+ #accomBtn {
+     border-radius: 20px;
+ }*/
+
+/*이동 시간*/
+.padding300 {
+    padding: 0 300px;
+}
+
+.margin50 {
+    margin: 50px 0;
+}
+
+.cities li {
+    display: flex;
+}
+
+.cities>a {
+    margin-top: 15px;
+}
+
+.cities li>span {
+    place-self: center;
+    margin-left: 20px;
+}
+
+.cities li>span>* {
+    display: block;
+}
+
+.quarter>* {
+    width: 25%;
+    padding-right: 13px;
+    box-sizing: border-box;
+}
+.img70 img {
+    width: 70px;
+}
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.items.third>li {
+    margin: 0 0px;
+}
+.cities a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.cities a:hover {
+    color: #ffb03b;
+}
+
+/*news&event*/
+.pro {
+    text-decoration: none;
+    color: #000000;
+}
+
+.Butt {
+    text-decoration: none;
+}
+
+.pro:hover {
+    color: #ffb03b;
+}
+
+.a:hover img {
+    transform: scale(1.4);
+}
+
+.a {
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.imge {
+    max-width: 100%;
+    transition: all 0.2s linear;
+}
+
+.container .row h2 {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.container .row h1 {
+    font-size: 70px;
+    font-weight: 800;
+}
+
+/*Best3*/
+.Best3 .box {
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all ease-in-out 0.3s;
+    height: 100%;
+}
+
+.Best3 .section-title h2 {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.Best3 .box h4 {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0;
+    margin: 20px 0;
+    color: #6c665c;
+}
+
+.Best3 .box p {
+    color: #aaaaaa;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.Best3 .box:hover {
+    background: #ffb03b;
+    padding: 30px 30px 70px 30px;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+.Best3 .box:hover span, .Best3 .box:hover h4, .Best3 .box:hover p, .box:hover h6{
+    color: #fff;
+}
+.Best3 .box:hover .price{
+    color: black;
+}
+
+.price {
+    /*background: var(--white-color);*/
+    /*background-color: white;*/
+    border-radius: 100px;
+    /*color: var(--secondary-color);*/
+    color: grey;
+    /*font-size: var(--menu-font-size);
+    font-weight: var(--font-weight-semibold);*/
+    display: inline-block;
+    width: 95px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+}
+
+/*여행은 살아보는거야*/
+.quarter a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.quarter a:hover {
+    color: #ffb03b;
+}
+
+.font45 {
+    font-size: 45px;
+    font-weight: 600;
+    padding: 30px;
+}
+
+.trip li {
+    display: block;
+}
+
+/*주변음식점*/
+.food .section-title h2 {
+    font-size: 45px;
+    font-weight: 600;
+}
+.food {
+    background-size: cover;
+    padding: 60px 0;
+    position: relative;
+}
+.food::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 9;
+}
+.food .container {
+    position: relative;
+    z-index: 10;
+}
+.food .restaurant {
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+}
+.food .restaurant .pic {
+    overflow: hidden;
+}
+.food .restaurant .restaurant-info {
+    position: absolute;
+    bottom: -80px;
+    left: 20px;
+    right: 20px;
+    background: #fff;
+    padding: 20px 0;
+    color: #433f39;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+.food .restaurant h4 {
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #6c665c;
+    position: relative;
+    padding-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+}
+.food .restaurant h4::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #ffcf88;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+.food .restaurant span {
+    font-style: italic;
+    display: block;
+    font-size: 13px;
+}
+.food .restaurant {
+    margin-top: 15px;
+}
+.food .restaurant {
+    transition: color 0.3s;
+    color: #7a7368;
+}
+.food .restaurant a:hover {
+    color: #ffb03b;
+}
+.food .member .social i {
+    font-size: 16px;
+    margin: 0 2px;
+}
+@media (max-width: 992px) {
+    .food .restaurant {
+        margin-bottom: 110px;
+    }
+}
+@media (min-width: 1024px) {
+    .food {
+        background-attachment: fixed;
+    }
+}
+
+
+
+
+
+
+/*체험 페이지*/
+/*title*/
+.title {
+    padding: 200px;
+    margin-bottom: 30px;
+}
+
+.title .section-title h2 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 100px;
+    color: lightskyblue;
+}
+
+/*content*/
+.section-content b {
+    font-size: 30px;
+}
+
+.section-content p {
+    font-size: 20px;
+}
+
+/*배경 이미지*/
+.BgImage {
+    background-image: url('/resources/img/trip4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+/*세상을~, 수백만명~*/
+.padding5080 {
+    padding: 50px 80px;
+}
+
+.black-background {
+    background: black;
+    color: white;
+}
+
+.black-background * {
+    color: white;
+}
+
+.font32 {
+    font-size: 32px;
+    padding: 30px;
+}
+
+.font18 {
+    font-size: 18px;
+}
+
+.font14 {
+    font-size: 14px;
+}
+
+.third>* {
+    width: 33.33%;
+    padding-right: 13px;
+    box-sizing: border-box;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.items.third>li {
+    margin: 0 0px;
+}
+
+.world a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.world a:hover {
+    color: #ffb03b;
+}
+
+.world li {
+    display: block;
+}
+
+.world b {
+    font-size: 20px;
+}
+
+/*experpic*/
+.experpic img{
+    width: 450px;
+    height: 555px;
+}
+
+.exper {
+    padding: 50px;
+}
+
+.exper .write {
+    margin-top: 150px;
+}
+
+
+/*help*/
+.help .section-title h2 {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.help {
+    padding: 100px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+/*체험 호스트 절차*/
+.host {
+    padding: 80px;
+    margin-bottom: 30px;
+}
+
+.host .row {
+    margin-top: 50px;
+}
+
+.host .box {
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all ease-in-out 0.3s;
+    height: 100%;
+}
+
+.host .section-title h2 {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.host .box h4 {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0;
+    margin: 20px 0;
+    color: #6c665c;
+}
+
+.host .box p {
+    color: #aaaaaa;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.host .box:hover {
+    background: #ffb03b;
+    padding: 30px 30px 70px 30px;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+.host .box:hover span, .host .box:hover h4, .host .box:hover p, .box:hover h6{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

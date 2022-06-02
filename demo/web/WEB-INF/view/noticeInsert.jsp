@@ -56,6 +56,7 @@
     $(document).ready(function () {
         $("#cancelBtn").click(cancelnotice);
         $("#registration").click(insertnotice);
+        $("#content").onkeyup(adjustHeight);
 
 
         //취소 클릭시 리스트페이지로 이동
@@ -69,6 +70,13 @@
                 alert("항목을 모두 입력하세요.");
                 return;
             }
+        }
+        
+        function adjustHeight() {
+            var textEle = $('textarea');
+            textEle[0].style.height = 'auto';
+            var textEleHeight = textEle.prop('scrollHeight');
+            textEle.css('height', textEleHeight);
         }
     })
 

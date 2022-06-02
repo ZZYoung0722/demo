@@ -61,6 +61,11 @@
     <%@ include file="nav.jsp"%>
     <div id="inner">
         <div id="main">
+            <div class="nav-item">
+                <a href="/main">
+                    <img src="/resources/img/accom.png" style="height: 100px;">
+                </a>
+            </div>
             <div id="title">
                 <h1>Login</h1>
             </div>

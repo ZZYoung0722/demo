@@ -4,7 +4,6 @@ import com.common.CustomJsonView;
 import com.prj.dto.*;
 import com.prj.service.AccomService;
 import com.utill.*;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
@@ -34,6 +33,17 @@ public class AccomController {
     @RequestMapping("/signupform")
     public String signUpform() {
         return "signUp";
+    }
+
+    @RequestMapping("/ex")
+    public String ex() {
+        return "ex";
+    }
+
+    //체험
+    @RequestMapping("/experience")
+    public String experience() {
+        return "experience";
     }
 
     //로그인 화면
@@ -138,7 +148,7 @@ public class AccomController {
     public String noticelist(@RequestParam(name = "page", required = false, defaultValue = "1") String page, Criteria criteria, Model model) {
 
         int totalRecords = accomService.totalCount(criteria);
-        Pagination pagination = new Pagination(page, totalRecords, 3);
+        Pagination pagination = new Pagination(page, totalRecords, 10);
 
         //시작 끝 criteria에 저장
         criteria.setBeginIndex(pagination.getBegin());
