@@ -46,6 +46,24 @@ public class AccomController {
         return "experience";
     }
 
+    //seoul
+    @RequestMapping("/seoul")
+    public String seoul() {
+        return "seoul";
+    }
+
+    //jeju
+    @RequestMapping("/jeju")
+    public String jeju() {
+        return "jeju";
+    }
+
+    //gangwon
+    @RequestMapping("/gangwon")
+    public String gangwon() {
+        return "gangwon";
+    }
+
     //로그인 화면
     @RequestMapping("/loginform")
     public String loginform() {

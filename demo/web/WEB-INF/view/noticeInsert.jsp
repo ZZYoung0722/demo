@@ -19,6 +19,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
+    <style>
+        .noticeinsert{
+            margin-top: 80px;
+        }
+    </style>
+
 </head>
 <body>
 <%@ include file="nav.jsp" %>
@@ -27,7 +33,7 @@
 <div class="container">
     <div class="panel-group">
         <div class="panel panel-default">
-            <div class="panel-heading">
+            <div class="panel-heading noticeinsert">
                 <h1> 공지사항 등록 </h1>
             </div>
             <div class="panel-body">
@@ -71,7 +77,8 @@
                 return;
             }
         }
-        
+
+        //textarea 자동조절
         function adjustHeight() {
             var textEle = $('textarea');
             textEle[0].style.height = 'auto';

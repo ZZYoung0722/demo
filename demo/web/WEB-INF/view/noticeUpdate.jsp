@@ -19,6 +19,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
+    <style>
+        .noticeupdate {
+            margin-top: 100px;
+        }
+
+        .content {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            height: 2.7rem;
+            padding: 0.6rem;
+            font-size: 1.2rem;
+            resize: none;
+        }
+    </style>
+
 </head>
 <body>
 <%@ include file="nav.jsp" %>
@@ -26,7 +42,7 @@
 <div class="container">
     <div class="panel-group">
         <div class="panel panel-default">
-            <div class="panel-heading">
+            <div class="panel-heading noticeupdate">
                 <h1> 공지사항 수정 </h1>
             </div>
             <div class="panel-body">
@@ -41,7 +57,7 @@
                     <br>
                     <div class="form-group row">
                         <label for="content" class="col-md-2">내용</label>
-                        <textarea id="content" name="content" class="form-control" cols="50" rows="10">${dto.content}</textarea>
+                        <textarea id="content" name="content" class="form-control content" cols="50" rows="10">${dto.content}</textarea>
                     </div>
                     <br>
                     <div style="text-align: center;">
@@ -63,6 +79,13 @@
         //취소 클릭시 리스트페이지로 이동
         function cancelnotice() {
             window.location.href = "/noticelist"
+        }
+
+        var txtArea = $(".content");
+        if (txtArea) {
+            txtArea.each(function(){
+                $(this).height(this.scrollHeight);
+            });
         }
     })
 

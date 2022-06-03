@@ -16,7 +16,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" aria-label="Tenth navbar example">
     <div class="container-fluid">
         <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
             <ul class="navbar-nav">

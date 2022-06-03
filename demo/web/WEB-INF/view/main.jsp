@@ -112,7 +112,7 @@
 
 <section class="padding300 margin50">
     <ul class="items quarter img70 cities">
-        <a href="#">
+        <a href="/seoul">
             <li>
                 <img src="https://a0.muscache.com/im/pictures/71e23854-a3c7-491c-b715-6e86233a293f.jpg?im_q=medq&im_w=720">
                 <span><span class="font_bold">서울</span><span>차로 30분 거리</span></span>
@@ -124,6 +124,12 @@
                 <span><span class="font_bold">인천</span><span>차로 1시간 거리</span></span>
             </li>
         </a>
+        <a href="/gangwon">
+            <li>
+                <img src="https://a0.muscache.com/im/pictures/847cfb7f-788d-42dc-9148-f375348dde76.jpg?im_q=medq&im_w=240">
+                <span><span class="font_bold">강원도</span><span>차로 3시간 거리</span></span>
+            </li>
+        </a>
         <a href="#">
             <li>
                 <img src="https://a0.muscache.com/im/pictures/76e5f1c6-a788-418c-a28b-f0ee29cffd41.jpg?im_q=medq&im_w=240">
@@ -132,32 +138,26 @@
         </a>
         <a href="#">
             <li>
-                <img src="https://a0.muscache.com/im/pictures/ac2086c9-df0d-4085-94c0-94fe3fb94862.jpg?im_q=medq&im_w=240">
-                <span><span class="font_bold">의정부시</span><span>차로 30분 거리</span></span>
-            </li>
-        </a>
-        <a href="#">
-            <li>
-                <img src="https://a0.muscache.com/im/pictures/8340bd19-ee32-4669-8b10-a8ac7e7735d4.jpg?im_q=medq&im_w=240">
-                <span><span class="font_bold">대전</span><span>차로 2시간 거리</span></span>
+                <img src="https://a0.muscache.com/im/pictures/560c06e1-a396-4414-9e38-4fbe8e9f04c4.jpg?im_q=medq&im_w=240">
+                <span><span class="font_bold">부산</span><span>차로 5시간 거리</span></span>
             </li>
         </a>
         <a href="#">
             <li>
                 <img src="https://a0.muscache.com/im/pictures/7c424b7e-0f02-4282-93cf-c5fc5e5e157d.jpg?im_q=medq&im_w=240">
-                <span><span class="font_bold">수원시</span><span>차로 45분 거리</span></span>
+                <span><span class="font_bold">경주</span><span>차로 3.5시간 거리</span></span>
             </li>
         </a>
         <a href="#">
             <li>
-                <img src="https://a0.muscache.com/im/pictures/560c06e1-a396-4414-9e38-4fbe8e9f04c4.jpg?im_q=medq&im_w=240">
-                <span><span class="font_bold">부천시</span><span>차로 45분 거리</span></span>
+                <img src="https://a0.muscache.com/im/pictures/8340bd19-ee32-4669-8b10-a8ac7e7735d4.jpg?im_q=medq&im_w=240">
+                <span><span class="font_bold">전주</span><span>차로 3시간 거리</span></span>
             </li>
         </a>
-        <a href="#">
+        <a href="/jeju">
             <li>
-                <img src="https://a0.muscache.com/im/pictures/847cfb7f-788d-42dc-9148-f375348dde76.jpg?im_q=medq&im_w=240">
-                <span><span class="font_bold">안산시</span><span>차로 1시간 거리</span></span>
+                <img src="https://a0.muscache.com/im/pictures/ac2086c9-df0d-4085-94c0-94fe3fb94862.jpg?im_q=medq&im_w=240">
+                <span><span class="font_bold">제주도</span><span>비행기로 1시간 거리</span></span>
             </li>
         </a>
     </ul>

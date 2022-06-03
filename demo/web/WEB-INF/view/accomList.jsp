@@ -55,15 +55,15 @@
 <body>
 
 <%@ include file="nav.jsp" %>
-<br>
+<%--<br><br><br>--%>
 
-<div class="input-group mb-3" id="search" style="width: 500px;">
+<div class="input-group mb-3" id="search" style="width: 500px; margin-top: 80px;">
     <input id="keyword" type="search" class="form-control" placeholder="Search" aria-describedby="button-addon2">
     <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="searchClick()">Search</button>
 </div>
 
 <div>
-    <div class="list" style=" height: 85.5%; overflow:auto">
+    <div class="list" style=" height: 85.5%; overflow-x: hidden;">
         <%--<div class="container">
             <div class="row">
                 <table class="table table-striped">

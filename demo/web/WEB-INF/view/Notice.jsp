@@ -33,13 +33,18 @@
         .a:hover {
             color: #ffb03b;
         }
+
+        .notice {
+            text-align: center;
+            margin-top: 80px;
+        }
     </style>
 
 </head>
 <body>
 <%@ include file="nav.jsp" %>
 <br>
-<div style="text-align: center;">
+<div class="notice">
     <h1>공지사항</h1>
 </div>
 

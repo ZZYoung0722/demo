@@ -33,7 +33,7 @@
 <%@ include file="nav.jsp" %>
 
 
-<section id="title" class="title">
+<%--<section id="title" class="title">
     <div class="container">
         <div class="section-title">
             <h2>내가 좋아하는 것에서 가치를 찾아보세요.</h2>
@@ -44,28 +44,46 @@
                 체험을 호스팅하여 내 도시와 문화, 취미활동, 사회 공헌 활동을 소개해보세요.</p>
         </div>
     </div>
+</section>--%>
+
+<section id="title" class="title">
+    <div class="container">
+        <div class="row">
+            <div class="section-title col-6">
+                <h2>내가 좋아하는 것에서 가치를 찾아보세요.</h2>
+            </div>
+            <video src="/resources/img/video.mp4" loop autoplay controls muted style="width: 50%; height: 50%;"></video>
+            <div class="section-content">
+                <b>체험이란?</b>
+                <p>체험은 일반적인 투어나 강습이 아닌, 세계 각지의 현지인이 직접 기획하고 진행하는 활동입니다.<br>
+                    체험을 호스팅하여 내 도시와 문화, 취미활동, 사회 공헌 활동을 소개해보세요.</p>
+            </div>
+        </div>
+    </div>
 </section>
 
-
-<section class="padding80 margin50">
-    <div><b class="font32">수백만 명에 이르는 체험 커뮤니티의 일원이 되어보세요.</b></div>
+<section class="black-background padding5080">
+    <div>
+        <b class="font32">세상을 만나는 특별한 방법</b>
+        <div class="font14">현지 전문가와 함께하는 독특한 액티비티를 직접 체험하거나 온라인으로 만나보세요.</div>
+    </div>
     <ul class="items third world">
         <a href="#">
             <li>
                 <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt="두 사람이 휴대폰을 보며 아파트의 소파에서 휴식을 취하고 있고, 테이블 위 화병에는 해바라기 한 다발이 꽂혀 있습니다." elementtiming="LCP-target" src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/blte7abde74510fa923/6238e80fdf839864f7d0b6b0/Tile_(2).png?crop=100p,87.74p,x0,y12.12p&amp;width=432&amp;height=513&amp;auto=webp" data-original-uri="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/blte7abde74510fa923/6238e80fdf839864f7d0b6b0/Tile_(2).png?crop=100p,87.74p,x0,y12.12p&amp;width=432&amp;height=513&amp;auto=webp">
-                <b>체험 호스트 되기</b>
+                <b class="font18">체험 호스트 되기</b>
             </li>
         </a>
         <a href="#">
             <li>
                 <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt="분홍색 배경을 바탕으로 서 있는 여성을 그린 그림." elementtiming="LCP-target" src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltbf958631ab6a9671/5dd2ec88fc77845f003a545c/set-up-listing-tile@2x_(1).jpg?crop=99.82p,99.85p,x0,y0&amp;width=432&amp;height=513&amp;auto=webp" data-original-uri="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltbf958631ab6a9671/5dd2ec88fc77845f003a545c/set-up-listing-tile@2x_(1).jpg?crop=99.82p,99.85p,x0,y0&amp;width=432&amp;height=513&amp;auto=webp">
-                <b>온라인 체험 호스팅하기</b>
+                <b class="font18">온라인 체험 호스팅하기</b>
             </li>
         </a>
         <a href="#">
             <li>
                 <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt="커피잔을 들고 창밖으로 자전거를 탄 사람을 바라보는 모습을 그린 일러스트입니다." elementtiming="LCP-target" src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltb2fadf36b8956143/5f5a50763fc7e52e120b649d/Tile_Discovering_Hosting_jpg.jpg?crop=100p,87.76p,x0,y12.23p&amp;width=432&amp;height=513&amp;auto=webp" data-original-uri="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltb2fadf36b8956143/5f5a50763fc7e52e120b649d/Tile_Discovering_Hosting_jpg.jpg?crop=100p,87.76p,x0,y12.23p&amp;width=432&amp;height=513&amp;auto=webp">
-                <b>체험 호스팅하기</b>
+                <b class="font18">체험 호스팅하기</b>
             </li>
         </a>
     </ul>
@@ -73,7 +91,7 @@
 
 <section class="BgImage"></section>
 
-<section class="black-background padding5080">
+<section class="padding5080">
     <div>
         <b class="font32">세상을 만나는 특별한 방법</b>
         <div class="font14">현지 전문가와 함께하는 독특한 액티비티를 직접 체험하거나 온라인으로 만나보세요.</div>
@@ -436,7 +454,7 @@
             <div class="col-md-6">
                 <div class="h-100 p-5 text-white bg-dark rounded-3">
                     <h2 style="text-align: center">호스트를 위한</h2>
-                    <h1 style="text-align: center; color: deeppink;">에어커버</h1>
+                    <h1 style="text-align: center; color: deeppink;">커버</h1>
                     <h4>호스트를 위한 에어커버는 체험에도 적용됩니다.</h4>
                     <p>호스트를 위한 에어커버에는 최대 1백만 달러까지 보장되는 체험 책임보험이 포함되어, 에어비앤비 체험 진행 중
                         만일이라도 게스트에게 신체 상해가 발생한 경우 호스트를 보호해줍니다. 에어커버는 모든 예약에 무료로 제공됩니다.</p>
