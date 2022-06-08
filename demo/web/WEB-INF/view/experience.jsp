@@ -46,17 +46,27 @@
     </div>
 </section>--%>
 
+<div class="bg-video">
+    <video class="bg-video__content" autoplay muted loop>
+        <source src="/resources/img/video.mp4" type="video/mp4" />
+        <source src="img/video.webm" type="video/webm" />
+        Your browser is not supported!
+    </video>
+</div>
+
 <section id="title" class="title">
     <div class="container">
         <div class="row">
             <div class="section-title col-6">
                 <h2>내가 좋아하는 것에서 가치를 찾아보세요.</h2>
             </div>
-            <video src="/resources/img/video.mp4" loop autoplay controls muted style="width: 50%; height: 50%;"></video>
+            <%--<video src="/resources/img/video.mp4" loop autoplay controls muted style="width: 50%; height: 50%;"></video>--%>
             <div class="section-content">
                 <b>체험이란?</b>
                 <p>체험은 일반적인 투어나 강습이 아닌, 세계 각지의 현지인이 직접 기획하고 진행하는 활동입니다.<br>
-                    체험을 호스팅하여 내 도시와 문화, 취미활동, 사회 공헌 활동을 소개해보세요.</p>
+                    체험을 호스팅하여 내 도시와 문화, 취미활동, 사회 공헌 활동을 소개해보세요.<br>
+                체험은 전문성, 특별한 기회, 교감 이라는 요건을 만족해야합니다.<br>
+                줌(Zoom)을 이용한 온라인체험, 동물체험, 쿠킹체험, 사회공헌체험, 어드벤처(이틀 이상 진행되는 체험)이 있습니다.</p>
             </div>
         </div>
     </div>
@@ -70,19 +80,19 @@
     <ul class="items third world">
         <a href="#">
             <li>
-                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt="두 사람이 휴대폰을 보며 아파트의 소파에서 휴식을 취하고 있고, 테이블 위 화병에는 해바라기 한 다발이 꽂혀 있습니다." elementtiming="LCP-target" src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/blte7abde74510fa923/6238e80fdf839864f7d0b6b0/Tile_(2).png?crop=100p,87.74p,x0,y12.12p&amp;width=432&amp;height=513&amp;auto=webp" data-original-uri="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/blte7abde74510fa923/6238e80fdf839864f7d0b6b0/Tile_(2).png?crop=100p,87.74p,x0,y12.12p&amp;width=432&amp;height=513&amp;auto=webp">
+                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target" src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/blte7abde74510fa923/6238e80fdf839864f7d0b6b0/Tile_(2).png?crop=100p,87.74p,x0,y12.12p&amp;width=432&amp;height=513&amp;auto=webp" data-original-uri="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/blte7abde74510fa923/6238e80fdf839864f7d0b6b0/Tile_(2).png?crop=100p,87.74p,x0,y12.12p&amp;width=432&amp;height=513&amp;auto=webp">
                 <b class="font18">체험 호스트 되기</b>
             </li>
         </a>
         <a href="#">
             <li>
-                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt="분홍색 배경을 바탕으로 서 있는 여성을 그린 그림." elementtiming="LCP-target" src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltbf958631ab6a9671/5dd2ec88fc77845f003a545c/set-up-listing-tile@2x_(1).jpg?crop=99.82p,99.85p,x0,y0&amp;width=432&amp;height=513&amp;auto=webp" data-original-uri="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltbf958631ab6a9671/5dd2ec88fc77845f003a545c/set-up-listing-tile@2x_(1).jpg?crop=99.82p,99.85p,x0,y0&amp;width=432&amp;height=513&amp;auto=webp">
+                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target" src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltbf958631ab6a9671/5dd2ec88fc77845f003a545c/set-up-listing-tile@2x_(1).jpg?crop=99.82p,99.85p,x0,y0&amp;width=432&amp;height=513&amp;auto=webp" data-original-uri="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltbf958631ab6a9671/5dd2ec88fc77845f003a545c/set-up-listing-tile@2x_(1).jpg?crop=99.82p,99.85p,x0,y0&amp;width=432&amp;height=513&amp;auto=webp">
                 <b class="font18">온라인 체험 호스팅하기</b>
             </li>
         </a>
         <a href="#">
             <li>
-                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt="커피잔을 들고 창밖으로 자전거를 탄 사람을 바라보는 모습을 그린 일러스트입니다." elementtiming="LCP-target" src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltb2fadf36b8956143/5f5a50763fc7e52e120b649d/Tile_Discovering_Hosting_jpg.jpg?crop=100p,87.76p,x0,y12.23p&amp;width=432&amp;height=513&amp;auto=webp" data-original-uri="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltb2fadf36b8956143/5f5a50763fc7e52e120b649d/Tile_Discovering_Hosting_jpg.jpg?crop=100p,87.76p,x0,y12.23p&amp;width=432&amp;height=513&amp;auto=webp">
+                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target" src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltb2fadf36b8956143/5f5a50763fc7e52e120b649d/Tile_Discovering_Hosting_jpg.jpg?crop=100p,87.76p,x0,y12.23p&amp;width=432&amp;height=513&amp;auto=webp" data-original-uri="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltb2fadf36b8956143/5f5a50763fc7e52e120b649d/Tile_Discovering_Hosting_jpg.jpg?crop=100p,87.76p,x0,y12.23p&amp;width=432&amp;height=513&amp;auto=webp">
                 <b class="font18">체험 호스팅하기</b>
             </li>
         </a>
@@ -99,14 +109,14 @@
     <ul class="items third world">
         <a href="#">
             <li>
-                <img class="_1cb9q3xq" aria-hidden="true" alt="한 남자가 의자가 딸린 긴 실내 테이블에서 보이는 울창한 외부 열대나무를 향해 유리문을 밀어 엽니다." decoding="async" elementtiming="LCP-target" fetchpriority="low" loading="lazy" src="https://a0.muscache.com/im/pictures/334530d8-2ad6-40e8-8fd2-4ac0835e693a.jpg?im_w=720" data-original-uri="https://a0.muscache.com/im/pictures/334530d8-2ad6-40e8-8fd2-4ac0835e693a.jpg" style="object-fit: cover; object-position: center bottom; border-radius: 4px;">
+                <img class="_1cb9q3xq" aria-hidden="true" decoding="async" elementtiming="LCP-target" fetchpriority="low" loading="lazy" src="https://a0.muscache.com/im/pictures/334530d8-2ad6-40e8-8fd2-4ac0835e693a.jpg?im_w=720" data-original-uri="https://a0.muscache.com/im/pictures/334530d8-2ad6-40e8-8fd2-4ac0835e693a.jpg" style="object-fit: cover; object-position: center bottom; border-radius: 4px;">
                 <b class="font18">온라인 체험</b>
                 <div class="font14">집에서 즐기는 랜선 세계 여행</div>
             </li>
         </a>
         <a href="#">
             <li>
-                <img class="_1cb9q3xq" aria-hidden="true" alt="사람들이 모여 있는 커다란 테이블에서 한 여성이 방금 만든 생파스타를 손에 들고 있습니다." decoding="async" elementtiming="LCP-target" fetchpriority="low" loading="lazy" src="https://a0.muscache.com/im/pictures/a464d642-695e-4d2c-aa51-2302de067f45.jpg?im_w=720" data-original-uri="https://a0.muscache.com/im/pictures/a464d642-695e-4d2c-aa51-2302de067f45.jpg" style="object-fit: cover; object-position: center bottom; border-radius: 4px;">
+                <img class="_1cb9q3xq" aria-hidden="true" decoding="async" elementtiming="LCP-target" fetchpriority="low" loading="lazy" src="https://a0.muscache.com/im/pictures/a464d642-695e-4d2c-aa51-2302de067f45.jpg?im_w=720" data-original-uri="https://a0.muscache.com/im/pictures/a464d642-695e-4d2c-aa51-2302de067f45.jpg" style="object-fit: cover; object-position: center bottom; border-radius: 4px;">
                 <b class="font18">체험</b>
                 <div class="font14">어디에서든 즐길 수 있는 체험</div>
             </li>
@@ -131,7 +141,7 @@
                     사람들의 흥미를 자극할 독특한 액티비티를 기획해보세요.</p>
             </div>
             <div class="col-md-5 experpic">
-                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt="" elementtiming="LCP-target"
+                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target"
                      src="https://a0.muscache.com/im/pictures/2bdf020b-303c-46a4-bf2c-6c6a8e775bd8.jpg?aki_policy=x_large"
                      data-original-uri="https://a0.muscache.com/im/pictures/2bdf020b-303c-46a4-bf2c-6c6a8e775bd8.jpg?aki_policy=x_large">
             </div>
@@ -143,7 +153,7 @@
                 <p class="lead">흥미로운 거리 벽화 찾기, 일몰에 즐기는 서핑 등 평소 좋아하는 일로 수입을 올려보세요. 체험 호스팅을 통헤 취미를 즐기며 수익을 올릴 수 있습니다.</p>
             </div>
             <div class="col-md-5 order-md-1">
-                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt="" elementtiming="LCP-target"
+                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target"
                      src="https://a0.muscache.com/im/pictures/55b065f5-e6d9-4a0a-8066-9c1850db7660.jpg?aki_policy=x_large"
                      data-original-uri="https://a0.muscache.com/im/pictures/55b065f5-e6d9-4a0a-8066-9c1850db7660.jpg?aki_policy=x_large">
             </div>
@@ -155,7 +165,7 @@
                 <p class="lead">유기견과 함께하는 하이킹, 윤리적 패션에 대한 소개까지. 완전히 새로운 방식으로 사회 공헌 활동에 대해 알리세요.</p>
             </div>
             <div class="col-md-5 experpic">
-                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt="" elementtiming="LCP-target"
+                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target"
                      src="https://a0.muscache.com/im/pictures/d1d720a0-7253-4f89-b9b4-50759c376a9a.jpg?aki_policy=x_large"
                      data-original-uri="https://a0.muscache.com/im/pictures/d1d720a0-7253-4f89-b9b4-50759c376a9a.jpg?aki_policy=x_large">
             </div>
@@ -179,7 +189,7 @@
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
                 <div class="card shadow-lg">
-                    <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt="" elementtiming="LCP-target"
+                    <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target"
                          src="https://a0.muscache.com/im/pictures/36ad251f-02c2-486a-965f-1d473e25e509.jpg?aki_policy=x_large"
                          data-original-uri="https://a0.muscache.com/im/pictures/36ad251f-02c2-486a-965f-1d473e25e509.jpg?aki_policy=x_large">
                     <div class="card-body">
@@ -190,7 +200,7 @@
             </div>
             <div class="col">
                 <div class="card shadow-lg">
-                    <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt="" elementtiming="LCP-target"
+                    <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target"
                          src="https://a0.muscache.com/im/pictures/eca85a07-8fad-4648-a4a4-b4c9283fdd65.jpg?aki_policy=x_large"
                          data-original-uri="https://a0.muscache.com/im/pictures/eca85a07-8fad-4648-a4a4-b4c9283fdd65.jpg?aki_policy=x_large">
                     <div class="card-body">
@@ -201,7 +211,7 @@
             </div>
             <div class="col">
                 <div class="card shadow-lg">
-                    <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt="" elementtiming="LCP-target"
+                    <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target"
                          src="https://a0.muscache.com/im/pictures/1ecf2c03-5b86-4af3-a194-c18764eafbb3.jpg?aki_policy=x_large"
                          data-original-uri="https://a0.muscache.com/im/pictures/1ecf2c03-5b86-4af3-a194-c18764eafbb3.jpg?aki_policy=x_large">
                     <div class="card-body">
@@ -315,8 +325,7 @@
                 </div>
                 <div class="col">
                     <div class="card shadow-lg">
-                        <img class="_6tbg2q" aria-hidden="true" alt="여러 사람과 개 한 마리가 바위 해변에서 하이킹을 즐기고 있습니다."
-                             elementtiming="LCP-target"
+                        <img class="_6tbg2q" aria-hidden="true" elementtiming="LCP-target"
                              src="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/blt4f32d08e271c7ba5/changes-and-cancellations-optimized.jpg"
                              data-original-uri="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/blt4f32d08e271c7ba5/changes-and-cancellations-optimized.jpg"
                              style="object-fit: cover; vertical-align: bottom;">
@@ -365,8 +374,7 @@
                 </div>
                 <div class="col">
                     <div class="card shadow-lg">
-                        <img class="_6tbg2q" aria-hidden="true" alt="두 사람이 레코드 가게를 둘러보고 있습니다."
-                             elementtiming="LCP-target"
+                        <img class="_6tbg2q" aria-hidden="true" elementtiming="LCP-target"
                              src="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/bltbe0500ef75ea2ee7/how-cohosting-works-optimized.jpg"
                              data-original-uri="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/bltbe0500ef75ea2ee7/how-cohosting-works-optimized.jpg"
                              style="object-fit: cover; vertical-align: bottom;">

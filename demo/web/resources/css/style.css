@@ -448,7 +448,12 @@ img {
     font-size: 60px;
     font-weight: 600;
     margin-bottom: 100px;
-    color: lightskyblue;
+    color: cornflowerblue;
+    margin-top: 30px;
+}
+
+.title .section-content {
+    margin-top: 40px;
 }
 
 /*content*/
@@ -462,7 +467,7 @@ img {
 
 /*배경 이미지*/
 .BgImage {
-    background-image: url('/resources/img/trip4.jpg');
+    background-image: url('https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/blt3f0e84b006a0cfd9/62339331d8ca0c3e4caaa094/image1.jpg?crop=100p,84.47p,x0,y5.78p&width=1050&height=591&auto=webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -604,6 +609,24 @@ img {
     color: #fff;
 }
 
+/*체험 페이지 배경 영상*/
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.15;                                          /*투명도*/
+}
+
+video {
+    width: 100%;
+}
+
+
+
+
 
 
 /*seoul*/
@@ -623,11 +646,13 @@ img {
 }
 
 
+.box {
+    border: 2px solid ;
+    color: red;
+    height: auto;
+    width: auto;
 
-
-
-
-
+}
 
 
 

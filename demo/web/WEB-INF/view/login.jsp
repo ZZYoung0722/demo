@@ -41,6 +41,7 @@
         #title {
             margin-left: 1%;
             font-size: 40px;
+            margin-top: 180px;
         }
 
         #content {
@@ -61,11 +62,6 @@
     <%@ include file="nav.jsp"%>
     <div id="inner">
         <div id="main">
-            <div class="nav-item">
-                <a href="/main">
-                    <img src="/resources/img/accom.png" style="height: 100px;">
-                </a>
-            </div>
             <div id="title">
                 <h1>Login</h1>
             </div>
@@ -73,8 +69,8 @@
             <form action="/login", method="post">
                 <div id="content" style="width: 400px;">
                     ID<input type="text" id="userId" name="userId" class="form-control" required="required" placeholder="ID">
-                    PassWord<input type="password" id="userPw" name="userPw" class="form-control" required="required"
-                                   placeholder="PassWord"><br>
+                    Password<input type="password" id="userPw" name="userPw" class="form-control" required="required"
+                                   placeholder="Password"><br>
                     <c:if test="${not empty error}">
                         <p style="color: red">${error}</p>
                     </c:if>
