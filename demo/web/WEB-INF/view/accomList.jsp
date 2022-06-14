@@ -55,7 +55,6 @@
 <body>
 
 <%@ include file="nav.jsp" %>
-<%--<br><br><br>--%>
 
 <div class="input-group mb-3" id="search" style="width: 500px; margin-top: 80px;">
     <input id="keyword" type="search" class="form-control" placeholder="Search" aria-describedby="button-addon2">
@@ -234,7 +233,7 @@
         var testName = accom.accomName;
         var str = '';
         str += '<div class="col-sm-4">';
-        str += '<div class="card">';
+        str += '<div class="card" style="height: 400px;">';
         str += '<div class="card-body">';
         str += '<div id="' + testName + '"' + 'class="carousel slide" data-bs-ride="carousel">';
         str += '<div class="carousel-inner">';
@@ -246,7 +245,7 @@
                 str += '<div class="carousel-item">';
             }
 
-            str += '<img src="/resources/img/' + accom.accomImg[i].imgName + '.jpg" class="d-block card-img-top">';
+            str += '<img src="/resources/img/' + accom.accomImg[i].imgName + '.jpg" class="d-block card-img-top" style="height: 300px;">';
             str += '</div>';
         }
 

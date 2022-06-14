@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>seoul</title>
+    <title>incheon</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -36,9 +36,10 @@
 
 <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
     <div class="col-md-5 p-lg-5 mx-auto my-5">
-        <h1 class="display-4 fw-normal">서울 테마파크</h1>
-        <p class="lead fw-normal">서울특별시는 대한민국의 수도이자 최대 도시이며 최고 도시다.</p>
-        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#seoul">
+        <h1 class="display-4 fw-normal">인천 테마파크</h1>
+        <p class="lead fw-normal">서쪽으로 황해를 건너 중국 대륙과 마주하고 있다. 인천항과 인천국제공항을 중심으로 제조업과
+            물류 산업이 발달하였으며 2003년 인천광역시경제자유구역청이 개청되어 송도。청라。영종 지구를 관할하다.</p>
+        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#incheon">
             Review
         </button>
     </div>
@@ -46,16 +47,16 @@
     <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
 </div>
 
-<div class="modal fade" id="seoul" tabindex="-1" aria-labelledby="seoulLabel" aria-hidden="true">
+<div class="modal fade" id="incheon" tabindex="-1" aria-labelledby="incheonLabel" aria-hidden="true">
     <div class="modal-dialog">
-        <div class="modal-content"style="border-radius: 1rem;">
+        <div class="modal-content" style="border-radius: 1rem;">
             <div class="modal-header">
-                <h2 class="modal-title" id="seoulLabel">Review</h2>
+                <h2 class="modal-title" id="incheonLabel">Review</h2>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="d-flex flex-wrap align-items-center w-100 mt-2">
-                    <h6 class="reviews-text mb-0 me-3">3.5/5.0</h6>
+                    <h6 class="reviews-text mb-0 me-3">4.0/5.0</h6>
                     <div class="reviews-stars" style="text-align: center;">
                         <i class="bi bi-star-fill" style="color: gold">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -75,10 +76,10 @@
                                 <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                             </svg>
                         </i>
-                        <i class="bi bi-star-half" style="color: gold">
+                        <i class="bi bi-star-fill" style="color: gold">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                 class="bi bi-star-half" viewBox="0 0 16 16">
-                                <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                                 class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                             </svg>
                         </i>
                         <i class="bi bi-star" style="color: gold">
@@ -99,49 +100,37 @@
                 <div class="writer">
                     <h3>이름</h3>
                     <i>
-                        <p>남산타워!!</p>
+                        <p>인천차이나타운!!</p>
                     </i>
                 </div>
                 <div class="writer">
                     <h3>이름</h3>
                     <i>
-                        <p>경복궁!!!</p>
+                        <p>송월동동화마을!!!</p>
                     </i>
                 </div>
                 <div class="writer">
                     <h3>이름</h3>
                     <i>
-                        <p>북촌한옥마을!!!!</p>
+                        <p>월미테마파크!!!!</p>
                     </i>
                 </div>
                 <div class="writer">
                     <h3>이름</h3>
                     <i>
-                        <p>롯데월드!!!!!</p>
+                        <p>인청상륙작선기념관!!!!!</p>
                     </i>
                 </div>
                 <div class="writer">
                     <h3>이름</h3>
                     <i>
-                        <p>광장시장!!!!!!</p>
+                        <p>인천대교!!!!!!</p>
                     </i>
                 </div>
                 <div class="writer">
                     <h3>이름</h3>
                     <i>
-                        <p>청계천!!!!!!!</p>
-                    </i>
-                </div>
-                <div class="writer">
-                    <h3>이름</h3>
-                    <i>
-                        <p>동대문디자인플라자!!!!!!!!</p>
-                    </i>
-                </div>
-                <div class="writer">
-                    <h3>이름</h3>
-                    <i>
-                        <p>광화문!!!!!!!!!</p>
+                        <p>영종대교!!!!!!!</p>
                     </i>
                 </div>
             </div>
@@ -149,26 +138,27 @@
     </div>
 </div>
 
-
 <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
     <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
         <div class="my-3 py-3">
-            <h2 class="display-5">경복궁</h2>
-            <p class="lead">조선 왕조의 법궁이다. <br>이름에는 '새 왕조가 큰 복을 누려 번영할 것'이라는 의미가 담겨 있다.</p><br>
+            <h2 class="display-5">인천차이나타운</h2>
+            <p class="lead">인천역 앞에 있는 차이나타운이다. 중국 음식점이나 기념품 등을 파는 상점이 많은 편이다.
+                매년 9월과 10월엔 각각 인천-중국의날 문화축제와 짜장면 축제가 열린다.
+                1883년 인천항 개항 후 1884년에 만들어진 중국(청나라) 조계지에 화교들이 모여들면서 형성되었다.</p>
         </div>
         <div>
-            <img src="http://cdn.news.eugenes.co.kr/news/photo/201608/2245_4430_324.jpg" class="palace">
+            <img src="https://ldb-phinf.pstatic.net/20140407_30/1396855777869zaIeD_JPEG/%C0%CE%C3%B5_%C2%F7%C0%CC%B3%AA%C5%B8%BF%EE_17.JPG?type=m500_500"
+                 class="palace">
         </div>
     </div>
     <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
         <div class="my-3 p-3">
-            <h2 class="display-5">남산서울타워</h2>
-            <p class="lead">
-                대한민국 대표 랜드마크 <br>
-                효율적인 방송전파 송수신과 한국의 전통미를 살린 관광 전망시설의 기능을 겸비한 국내 최초의 종합전파탑으로 방송문화와 관광산업의 미래를 위해 건립되었습니다.</p>
+            <h2 class="display-5">송월동동화마을</h2>
+            <p class="lead">송월동 동화마을은 인천광역시 중구 송월동에 있는 동화를 주제로 한 마을이다. 원래 인천의 오래된
+                달동네였던 곳을 재정비하여 한국 전래동화를 비롯해 세계명작동화에 나오는 주인공들과 배경으로 소재로 꾸며졌다.</p>
         </div>
         <div>
-            <img src="https://korean.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=24595&fileTy=MEDIA&fileNo=1"
+            <img src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20191119_95%2F1574165857543Me2ly_JPEG%2FJTSJWgC-xPv3aAhpgcN2Pdy_.jpg"
                  class="tower">
         </div>
     </div>
@@ -177,22 +167,23 @@
 <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
     <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
         <div class="my-3 p-3">
-            <h2 class="display-5">북촌한옥마을</h2>
-            <p class="lead">종로의 북쪽마을 도심을 흐르는 청계천과 600년 선조의 숨결이 살아숨쉬는 곳.<br>
-                전통한옥과 비교할 때 비록 온전히 품격을 갖추지 못했지만, 북촌한옥에는 한옥의 구성과 아름다움이 응축되어 있다.</p>
+            <h2 class="display-5">월미테마파크</h2>
+            <p class="lead">입장료가 없는 월미도의 초대형 놀이체험 테마파크!<br>
+                70M 높이 하이퍼샷-드롭부터 월미도의 마스코드 타가디스코, 극강스릴 2층바이킹, 115M 대관람차등 스릴만점
+                놀이기구들과 30여가지 어린이 놀이시설까지 온가족이 즐거운 복합 테마파크 입니다.</p>
         </div>
         <div>
-            <img src="https://content.r9cdn.net/rimg/dimg/79/5c/2a4a56c0-lm-169100-169b609d730.jpg?crop=true&width=568&height=320&xhint=1937&yhint=1193"
+            <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxNzExMDZfMTM4%2FMDAxNTA5OTU2MjEwNTY5.ylLT0z2wFLb_j2W4KGGdhQiPJIlFLs9SnVoIO0oS98Ag.LIpJVTPowpwJfgDBQ20mDCix_odLeYsURVPy4Y86IAEg.JPEG.incheontogi%2F1.jpg%23773x515"
                  class="town">
         </div>
     </div>
     <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
         <div class="my-3 py-3">
-            <h2 class="display-5">롯데월드</h2>
-            <p class="lead">롯데월드 어드벤처는 현재 존재하는 테마파크 중에서 페라리 월드 다음으로 세계 최대 규모를 가진 실내 테마파크다.</p><br>
+            <h2 class="display-5">인천상륙작전기념관</h2>
+            <p class="lead">6.25 전쟁 때 연합군 상륙작전을 기리기 위하여 세운 기념관으로, 인천광역시 연수구 옥련동에 있다.</p><br><br>
         </div>
         <div>
-            <img src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220607_152%2F1654589099269gUzuR_PNG%2F%25BF%25A9%25B8%25A7%25C3%25E0%25C1%25A6.PNG"
+            <img src="https://ldb-phinf.pstatic.net/20140407_242/1396855326420hOhNL_JPEG/%C0%CE%C3%B5_%C0%CE%C3%B5%BB%F3%B7%FA%C0%DB%C0%FC%B1%E2%B3%E4%B0%FC_12.JPG?type=m500_500"
                  class="lotte">
         </div>
     </div>
@@ -201,48 +192,26 @@
 <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
     <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
         <div class="my-3 p-3">
-            <h2 class="display-5">청계천</h2>
-            <p class="lead">서울의 도시개발 역사를 상징하는 하천으로도 유명하다.<br>
-                서울 내의 모든 물이 여기에 모여 동쪽으로 흐르다가 왕십리 밖 살곶이다리 근처에서 중랑천과 합쳐 서쪽으로 흐름을 바꾸어 한강으로 빠진다.</p>
+            <h2 class="display-5">영종대교</h2>
+            <p class="lead">영종대교는 2000년대 대한민국 항공 수요에 대비해 영종도와 용유도 일원의 간석지에 건설된 인천국제공항과
+                육지를 연결하는 다리이다. 본 다리가 건설된 후 서울에서 인천국제공항까지 45분대에 도달이 가능해졌으며, 아·태 지역의 중추
+                공항 기능 담당에도 큰 힘이 됐다.
+                영종대교는 다이아몬드형의 주탑을 적용한 세계최조의 3차원 자정식 현수교이다.</p>
         </div>
         <div>
-            <img src="https://www.sisul.or.kr/open_content/cheonggye/images/visual_mb.jpg" class="river">
+            <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMThfMjc2%2FMDAxNjE2MDMxNzUxNzMw.FNrSe3MY-0nJS6ZVcw17LJSVG32YHQzVLi4t-7g7p8og.5Yx-rifnzqkIqUdI5hZwo5wqIwma3HXzH5nmD4QT7hIg.JPEG.cjs7350%2F12_%25B1%25B3%25B7%25AE%25BC%25D2%25B0%25B3_%25BF%25B5%25C1%25BE%25B4%25EB%25B1%25B3_0.jpg&type=sc960_832"
+                 class="river">
         </div>
     </div>
     <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
         <div class="my-3 py-3">
-            <h2 class="display-5">광장시장</h2>
-            <p class="lead">서울 최대 규모의 재래시장이자, 대한민국 최초의 전통 거래 시장이다.<br>
-                광장이라는 이름의 유래는 청계천 3,4가에 있던 광교와 장교로 광장시장의 위치가 이 두 다리 사이에 있다고 하여 붙여졌다.</p>
+            <h2 class="display-5">인천대교</h2>
+            <p class="lead">인천대교는 우리나라에서 가장 긴 다리로 '바다 위의 하이웨이'라는 별명을 지니고 있다. 또한 IMF 구제 금융사태가 일어난
+                어려운 시기에 외자 유치를 이끌어내 민간 투자 사업으로 건설한 교량으로, 총 26조 원의 생산 유발액을 창출하기도 했다.</p><br>
         </div>
         <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStr6L3yD5uRAJE2KkRO0qV4vuA8N2Lc7fpLw&usqp=CAU"
+            <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDExMDZfMjQ1%2FMDAxNjA0NjM2NDE2MzAy.TJaxOktUXAb6h_PdD45D9TfEfvqhX11_owu-7ht5I04g.gWVJ8b7yH_emrbPIOGDTAaJZH1P9o2dcJ_qX7duL5P4g.JPEG.rlafogns2%2F20201106_122439.jpg&type=sc960_832"
                  class="market">
-        </div>
-    </div>
-</div>
-
-<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-            <h2 class="display-5">DDP 동대문디자인플라자</h2>
-            <p class="lead">서울특별시 중구의 전시장 및 쇼핑몰.<br>
-                영국의 건축가 자하 하디드가 설계했다. 홈페이지에 따르면 세계 최대 규모의 3차원 비정형 건축물이라고 한다.</p>
-        </div>
-        <div>
-            <img src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20170526_171%2F1495772011947hzUIv_JPEG%2FDDP1_%25281%2529.jpg"
-                 class="ddp">
-        </div>
-    </div>
-    <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-        <div class="my-3 py-3">
-            <h2 class="display-5">광화문</h2>
-            <p class="lead">경복궁의 남쪽에 있는 정문이고, '임금의 큰 덕이 온 나라를 비춘다'는 의미이다.<br>
-                조선 태조 4년에 건립됨. 임진왜란 때 소실되었다가 고종 1년 대원군 때 재건됨. 현재의 광화문은 1968년 12월에 복원된 것임.</p>
-        </div>
-        <div>
-            <img src="https://ldb-phinf.pstatic.net/20140407_247/1396856055211xTVu7_JPEG/%BC%AD%BF%EF_%B1%A4%C8%AD%B9%AE_4.jpg?type=m500_500"
-                 class="door">
         </div>
     </div>
 </div>

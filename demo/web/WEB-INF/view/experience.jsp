@@ -32,24 +32,10 @@
 <body>
 <%@ include file="nav.jsp" %>
 
-
-<%--<section id="title" class="title">
-    <div class="container">
-        <div class="section-title">
-            <h2>내가 좋아하는 것에서 가치를 찾아보세요.</h2>
-        </div>
-        <div class="section-content">
-            <b>체험이란?</b>
-            <p>체험은 일반적인 투어나 강습이 아닌, 세계 각지의 현지인이 직접 기획하고 진행하는 활동입니다.<br>
-                체험을 호스팅하여 내 도시와 문화, 취미활동, 사회 공헌 활동을 소개해보세요.</p>
-        </div>
-    </div>
-</section>--%>
-
 <div class="bg-video">
     <video class="bg-video__content" autoplay muted loop>
-        <source src="/resources/img/video.mp4" type="video/mp4" />
-        <source src="img/video.webm" type="video/webm" />
+        <source src="/resources/img/video.mp4" type="video/mp4"/>
+        <source src="img/video.webm" type="video/webm"/>
         Your browser is not supported!
     </video>
 </div>
@@ -60,13 +46,12 @@
             <div class="section-title col-6">
                 <h2>내가 좋아하는 것에서 가치를 찾아보세요.</h2>
             </div>
-            <%--<video src="/resources/img/video.mp4" loop autoplay controls muted style="width: 50%; height: 50%;"></video>--%>
             <div class="section-content">
                 <b>체험이란?</b>
                 <p>체험은 일반적인 투어나 강습이 아닌, 세계 각지의 현지인이 직접 기획하고 진행하는 활동입니다.<br>
                     체험을 호스팅하여 내 도시와 문화, 취미활동, 사회 공헌 활동을 소개해보세요.<br>
-                체험은 전문성, 특별한 기회, 교감 이라는 요건을 만족해야합니다.<br>
-                줌(Zoom)을 이용한 온라인체험, 동물체험, 쿠킹체험, 사회공헌체험, 어드벤처(이틀 이상 진행되는 체험)이 있습니다.</p>
+                    체험은 전문성, 특별한 기회, 교감 이라는 요건을 만족해야합니다.<br>
+                    줌(Zoom)을 이용한 온라인체험, 동물체험, 쿠킹체험, 사회공헌체험, 어드벤처(이틀 이상 진행되는 체험)이 있습니다.</p>
             </div>
         </div>
     </div>
@@ -80,19 +65,25 @@
     <ul class="items third world">
         <a href="#">
             <li>
-                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target" src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/blte7abde74510fa923/6238e80fdf839864f7d0b6b0/Tile_(2).png?crop=100p,87.74p,x0,y12.12p&amp;width=432&amp;height=513&amp;auto=webp" data-original-uri="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/blte7abde74510fa923/6238e80fdf839864f7d0b6b0/Tile_(2).png?crop=100p,87.74p,x0,y12.12p&amp;width=432&amp;height=513&amp;auto=webp">
+                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target"
+                     src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/blte7abde74510fa923/6238e80fdf839864f7d0b6b0/Tile_(2).png?crop=100p,87.74p,x0,y12.12p&amp;width=432&amp;height=513&amp;auto=webp"
+                     data-original-uri="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/blte7abde74510fa923/6238e80fdf839864f7d0b6b0/Tile_(2).png?crop=100p,87.74p,x0,y12.12p&amp;width=432&amp;height=513&amp;auto=webp">
                 <b class="font18">체험 호스트 되기</b>
             </li>
         </a>
-        <a href="#">
+        <a href="/online">
             <li>
-                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target" src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltbf958631ab6a9671/5dd2ec88fc77845f003a545c/set-up-listing-tile@2x_(1).jpg?crop=99.82p,99.85p,x0,y0&amp;width=432&amp;height=513&amp;auto=webp" data-original-uri="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltbf958631ab6a9671/5dd2ec88fc77845f003a545c/set-up-listing-tile@2x_(1).jpg?crop=99.82p,99.85p,x0,y0&amp;width=432&amp;height=513&amp;auto=webp">
+                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target"
+                     src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltbf958631ab6a9671/5dd2ec88fc77845f003a545c/set-up-listing-tile@2x_(1).jpg?crop=99.82p,99.85p,x0,y0&amp;width=432&amp;height=513&amp;auto=webp"
+                     data-original-uri="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltbf958631ab6a9671/5dd2ec88fc77845f003a545c/set-up-listing-tile@2x_(1).jpg?crop=99.82p,99.85p,x0,y0&amp;width=432&amp;height=513&amp;auto=webp">
                 <b class="font18">온라인 체험 호스팅하기</b>
             </li>
         </a>
-        <a href="#">
+        <a href="/pilotOperation">
             <li>
-                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target" src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltb2fadf36b8956143/5f5a50763fc7e52e120b649d/Tile_Discovering_Hosting_jpg.jpg?crop=100p,87.76p,x0,y12.23p&amp;width=432&amp;height=513&amp;auto=webp" data-original-uri="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltb2fadf36b8956143/5f5a50763fc7e52e120b649d/Tile_Discovering_Hosting_jpg.jpg?crop=100p,87.76p,x0,y12.23p&amp;width=432&amp;height=513&amp;auto=webp">
+                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target"
+                     src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltb2fadf36b8956143/5f5a50763fc7e52e120b649d/Tile_Discovering_Hosting_jpg.jpg?crop=100p,87.76p,x0,y12.23p&amp;width=432&amp;height=513&amp;auto=webp"
+                     data-original-uri="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltb2fadf36b8956143/5f5a50763fc7e52e120b649d/Tile_Discovering_Hosting_jpg.jpg?crop=100p,87.76p,x0,y12.23p&amp;width=432&amp;height=513&amp;auto=webp">
                 <b class="font18">체험 호스팅하기</b>
             </li>
         </a>
@@ -109,21 +100,32 @@
     <ul class="items third world">
         <a href="#">
             <li>
-                <img class="_1cb9q3xq" aria-hidden="true" decoding="async" elementtiming="LCP-target" fetchpriority="low" loading="lazy" src="https://a0.muscache.com/im/pictures/334530d8-2ad6-40e8-8fd2-4ac0835e693a.jpg?im_w=720" data-original-uri="https://a0.muscache.com/im/pictures/334530d8-2ad6-40e8-8fd2-4ac0835e693a.jpg" style="object-fit: cover; object-position: center bottom; border-radius: 4px;">
+                <img class="_1cb9q3xq" aria-hidden="true" decoding="async" elementtiming="LCP-target"
+                     fetchpriority="low" loading="lazy"
+                     src="https://a0.muscache.com/im/pictures/334530d8-2ad6-40e8-8fd2-4ac0835e693a.jpg?im_w=720"
+                     data-original-uri="https://a0.muscache.com/im/pictures/334530d8-2ad6-40e8-8fd2-4ac0835e693a.jpg"
+                     style="object-fit: cover; object-position: center bottom; border-radius: 4px;">
                 <b class="font18">온라인 체험</b>
                 <div class="font14">집에서 즐기는 랜선 세계 여행</div>
             </li>
         </a>
         <a href="#">
             <li>
-                <img class="_1cb9q3xq" aria-hidden="true" decoding="async" elementtiming="LCP-target" fetchpriority="low" loading="lazy" src="https://a0.muscache.com/im/pictures/a464d642-695e-4d2c-aa51-2302de067f45.jpg?im_w=720" data-original-uri="https://a0.muscache.com/im/pictures/a464d642-695e-4d2c-aa51-2302de067f45.jpg" style="object-fit: cover; object-position: center bottom; border-radius: 4px;">
+                <img class="_1cb9q3xq" aria-hidden="true" decoding="async" elementtiming="LCP-target"
+                     fetchpriority="low" loading="lazy"
+                     src="https://a0.muscache.com/im/pictures/a464d642-695e-4d2c-aa51-2302de067f45.jpg?im_w=720"
+                     data-original-uri="https://a0.muscache.com/im/pictures/a464d642-695e-4d2c-aa51-2302de067f45.jpg"
+                     style="object-fit: cover; object-position: center bottom; border-radius: 4px;">
                 <b class="font18">체험</b>
                 <div class="font14">어디에서든 즐길 수 있는 체험</div>
             </li>
         </a>
         <a href="#">
             <li>
-                <img class="_1cb9q3xq" style="object-fit:cover;border-radius:12px" aria-hidden="true" elementtiming="LCP-target" src="https://a0.muscache.com/im/pictures/64ff6bd8-996c-4842-87b2-4c5cb43c337d.jpg?im_w=720" data-original-uri="https://a0.muscache.com/im/pictures/64ff6bd8-996c-4842-87b2-4c5cb43c337d.jpg">
+                <img class="_1cb9q3xq" style="object-fit:cover;border-radius:12px" aria-hidden="true"
+                     elementtiming="LCP-target"
+                     src="https://a0.muscache.com/im/pictures/64ff6bd8-996c-4842-87b2-4c5cb43c337d.jpg?im_w=720"
+                     data-original-uri="https://a0.muscache.com/im/pictures/64ff6bd8-996c-4842-87b2-4c5cb43c337d.jpg">
                 <b class="font18">어드벤쳐</b>
                 <div class="font14">숙박과 식사가 포함된 며칠 일정의 여행입니다.</div>
             </li>
@@ -434,31 +436,39 @@
     <div class="container py-4">
         <div class="p-5 mb-4 bg-light rounded-3">
             <div class="container-fluid py-5">
-                <ul class="items quarter img70 cities">
-                    <li>
-                        <img src="//a0.muscache.com/airbnb/static/packages/assets/frontend/explore-core/images/icon-uc-alarm.e0a2b02fa7d1e956cd4135847fc0cda1.gif">
+                <div class="parent">
+                    <div class="child">
+                        <div class="items quarter img70 cities workbox">
+                            <img src="//a0.muscache.com/airbnb/static/packages/assets/frontend/explore-core/images/icon-uc-alarm.e0a2b02fa7d1e956cd4135847fc0cda1.gif">
+                        </div>
                         <span class="font_bold">해야 할 일</span>
-                    </li>
-                    <li>
-                        <img src="//a0.muscache.com/airbnb/static/packages/assets/frontend/explore-core/images/icon-uc-calendar.ace59291b2904181320cb34108a24537.gif">
+                    </div>
+                    <div class="child">
+                        <div class="items quarter img70 cities planebox">
+                            <img src="//a0.muscache.com/airbnb/static/packages/assets/frontend/explore-core/images/icon-uc-calendar.ace59291b2904181320cb34108a24537.gif">
+                        </div>
                         <span class="font_bold">일정 관리</span>
-                    </li>
-                    <li>
-                        <img src="//a0.muscache.com/airbnb/static/packages/assets/frontend/explore-core/images/icon-uc-money-saved.0d988c4ec128a1a11fdc5c499940dec8.gif">
+                    </div>
+                    <div class="child">
+                        <div class="items quarter img70 cities paybox">
+                            <img src="//a0.muscache.com/airbnb/static/packages/assets/frontend/explore-core/images/icon-uc-money-saved.0d988c4ec128a1a11fdc5c499940dec8.gif">
+                        </div>
                         <span class="font_bold">결제</span>
-                    </li>
-                    <li>
-                        <img src="//a0.muscache.com/airbnb/static/packages/assets/frontend/explore-core/images/icon-uc-graph.3f8bd411622845e624b9be5ba9631168.gif">
+                    </div>
+                    <div class="child">
+                        <div class="items quarter img70 cities tipbox">
+                            <img src="//a0.muscache.com/airbnb/static/packages/assets/frontend/explore-core/images/icon-uc-graph.3f8bd411622845e624b9be5ba9631168.gif">
+                        </div>
                         <span class="font_bold">호스팅 팁</span>
-                    </li>
-                </ul>
+                    </div>
+                </div>
                 <h1 class="display-5 fw-bold">호스팅에 최적화된 도구</h1>
                 <p class="col-md-8 fs-4">체험 현황에 대해 볼 수 있는 알림판, 체험 개선에 대한 피드백, 검색 및 필터링을 통해 전 세계 게스트에게 노출, 간편한 결제 시스템 등
                     다양한 혜택을 누리실 수 있습니다.</p>
             </div>
         </div>
 
-        <div class="row align-items-md-stretch">
+        <div class="row align-items-md-stretch cover">
             <div class="col-md-6">
                 <div class="h-100 p-5 text-white bg-dark rounded-3">
                     <h2 style="text-align: center">호스트를 위한</h2>
@@ -508,25 +518,31 @@
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <div class="box">
-                    <span>01</span>
-                    <h4>체험 퀄리티 기준 알아보기</h4>
-                    <p>체험이 사이트의 기준(전문성, 특별한 기회 및 교감)에 부합하는지 확인하세요.</p>
-                </div>
+                <a href="/experHost" role="button">
+                    <div class="box">
+                        <span>01</span>
+                        <h4>체험 퀄리티 기준 알아보기</h4>
+                        <p>체험이 사이트의 기준(전문성, 특별한 기회 및 교감)에 부합하는지 확인하세요.</p><br>
+                    </div>
+                </a>
             </div>
             <div class="col-lg-4 mt-4 mt-lg-0">
-                <div class="box">
-                    <span>02</span>
-                    <h4>체험 페이지 만들기</h4>
-                    <p>체험 페이지는 게스트에게 체험에 대한 정보를 소개하는 곳입니다. 전문성을 강조하고 퀄리티 높은 사진을 추가하여 좋은 첫인상을 남기세요.</p>
-                </div>
+                <a href="/experRegistration" role="button">
+                    <div class="box">
+                        <span>02</span>
+                        <h4>체험 페이지 만들기</h4>
+                        <p>체험 페이지는 게스트에게 체험에 대한 정보를 소개하는 곳입니다. 전문성을 강조하고 퀄리티 높은 사진을 추가하여 좋은 첫인상을 남기세요.</p>
+                    </div>
+                </a>
             </div>
             <div class="col-lg-4 mt-4 mt-lg-0">
-                <div class="box">
-                    <span>03</span>
-                    <h4>체험 호스팅 시작하기</h4>
-                    <p>사이트의 퀄리티 기준에 부합하면 호스팅 가능한 날짜를 설정하고 바로 체험을 시작하실 수 있습니다.</p>
-                </div>
+                <a href="/experHosting" role="button">
+                    <div class="box">
+                        <span>03</span>
+                        <h4>체험 호스팅 시작하기</h4>
+                        <p>사이트의 퀄리티 기준에 부합하면 호스팅 가능한 날짜를 설정하고 바로 체험을 시작하실 수 있습니다.</p><br>
+                    </div>
+                </a>
             </div>
         </div>
     </div>

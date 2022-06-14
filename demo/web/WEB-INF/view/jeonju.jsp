@@ -2,13 +2,13 @@
   Created by IntelliJ IDEA.
   User: nCloud
   Date: 2022-06-03
-  Time: 오후 1:33
+  Time: 오후 3:12
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>seoul</title>
+    <title>jeonju</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -36,9 +36,10 @@
 
 <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
     <div class="col-md-5 p-lg-5 mx-auto my-5">
-        <h1 class="display-4 fw-normal">서울 테마파크</h1>
-        <p class="lead fw-normal">서울특별시는 대한민국의 수도이자 최대 도시이며 최고 도시다.</p>
-        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#seoul">
+        <h1 class="display-4 fw-normal">전주 테마파크</h1>
+        <p class="lead fw-normal">광역시인 광주를 빼면 큰 도시가 적은 호남에서는 유일하게 대도시 특례를 받는 도시로
+            전북 제1의 도시, 호남 제2의 도시이다. 무엇보다도 조선 뿌리가 되는 도시이다 보니 인지도가 높으며 일본에서도 서율특별시, 부산광역시 다음으로 인지도가 높다.</p>
+        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#jeonju">
             Review
         </button>
     </div>
@@ -46,11 +47,11 @@
     <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
 </div>
 
-<div class="modal fade" id="seoul" tabindex="-1" aria-labelledby="seoulLabel" aria-hidden="true">
+<div class="modal fade" id="jeonju" tabindex="-1" aria-labelledby="jeonjuLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content"style="border-radius: 1rem;">
             <div class="modal-header">
-                <h2 class="modal-title" id="seoulLabel">Review</h2>
+                <h2 class="modal-title" id="jeonjuLabel">Review</h2>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -99,49 +100,31 @@
                 <div class="writer">
                     <h3>이름</h3>
                     <i>
-                        <p>남산타워!!</p>
+                        <p>전주한옥마을!!</p>
                     </i>
                 </div>
                 <div class="writer">
                     <h3>이름</h3>
                     <i>
-                        <p>경복궁!!!</p>
+                        <p>경기전!!!</p>
                     </i>
                 </div>
                 <div class="writer">
                     <h3>이름</h3>
                     <i>
-                        <p>북촌한옥마을!!!!</p>
+                        <p>남부시장!!!!</p>
                     </i>
                 </div>
                 <div class="writer">
                     <h3>이름</h3>
                     <i>
-                        <p>롯데월드!!!!!</p>
+                        <p>오목대 이목대!!!!!</p>
                     </i>
                 </div>
                 <div class="writer">
                     <h3>이름</h3>
                     <i>
-                        <p>광장시장!!!!!!</p>
-                    </i>
-                </div>
-                <div class="writer">
-                    <h3>이름</h3>
-                    <i>
-                        <p>청계천!!!!!!!</p>
-                    </i>
-                </div>
-                <div class="writer">
-                    <h3>이름</h3>
-                    <i>
-                        <p>동대문디자인플라자!!!!!!!!</p>
-                    </i>
-                </div>
-                <div class="writer">
-                    <h3>이름</h3>
-                    <i>
-                        <p>광화문!!!!!!!!!</p>
+                        <p>전주동물원!!!!!!</p>
                     </i>
                 </div>
             </div>
@@ -149,103 +132,71 @@
     </div>
 </div>
 
+<section>
+    <div class="container">
+        <div class="row exper black-background">
+            <div class="col-md-6 write">
+                <h2 class="featurette-heading">전주한옥마을</h2>
+                <p class="lead">전주 한옥마을은 전주 풍남동 일대에 700여 채의 한옥이 군락을 이루고 있는
+                국내 최대 규모의 전통 한옥촌이며, 전국 유일의 도심 한옥군입니다.
+                1910년 조정되기 시작한 우리나라 근대 주거문화 발달과정의 중요한 공간으로, 경기전, 오목대, 향교 등
+                중요 문화재와 20여개의 문화시설이 산재되어 있으며, 한옥, 한식, 한지, 한소리, 한복, 한방 등 韓스타일이 집약된
+                대한민국 대표 여행지입니다.</p>
+            </div>
+            <div class="col-md-5 experpic">
+                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target" src="/resources/img/trip4.jpg">
+            </div>
+        </div>
 
-<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-        <div class="my-3 py-3">
-            <h2 class="display-5">경복궁</h2>
-            <p class="lead">조선 왕조의 법궁이다. <br>이름에는 '새 왕조가 큰 복을 누려 번영할 것'이라는 의미가 담겨 있다.</p><br>
+        <div class="row exper">
+            <div class="col-md-6 write">
+                <h2 class="featurette-heading">경기전</h2>
+                <p class="lead">경기전은 왕조의 발상지라 여기는 전주에 세운 전각으로, 세종 때 붙인 이름이다.
+                    건물은 정유재란 때 소실되었던 것을 1614년(광해군6)에 증건하엿다.
+                    경기전의 경역은 정전(正殿)과 조경묘(肇慶廟)로 나뉜다.</p>
+            </div>
+            <div class="col-md-5 experpic">
+                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA3MDJfMTgx%2FMDAxNTkzNjE1ODI4ODA0.2V8ocSzx8boJXvCH4NolxssMlHn1L5ZGib26y60H3NIg.GZLTne6CAqFa28sVQASK4TcxeA1vbFkvWGpVfIDNP7cg.JPEG.lsy5088%2F20200511_154500.jpg%231000x562">
+            </div>
         </div>
-        <div>
-            <img src="http://cdn.news.eugenes.co.kr/news/photo/201608/2245_4430_324.jpg" class="palace">
-        </div>
-    </div>
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-            <h2 class="display-5">남산서울타워</h2>
-            <p class="lead">
-                대한민국 대표 랜드마크 <br>
-                효율적인 방송전파 송수신과 한국의 전통미를 살린 관광 전망시설의 기능을 겸비한 국내 최초의 종합전파탑으로 방송문화와 관광산업의 미래를 위해 건립되었습니다.</p>
-        </div>
-        <div>
-            <img src="https://korean.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=24595&fileTy=MEDIA&fileNo=1"
-                 class="tower">
-        </div>
-    </div>
-</div>
 
-<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-            <h2 class="display-5">북촌한옥마을</h2>
-            <p class="lead">종로의 북쪽마을 도심을 흐르는 청계천과 600년 선조의 숨결이 살아숨쉬는 곳.<br>
-                전통한옥과 비교할 때 비록 온전히 품격을 갖추지 못했지만, 북촌한옥에는 한옥의 구성과 아름다움이 응축되어 있다.</p>
+        <div class="row exper black-background">
+            <div class="col-md-6 write">
+                <h2 class="featurette-heading">남부시장</h2>
+                <p class="lead">전주는 시장의 발상지(1473)이고, 남부시장은 그때부터 지금까지 계승된 한국의 유일무이한 역사적 시장이다.
+                남부시장은 한국 전통시장의 유래와 비슷한 역사를 가지고 있는 전라북도의 대표 시장입니다.
+                2015년 글로벌명품시장육성사업을 통해 한국의 대표 관광시장에서 세계의 관광시장으로 도약하고 전라북도를 대표하는 전통시장입니다.</p>
+            </div>
+            <div class="col-md-5 experpic">
+                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxNzEyMDVfMjky%2FMDAxNTEyMzk5ODgxNTA5.pTEIYoMAHlwvG0fl5Yk2MQ5H0tzhWspfuXQSkz3zfhgg.Y9JjEvHYzp51l6L03hhjOrlGmXqjwWhWHGpDDBqiT9og.JPEG.marketagency%2F2.jpg%23740x494">
+            </div>
         </div>
-        <div>
-            <img src="https://content.r9cdn.net/rimg/dimg/79/5c/2a4a56c0-lm-169100-169b609d730.jpg?crop=true&width=568&height=320&xhint=1937&yhint=1193"
-                 class="town">
-        </div>
-    </div>
-    <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-        <div class="my-3 py-3">
-            <h2 class="display-5">롯데월드</h2>
-            <p class="lead">롯데월드 어드벤처는 현재 존재하는 테마파크 중에서 페라리 월드 다음으로 세계 최대 규모를 가진 실내 테마파크다.</p><br>
-        </div>
-        <div>
-            <img src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220607_152%2F1654589099269gUzuR_PNG%2F%25BF%25A9%25B8%25A7%25C3%25E0%25C1%25A6.PNG"
-                 class="lotte">
-        </div>
-    </div>
-</div>
 
-<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-        <div class="my-3 p-3">
-            <h2 class="display-5">청계천</h2>
-            <p class="lead">서울의 도시개발 역사를 상징하는 하천으로도 유명하다.<br>
-                서울 내의 모든 물이 여기에 모여 동쪽으로 흐르다가 왕십리 밖 살곶이다리 근처에서 중랑천과 합쳐 서쪽으로 흐름을 바꾸어 한강으로 빠진다.</p>
+        <div class="row exper">
+            <div class="col-md-6 write">
+                <h2 class="featurette-heading">오목대 이목대</h2>
+                <p class="lead">한벽당 전주향교의 북쪽 4차선 노변, 벼랑같이 솟은 언덕에 세워진 오목대는 고려 말 우왕 6년에 이성계가 운봉 황산에서 왜군을
+                무찌르고 돌아가던 중 조상인 목조가 살았던 이 곳에 들러 승전을 자축한 곳으로, 그 후 고종 황제가 친필로 쓴 태조고황 제주필유지비를 세웠다.
+                여기서 육교를 건너서 이목대가 있는데, 천주교의 성지 치명자산이 있는 승암산 발치에 위치한다.</p>
+            </div>
+            <div class="col-md-5 experpic">
+                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target" src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=f8b4fff8-e15f-46f9-9967-ee24c555af90">
+            </div>
         </div>
-        <div>
-            <img src="https://www.sisul.or.kr/open_content/cheonggye/images/visual_mb.jpg" class="river">
-        </div>
-    </div>
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 py-3">
-            <h2 class="display-5">광장시장</h2>
-            <p class="lead">서울 최대 규모의 재래시장이자, 대한민국 최초의 전통 거래 시장이다.<br>
-                광장이라는 이름의 유래는 청계천 3,4가에 있던 광교와 장교로 광장시장의 위치가 이 두 다리 사이에 있다고 하여 붙여졌다.</p>
-        </div>
-        <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStr6L3yD5uRAJE2KkRO0qV4vuA8N2Lc7fpLw&usqp=CAU"
-                 class="market">
-        </div>
-    </div>
-</div>
 
-<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-            <h2 class="display-5">DDP 동대문디자인플라자</h2>
-            <p class="lead">서울특별시 중구의 전시장 및 쇼핑몰.<br>
-                영국의 건축가 자하 하디드가 설계했다. 홈페이지에 따르면 세계 최대 규모의 3차원 비정형 건축물이라고 한다.</p>
-        </div>
-        <div>
-            <img src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20170526_171%2F1495772011947hzUIv_JPEG%2FDDP1_%25281%2529.jpg"
-                 class="ddp">
-        </div>
-    </div>
-    <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-        <div class="my-3 py-3">
-            <h2 class="display-5">광화문</h2>
-            <p class="lead">경복궁의 남쪽에 있는 정문이고, '임금의 큰 덕이 온 나라를 비춘다'는 의미이다.<br>
-                조선 태조 4년에 건립됨. 임진왜란 때 소실되었다가 고종 1년 대원군 때 재건됨. 현재의 광화문은 1968년 12월에 복원된 것임.</p>
-        </div>
-        <div>
-            <img src="https://ldb-phinf.pstatic.net/20140407_247/1396856055211xTVu7_JPEG/%BC%AD%BF%EF_%B1%A4%C8%AD%B9%AE_4.jpg?type=m500_500"
-                 class="door">
+        <div class="row exper black-background">
+            <div class="col-md-6 write">
+                <h2 class="featurette-heading">전주동물원</h2>
+                <p class="lead">수달, 반달가슴곰 등 천연기념물로 지정된 동물을 비롯한 100여종 600여 마리의 동물들이 사는 동물원.
+                각 동물의 특성에 맞는 전문적인 환경을 제공하는 생태 동물원으로, 각 동물에 관련한 설명을 배치해두어 아이의 교육을 목적으로
+                방문하기 좋다.</p>
+            </div>
+            <div class="col-md-5 experpic">
+                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target" src="https://img.newspim.com/news//2019/05/01/1905011503126890.jpg">
+            </div>
         </div>
     </div>
-</div>
+</section>
 
 </body>
 </html>

@@ -46,16 +46,82 @@ public class AccomController {
         return "experience";
     }
 
+    //체험호스팅 장점
+    @RequestMapping("/experHosting")
+    public String experHosting() {
+        return "experHosting";
+    }
+
+    //체험 등록
+    @RequestMapping("/experRegistration")
+    public String experRegistration() {
+        return "experRegistration";
+    }
+
+    //체험 요금
+    @RequestMapping("/experPay")
+    public String experPay() {
+        return "experPay";
+    }
+
+    //체험 호스트
+    @RequestMapping("/experHost")
+    public String experHost() {
+        return "experHost";
+    }
+
+    //체험 호스팅하기
+    @RequestMapping("/pilotOperation")
+    public String pilotOperation() {
+        return "pilotOperation";
+    }
+
+    //온라인 체험 호스팅하기
+    @RequestMapping("/online")
+    public String online() {
+        return "online";
+    }
+
     //seoul
     @RequestMapping("/seoul")
     public String seoul() {
         return "seoul";
     }
 
+    //daegu
+    @RequestMapping("/daegu")
+    public String daegu() {
+        return "daegu";
+    }
+
+    //busan
+    @RequestMapping("/busan")
+    public String busan() {
+        return "busan";
+    }
+
+    //jeonju
+    @RequestMapping("/jeonju")
+    public String jeonju() {
+        return "jeonju";
+    }
+
     //jeju
     @RequestMapping("/jeju")
     public String jeju() {
         return "jeju";
+    }
+
+    //incheon
+    @RequestMapping("/incheon")
+    public String incheon() {
+        return "incheon";
+    }
+
+    //gyeongju
+    @RequestMapping("/gyeongju")
+    public String gyeongju() {
+        return "gyeongju";
     }
 
     //gangwon

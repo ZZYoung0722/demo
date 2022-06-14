@@ -30,6 +30,7 @@
         .a {
             text-decoration: none;
         }
+
         .a:hover {
             color: #ffb03b;
         }
@@ -37,6 +38,29 @@
         .notice {
             text-align: center;
             margin-top: 80px;
+        }
+
+        .pagination {
+            display: inline-block;
+        }
+
+        .pagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 50%;
+        }
+
+        .page-item.pageactive .page-link {
+            z-index: 1;
+            color: #555;
+            /*font-weight:bold;*/
+            border-color: #ccc;
+        }
+
+        .pagination a:hover:not(.active) {
+            background-color: lightblue;
         }
     </style>
 
@@ -67,7 +91,8 @@
                         <button type="submit" class="btn btn-outline-primary btn-m" id="btn-search">검색</button>
                     </td>
                     <td>
-                        <input type="button" id="writingBtn" class="btn btn-outline-secondary" value="글쓰기" style="float: right">
+                        <input type="button" id="writingBtn" class="btn btn-outline-secondary" value="글쓰기"
+                               style="float: right">
                     </td>
                 </tr>
             </table>
@@ -97,7 +122,6 @@
         </table>
 
 
-
         <c:if test="${pagination.totalRecords gt 0 }">
             <!-- 페이지 내비게이션 표시 -->
             <br><br><br>
@@ -106,13 +130,15 @@
                     <nav>
                         <ul class="pagination justify-content-center">
                             <li class="page-item ${pagination.existPrev ? '' : 'disabled' }">
-                                <a class="page-link" href="/noticelist?page=${pagination.prevPage }" aria-label="Previous"
+                                <a class="page-link" href="/noticelist?page=${pagination.prevPage }"
+                                   aria-label="Previous"
                                    data-page="${pagination.prevPage }"><span aria-hidden="true">&laquo;</span></a>
                             </li>
 
                             <c:forEach var="num" begin="${pagination.beginPage }" end="${pagination.endPage }">
-                                <li class="page-item ${pagination.pageNo eq num ? 'active' : '' }">
-                                    <a class="page-link" href="/noticelist?page=${num }" data-page="${num }">${num }</a>
+                                <li class="page-item pageactive ${pagination.pageNo eq num ? 'active' : '' }">
+                                    <a class="page-link pageactive" href="/noticelist?page=${num }"
+                                       data-page="${num }">${num }</a>
                                 </li>
                             </c:forEach>
 
