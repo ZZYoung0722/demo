@@ -12,22 +12,9 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="css/bootstrap-icons.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&amp;display=swap"
-          rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-            crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <link href="/resources/css/style.css" rel="stylesheet">
 
 </head>
@@ -52,7 +39,8 @@
             <div class="modal-header">
                 <h2 class="modal-title" id="jejuLabel">Review</h2>
                 <i class="bi bi-stars">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-stars" viewBox="0 0 16 16">
                         <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"/>
                     </svg>
                 </i>
@@ -175,13 +163,11 @@
                                  src="https://static.wixstatic.com/media/98e022_3e6815cacc80479c80bf31c69ffd1584~mv2.jpg/v1/fill/w_501,h_690,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/dd.jpg">
                         </div>
                         <div class="carousel-item">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt=""
-                                 elementtiming="LCP-target"
+                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
                                  src="https://static.wixstatic.com/media/98e022_4dc5cfc51b574c0d91f9f2d25b90c1fe~mv2.jpg/v1/fit/w_1164,h_749,q_90/98e022_4dc5cfc51b574c0d91f9f2d25b90c1fe~mv2.webp">
                         </div>
                         <div class="carousel-item">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt=""
-                                 elementtiming="LCP-target"
+                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
                                  src="https://static.wixstatic.com/media/98e022_4284c0af82bd4067a1a97b78cbbc8be9~mv2.jpg/v1/fit/w_1164,h_749,q_90/98e022_4284c0af82bd4067a1a97b78cbbc8be9~mv2.webp">
                         </div>
                     </div>
@@ -202,18 +188,15 @@
                 <div class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt=""
-                                 elementtiming="LCP-target"
+                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
                                  src="https://modo-phinf.pstatic.net/20200807_64/1596777049849lYcN0_JPEG/mosaze7G1v.jpeg?type=f540_540">
                         </div>
                         <div class="carousel-item">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt=""
-                                 elementtiming="LCP-target"
+                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
                                  src="https://modo-phinf.pstatic.net/20200807_181/1596777052036FPDtG_JPEG/mosadawCY2.jpeg?type=f540_540">
                         </div>
                         <div class="carousel-item">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt=""
-                                 elementtiming="LCP-target"
+                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
                                  src="https://modo-phinf.pstatic.net/20200807_10/15967770533648SU45_JPEG/mosatZeiIn.jpeg?type=f540_540">
                         </div>
                     </div>
@@ -225,24 +208,21 @@
             <div class="col-md-6 write">
                 <h2 class="featurette-heading">섭지코지</h2>
                 <p class="lead">제주특별자치도 서귀포시 성산읍 고성리에 위치한 해안이다.<br>
-                제주 방언으로 '좁은 땅'이라는 뜻의 '섭지'와 '곶'이라는 뜻의 '코지'가 합쳐져서 섭지코지라는 이름이 만들어졌다.</p>
+                    제주 방언으로 '좁은 땅'이라는 뜻의 '섭지'와 '곶'이라는 뜻의 '코지'가 합쳐져서 섭지코지라는 이름이 만들어졌다.</p>
             </div>
             <div class="col-md-5 experpic">
                 <div class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt=""
-                                 elementtiming="LCP-target"
+                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
                                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV75fNogtLVzBGVZKNXJ3cx2aTbvlK9YG1bA&usqp=CAU">
                         </div>
                         <div class="carousel-item">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt=""
-                                 elementtiming="LCP-target"
+                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
                                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_4tXDk_4KEqQ7jp85e88GvgoVUDw4vqZrSQ&usqp=CAU">
                         </div>
                         <div class="carousel-item">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt=""
-                                 elementtiming="LCP-target"
+                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
                                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfYFPoopyy97t53lMTJoszsVU6Cycf3GaDBg&usqp=CAU">
                         </div>
                     </div>
@@ -254,25 +234,22 @@
             <div class="col-md-6 write">
                 <h2 class="featurette-heading">우도</h2>
                 <p class="lead">제주도의 동쪽 끝에 접하는 섬으로, 제주특별자치도에서 제주도 다음으로 큰 섬이다.<br>
-                우도란 이름은 섬의 모습이 소과 누워있는 것 같다고 해서 붙여졌다. 서빈백사 해수욕장과 지두청사가 유명하다.
-                땅콩, 마늘, 소라, 오분자기, 우뭇가사리 등을 생산하며, 가축 사육도 활발하게 이루어진다.</p>
+                    우도란 이름은 섬의 모습이 소과 누워있는 것 같다고 해서 붙여졌다. 서빈백사 해수욕장과 지두청사가 유명하다.
+                    땅콩, 마늘, 소라, 오분자기, 우뭇가사리 등을 생산하며, 가축 사육도 활발하게 이루어진다.</p>
             </div>
             <div class="col-md-5 experpic">
                 <div class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt=""
-                                 elementtiming="LCP-target"
+                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
                                  src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MjFfMTY3%2FMDAxNjUzMDg5NzQ2ODcx.vlN7CQTyjgUsdcIITz3_8j_8EUSXIJq_nyLSEN4K3Acg.pA6kbQ7Gg-Pj1IIlZK5RfohO__RsP2cBaTplSeLw3v8g.JPEG.thwlsrhk1004%2FIMG_6248.jpg&type=a340">
                         </div>
                         <div class="carousel-item">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt=""
-                                 elementtiming="LCP-target"
+                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
                                  src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MjNfNjkg%2FMDAxNjUzMjk4ODIxOTY2.x_dQ5YByLSbiHqDsyTQlK2V4sJIgiZpCdEnK9vWEvcog.W3XHrCrNCsVU0o6v5VzILryKqTEP8CdPbWUViUECTWAg.JPEG.da3411%2FIMG_3057.JPG&type=a340">
                         </div>
                         <div class="carousel-item">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt=""
-                                 elementtiming="LCP-target"
+                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
                                  src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA0MDdfMTE4%2FMDAxNjQ5MjkwOTQ4MzU4.mkkCTCIcnT79JmzS3lbDNcHDqm0iJx3ZLEqVIDUFqFUg.R6qYowlinlZtpEaBmODgPaBvorZ10BSCw4vPHQh8TOgg.JPEG.baewisdom%2FIMG_6469.jpg&type=a340">
                         </div>
                     </div>
@@ -284,25 +261,23 @@
             <div class="col-md-6 write">
                 <h2 class="featurette-heading">함덕해수욕장</h2>
                 <p class="lead">제주올레 19코스를 걷다 보면 에메랄드빛 보석을 품고 있는 함덕해수욕장을 만날 수 있다. <br>
-                해수욕장 바로 옆에 우뚝선 오름(서우봉) 덕분에 '함덕서우봉해변'이라고도 불린다. 입구부터 환영해주는 키 큰 야자수들, 하얀 모래와 대조를 이루는 에메랄드빛 바다, 모래와 미역마저 투명하게 비춰주는 맑은 물과 하얀 파도가 그러하다.<br>
-                제주도 수많은 해수욕장 중에서도, 바다 색이 가장 예쁜 3곳을 꼽는다면 단연 협재, 김녕, 그리고 함덕해수욕장이다.</p>
+                    해수욕장 바로 옆에 우뚝선 오름(서우봉) 덕분에 '함덕서우봉해변'이라고도 불린다. 입구부터 환영해주는 키 큰 야자수들, 하얀 모래와 대조를 이루는 에메랄드빛 바다, 모래와 미역마저
+                    투명하게 비춰주는 맑은 물과 하얀 파도가 그러하다.<br>
+                    제주도 수많은 해수욕장 중에서도, 바다 색이 가장 예쁜 3곳을 꼽는다면 단연 협재, 김녕, 그리고 함덕해수욕장이다.</p>
             </div>
             <div class="col-md-5 experpic">
                 <div class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt=""
-                                 elementtiming="LCP-target"
+                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
                                  src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA3MDJfMTk1%2FMDAxNjI1MTkzMTcyNzcx.P16lK7ZMTmrMpIH6mzF1wOSLr7mfWVGzfOhqXPnMuhsg.nf6XOtuQxn25hZV-Sd311Vi6N0luzluGGH_EM9HCH0Ug.JPEG.dy0275%2FIMG_2864.JPG&type=a340">
                         </div>
                         <div class="carousel-item">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt=""
-                                 elementtiming="LCP-target"
+                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
                                  src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA0MDRfMTA1%2FMDAxNjQ5MDU2NTI0MTk0.ZUiwYRRTwirrR14S0eylXyvS9Vtb_o4ekMzOHs2g910g.Ki9LcUjju1pYTCrLFdSK8aSG3UWt8_LSDREo4R0xCEAg.JPEG.yerin9123%2F20220403%25A3%25DF140543.jpg&type=a340">
                         </div>
                         <div class="carousel-item">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt=""
-                                 elementtiming="LCP-target"
+                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
                                  src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTExMjVfNyAg%2FMDAxNjM3ODQxMzczMDE3.N4bOfWK1DjXVMkAdAZrRDcw0Vsh_0Y0WrYts2M4sCCkg.7QL4A49zfa7IhlDxpjrguesS7-HvK2zrm8IvIbd-rOYg.JPEG.monnani58%2FIMG_8800.JPG&type=a340">
                         </div>
                     </div>
@@ -313,25 +288,23 @@
         <div class="row exper">
             <div class="col-md-6 write">
                 <h2 class="featurette-heading">가파도</h2>
-                <p class="lead">제주도 부속섬 중 4번째로 큰 섬 가파도는 위에서 내려다보면, 바다를 헤엄쳐 가는 가오리 모양을 하고 있다. 이름은 가오리(가파리)를 닮아 가파도가 되었다는 설과, 덮개 모양을 닮아 '개도'로 부르던 것이 가파도라 굳어졌다는 설 등이 있다.
-                가파도 하면 빼 놓을수 없는 것이 '청보리'이다. 바닷일에 바빠 농사일에 신경 쓸새가 없엇던 주민들은 씨만 뿌려 놓으면 잘 자라는 보리 농사를 지어 밭을 놀렸다.</p>
+                <p class="lead">제주도 부속섬 중 4번째로 큰 섬 가파도는 위에서 내려다보면, 바다를 헤엄쳐 가는 가오리 모양을 하고 있다. 이름은 가오리(가파리)를 닮아 가파도가 되었다는
+                    설과, 덮개 모양을 닮아 '개도'로 부르던 것이 가파도라 굳어졌다는 설 등이 있다.
+                    가파도 하면 빼 놓을수 없는 것이 '청보리'이다. 바닷일에 바빠 농사일에 신경 쓸새가 없엇던 주민들은 씨만 뿌려 놓으면 잘 자라는 보리 농사를 지어 밭을 놀렸다.</p>
             </div>
             <div class="col-md-5 experpic">
                 <div class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt=""
-                                 elementtiming="LCP-target"
+                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
                                  src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MDlfMjQw%2FMDAxNjUyMDU5MTUzOTcz.ZdjlaHwPnrgl_erk5-GqiHD7ZoOhQI2mu9lfPq6S1acg.JQGa-DoFVvYGf5Ff9sLEc0swdtqPNvnwL2DS9kO4TDEg.JPEG.dkswldk96%2FIMG_6823.jpg&type=a340">
                         </div>
                         <div class="carousel-item">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt=""
-                                 elementtiming="LCP-target"
+                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
                                  src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MDZfMjk2%2FMDAxNjUxNzkyNjIxMDU2.Vr7XtlqXDBPRyCRe7Z5RNe3mBlgYmSus085rs4N4QYEg.M7exnoLIcQjMpUgiM4KKkVPL4PQeHuLZAV1fY-I0K3Eg.JPEG.francesco87%2FDSC02961.jpg&type=a340">
                         </div>
                         <div class="carousel-item">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt=""
-                                 elementtiming="LCP-target"
+                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
                                  src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MTdfMTg2%2FMDAxNjUyNzUxNzQ0NzIy.ZF_5T5-rrod0u26tIbhz6I_xQdsqN8uGFVgiD_Y9iogg.68lbktsAGK5Clq7zbUh1LJuZdCqyj0FhzCBTvENDCbwg.JPEG.22cccc%2F20220501%25A3%25DF104355.jpg&type=a340">
                         </div>
                     </div>
@@ -343,24 +316,22 @@
             <div class="col-md-6 write">
                 <h2 class="featurette-heading">용머리해안</h2>
                 <p class="lead">산방산 자락에서 해안가로 뻗어나가는 곳에 위치한다. 마치 바다 속으로 들어가는 용의 머리를 닮았다 해서 용머리해안으로 불린다.<br>
-                수 천 만년 동안 층층이 쌓인 사암층 암벽이 파도에 깎여 기묘한 절벽을 이루고 있다. 파도의 치여 비밀의 방처럼 움푹 패인 굴 방이나 암벽이 간직하고 있는 파도의 흔적은 기나긴 역사와 마주할 때의 웅장함을 느끼게 한다.</p>
+                    수 천 만년 동안 층층이 쌓인 사암층 암벽이 파도에 깎여 기묘한 절벽을 이루고 있다. 파도의 치여 비밀의 방처럼 움푹 패인 굴 방이나 암벽이 간직하고 있는 파도의 흔적은 기나긴
+                    역사와 마주할 때의 웅장함을 느끼게 한다.</p>
             </div>
             <div class="col-md-5 experpic">
                 <div class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt=""
-                                 elementtiming="LCP-target"
+                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
                                  src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MTBfMTU1%2FMDAxNjUyMTI1MjM5Nzk0.zcIY3GnZFh4g3ZinXY83Usy_1MvpzHzh38JHzjctJJgg.aG4qiQ_c1TdAuKcLMc-hOw-Dhpymw7pU_cTTZzkJdYwg.JPEG.1_nly%2F20220301%25A3%25DF145951.jpg&type=a340">
                         </div>
                         <div class="carousel-item">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt=""
-                                 elementtiming="LCP-target"
+                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
                                  src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjAzMDVfMjg4%2FMDAxNjQ2NDY2MDk1NzIz.bXktZFf4aPk7dreMXWJSueos3ImCx7gq2JkkJTfdWJkg.6TLHvE30dVRzqJXLyFwPpuUi3qL1CpvO38PvWp046xEg.JPEG.bsw001026%2FIMG_2499.JPEG&type=a340">
                         </div>
                         <div class="carousel-item">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt=""
-                                 elementtiming="LCP-target"
+                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
                                  src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjAxMjNfMTg2%2FMDAxNjQyOTQzNzIzOTMw.VBuOQa3WCdjhKn-s0jtfif3DegE-25-XN5iCfjg_dMsg.d50n6Qo334LtfdNvSuNJN3u3vqWAqEhG-lJxEtP1eTQg.JPEG.babosookun%2F20220120_160013.jpg&type=ofullfill340_600_png">
                         </div>
                     </div>
@@ -378,18 +349,15 @@
                 <div class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt=""
-                                 elementtiming="LCP-target"
+                            <img style="object-fit:cover"
                                  src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MjBfMTA4%2FMDAxNjUzMDE3MDc3Mzc5.pEZAyBVC4A5cvJR3LfgQw8-b5o3Ub8nxJm94XtjGS8Ug.MlGFaar9oiFv5Xf1oWM-_AHmfO59q1cuJ_nyye9UgzUg.JPEG.harim9992%2FIMG_2188.jpg&type=a340">
                         </div>
                         <div class="carousel-item">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt=""
-                                 elementtiming="LCP-target"
+                            <img style="object-fit:cover"
                                  src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MTVfMTk0%2FMDAxNjUyNjE3OTQ1MTU2.se640de2AsE4tNbBvkoRPatuk3ro-jTktaCKaUwXq_Qg.UU3R7p71QRqRijEgw3uoSg3rvP9_l9N1ejqNmS9T7c4g.JPEG.jaeyeon_22%2FKakaoTalk_20220515_211100591.jpg&type=a340">
                         </div>
                         <div class="carousel-item">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt=""
-                                 elementtiming="LCP-target"
+                            <img style="object-fit:cover"
                                  src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA0MTFfMzAg%2FMDAxNjQ5NjU3ODk1ODMy._rC7uPUSYfTpAbKwr4lK5uV_mQCifbEJjkuCnHMgE68g.lnP_9okGSp9sTdYGgiPaFUklXAVfoSE-g5hI89_F75og.JPEG.monday8445%2FIMG_0431.JPG&type=a340">
                         </div>
                     </div>
@@ -401,24 +369,22 @@
             <div class="col-md-6 write">
                 <h2 class="featurette-heading">오셜록티뮤지엄</h2>
                 <p class="lead">오셜록티뮤지엄은 국내외 차 관련 물품과 박물관이며, 푸른 녹차밭이 펼쳐지는 제주도 서광다원 입구에 위치하고 있다.<br>
-                동서양 전통과 현대가 조화를 이룬 문화의 공간이자, 자연 친화적인 휴식공간으로, 건물 전체가 녹차잔을 형상화하여 만들어졌다. 녹차와 한국 전통 차 문화를 이해할 수 있는 학습 공간으로 설록차의 모든 것을 체험해 볼 수 있는 곳이다.</p>
+                    동서양 전통과 현대가 조화를 이룬 문화의 공간이자, 자연 친화적인 휴식공간으로, 건물 전체가 녹차잔을 형상화하여 만들어졌다. 녹차와 한국 전통 차 문화를 이해할 수 있는 학습
+                    공간으로 설록차의 모든 것을 체험해 볼 수 있는 곳이다.</p>
             </div>
             <div class="col-md-5 experpic">
                 <div class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt=""
-                                 elementtiming="LCP-target"
+                            <img style="object-fit:cover"
                                  src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MTBfMjEx%2FMDAxNjUyMTQ4OTA3NTg0.IZ3eHmne_TUcIBAjfErMSE_tvFra46H2T-T2QwSUAMYg.3fALhE3L7pxks-Wfw257hKlwIsySKPC9lTRrxfU8Jv8g.JPEG.jshe201%2Foutput_2320488013.jpg&type=a340">
                         </div>
                         <div class="carousel-item">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt=""
-                                 elementtiming="LCP-target"
+                            <img style="object-fit:cover"
                                  src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA0MjdfOTAg%2FMDAxNjUwOTkwMzA1MTE4.FSq8y1giphBSWXKEq58Ap3T4sB3_Dy-9pk5g9jREuoQg.5AQscmSQTAGgIH_TBpmdB8u2XlPmzq3MUqOJ3-8AJEwg.JPEG.wjd2813%2FIMG_4428.JPG&type=a340">
                         </div>
                         <div class="carousel-item">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" alt=""
-                                 elementtiming="LCP-target"
+                            <img style="object-fit:cover"
                                  src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA1MTNfMTMw%2FMDAxNjUyNDA2MjQ5MjEz.LSABq5dVXSDQnjDbFMQTBkx7LAO2NNvBNd0LbQNRWy0g.ZlpaoDMhkSgZoW3mqRscbplBxiIYXfh3DFIbJXJVuqkg.JPEG.kimhjya%2FIMG_4367.JPG&type=a340">
                         </div>
                     </div>

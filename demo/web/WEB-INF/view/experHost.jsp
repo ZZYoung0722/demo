@@ -10,22 +10,11 @@
 <head>
     <title>experHost</title>
 
-    <link href="css/bootstrap-icons.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&amp;display=swap"
-          rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-            crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <link href="/resources/css/style.css" rel="stylesheet">
 
 </head>
@@ -43,10 +32,7 @@
     <div class="row mb-2">
         <div class="col">
             <div class="row overflow-hidden flex-md-row mb-4 h-md-400 position-relative">
-                <img class="_9ofhsl" aria-hidden="true" alt="호스트와 게스트가 주방에 놓인 테이블 주위에 둘러서서 웃고 있습니다." decoding="async"
-                     elementtiming="LCP-target"
-                     src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/blt7bdf58785edcb5c6/60ae1a01cc7ff369bd793577/CA_SE-193734_08_8.jpg?crop=16:9&amp;height=900&amp;width=1600"
-                     data-original-uri="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/blt7bdf58785edcb5c6/60ae1a01cc7ff369bd793577/CA_SE-193734_08_8.jpg?crop=16:9&amp;height=900&amp;width=1600"
+                <img src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/blt7bdf58785edcb5c6/60ae1a01cc7ff369bd793577/CA_SE-193734_08_8.jpg?crop=16:9&amp;height=900&amp;width=1600"
                      style="object-fit: cover; vertical-align: bottom;">
             </div>
         </div>
@@ -184,14 +170,8 @@
         </div>
 
         <div class="col-md-4">
-            <div class="position-sticky" style="top: 2rem;">
+            <div class="position-sticky" style="top: 5rem;">
                 <div class="p-4 mb-3 bg-light rounded">
-                    <i class="bi bi-stars">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                             class="bi bi-stars" viewBox="0 0 16 16">
-                            <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"/>
-                        </svg>
-                    </i>
                     <h4 style="margin-left: 20px;">하이라이트</h4>
                     <div class="p-4 hightlight">
                         <ul>

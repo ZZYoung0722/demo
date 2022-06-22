@@ -10,22 +10,11 @@
 <head>
     <title>experience</title>
 
-    <link href="css/bootstrap-icons.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&amp;display=swap"
-          rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-            crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <link href="/resources/css/style.css" rel="stylesheet">
 
 </head>
@@ -65,25 +54,22 @@
     <ul class="items third world">
         <a href="#">
             <li>
-                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target"
-                     src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/blte7abde74510fa923/6238e80fdf839864f7d0b6b0/Tile_(2).png?crop=100p,87.74p,x0,y12.12p&amp;width=432&amp;height=513&amp;auto=webp"
-                     data-original-uri="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/blte7abde74510fa923/6238e80fdf839864f7d0b6b0/Tile_(2).png?crop=100p,87.74p,x0,y12.12p&amp;width=432&amp;height=513&amp;auto=webp">
+                <img src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/blte7abde74510fa923/6238e80fdf839864f7d0b6b0/Tile_(2).png?crop=100p,87.74p,x0,y12.12p&amp;width=432&amp;height=513&amp;auto=webp"
+                     style="border-radius: 20px;">
                 <b class="font18">체험 호스트 되기</b>
             </li>
         </a>
         <a href="/online">
             <li>
-                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target"
-                     src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltbf958631ab6a9671/5dd2ec88fc77845f003a545c/set-up-listing-tile@2x_(1).jpg?crop=99.82p,99.85p,x0,y0&amp;width=432&amp;height=513&amp;auto=webp"
-                     data-original-uri="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltbf958631ab6a9671/5dd2ec88fc77845f003a545c/set-up-listing-tile@2x_(1).jpg?crop=99.82p,99.85p,x0,y0&amp;width=432&amp;height=513&amp;auto=webp">
+                <img src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltbf958631ab6a9671/5dd2ec88fc77845f003a545c/set-up-listing-tile@2x_(1).jpg?crop=99.82p,99.85p,x0,y0&amp;width=432&amp;height=513&amp;auto=webp"
+                     style="border-radius: 20px;">
                 <b class="font18">온라인 체험 호스팅하기</b>
             </li>
         </a>
         <a href="/pilotOperation">
             <li>
-                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target"
-                     src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltb2fadf36b8956143/5f5a50763fc7e52e120b649d/Tile_Discovering_Hosting_jpg.jpg?crop=100p,87.76p,x0,y12.23p&amp;width=432&amp;height=513&amp;auto=webp"
-                     data-original-uri="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltb2fadf36b8956143/5f5a50763fc7e52e120b649d/Tile_Discovering_Hosting_jpg.jpg?crop=100p,87.76p,x0,y12.23p&amp;width=432&amp;height=513&amp;auto=webp">
+                <img src="https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/bltb2fadf36b8956143/5f5a50763fc7e52e120b649d/Tile_Discovering_Hosting_jpg.jpg?crop=100p,87.76p,x0,y12.23p&amp;width=432&amp;height=513&amp;auto=webp"
+                     style="border-radius: 20px;">
                 <b class="font18">체험 호스팅하기</b>
             </li>
         </a>
@@ -100,32 +86,24 @@
     <ul class="items third world">
         <a href="#">
             <li>
-                <img class="_1cb9q3xq" aria-hidden="true" decoding="async" elementtiming="LCP-target"
-                     fetchpriority="low" loading="lazy"
-                     src="https://a0.muscache.com/im/pictures/334530d8-2ad6-40e8-8fd2-4ac0835e693a.jpg?im_w=720"
-                     data-original-uri="https://a0.muscache.com/im/pictures/334530d8-2ad6-40e8-8fd2-4ac0835e693a.jpg"
-                     style="object-fit: cover; object-position: center bottom; border-radius: 4px;">
+                <img src="https://a0.muscache.com/im/pictures/334530d8-2ad6-40e8-8fd2-4ac0835e693a.jpg?im_w=720"
+                     style="border-radius: 20px;">
                 <b class="font18">온라인 체험</b>
                 <div class="font14">집에서 즐기는 랜선 세계 여행</div>
             </li>
         </a>
         <a href="#">
             <li>
-                <img class="_1cb9q3xq" aria-hidden="true" decoding="async" elementtiming="LCP-target"
-                     fetchpriority="low" loading="lazy"
-                     src="https://a0.muscache.com/im/pictures/a464d642-695e-4d2c-aa51-2302de067f45.jpg?im_w=720"
-                     data-original-uri="https://a0.muscache.com/im/pictures/a464d642-695e-4d2c-aa51-2302de067f45.jpg"
-                     style="object-fit: cover; object-position: center bottom; border-radius: 4px;">
+                <img src="https://a0.muscache.com/im/pictures/a464d642-695e-4d2c-aa51-2302de067f45.jpg?im_w=720"
+                     style="border-radius: 20px;">
                 <b class="font18">체험</b>
                 <div class="font14">어디에서든 즐길 수 있는 체험</div>
             </li>
         </a>
         <a href="#">
             <li>
-                <img class="_1cb9q3xq" style="object-fit:cover;border-radius:12px" aria-hidden="true"
-                     elementtiming="LCP-target"
-                     src="https://a0.muscache.com/im/pictures/64ff6bd8-996c-4842-87b2-4c5cb43c337d.jpg?im_w=720"
-                     data-original-uri="https://a0.muscache.com/im/pictures/64ff6bd8-996c-4842-87b2-4c5cb43c337d.jpg">
+                <img src="https://a0.muscache.com/im/pictures/64ff6bd8-996c-4842-87b2-4c5cb43c337d.jpg?im_w=720"
+                     style="border-radius: 20px;">
                 <b class="font18">어드벤쳐</b>
                 <div class="font14">숙박과 식사가 포함된 며칠 일정의 여행입니다.</div>
             </li>
@@ -143,21 +121,17 @@
                     사람들의 흥미를 자극할 독특한 액티비티를 기획해보세요.</p>
             </div>
             <div class="col-md-5 experpic">
-                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target"
-                     src="https://a0.muscache.com/im/pictures/2bdf020b-303c-46a4-bf2c-6c6a8e775bd8.jpg?aki_policy=x_large"
-                     data-original-uri="https://a0.muscache.com/im/pictures/2bdf020b-303c-46a4-bf2c-6c6a8e775bd8.jpg?aki_policy=x_large">
+                <img src="https://a0.muscache.com/im/pictures/2bdf020b-303c-46a4-bf2c-6c6a8e775bd8.jpg?aki_policy=x_large">
             </div>
         </div>
 
         <div class="row exper">
             <div class="col-md-7 order-md-2 write">
                 <h2 class="featurette-heading">좋아하는 일을 하고<br>수익을 올리세요.</h2>
-                <p class="lead">흥미로운 거리 벽화 찾기, 일몰에 즐기는 서핑 등 평소 좋아하는 일로 수입을 올려보세요. 체험 호스팅을 통헤 취미를 즐기며 수익을 올릴 수 있습니다.</p>
+                <p class="lead">흥미로운 거리 벽화 찾기, 일몰에 즐기는 서핑 등 평소 좋아하는 일로 수입을 올려보세요. 체험 호스팅을 통해 취미를 즐기며 수익을 올릴 수 있습니다.</p>
             </div>
             <div class="col-md-5 order-md-1">
-                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target"
-                     src="https://a0.muscache.com/im/pictures/55b065f5-e6d9-4a0a-8066-9c1850db7660.jpg?aki_policy=x_large"
-                     data-original-uri="https://a0.muscache.com/im/pictures/55b065f5-e6d9-4a0a-8066-9c1850db7660.jpg?aki_policy=x_large">
+                <img src="https://a0.muscache.com/im/pictures/55b065f5-e6d9-4a0a-8066-9c1850db7660.jpg?aki_policy=x_large">
             </div>
         </div>
 
@@ -167,9 +141,7 @@
                 <p class="lead">유기견과 함께하는 하이킹, 윤리적 패션에 대한 소개까지. 완전히 새로운 방식으로 사회 공헌 활동에 대해 알리세요.</p>
             </div>
             <div class="col-md-5 experpic">
-                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target"
-                     src="https://a0.muscache.com/im/pictures/d1d720a0-7253-4f89-b9b4-50759c376a9a.jpg?aki_policy=x_large"
-                     data-original-uri="https://a0.muscache.com/im/pictures/d1d720a0-7253-4f89-b9b4-50759c376a9a.jpg?aki_policy=x_large">
+                <img src="https://a0.muscache.com/im/pictures/d1d720a0-7253-4f89-b9b4-50759c376a9a.jpg?aki_policy=x_large">
             </div>
         </div>
     </div>
@@ -187,13 +159,10 @@
 
 <div class="album py-5 bg-light">
     <div class="container">
-
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
                 <div class="card shadow-lg">
-                    <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target"
-                         src="https://a0.muscache.com/im/pictures/36ad251f-02c2-486a-965f-1d473e25e509.jpg?aki_policy=x_large"
-                         data-original-uri="https://a0.muscache.com/im/pictures/36ad251f-02c2-486a-965f-1d473e25e509.jpg?aki_policy=x_large">
+                    <img src="https://a0.muscache.com/im/pictures/36ad251f-02c2-486a-965f-1d473e25e509.jpg?aki_policy=x_large">
                     <div class="card-body">
                         <h3 class="card-title">문화 및 역사</h3>
                         <p class="card-text">지역의 명소에 숨겨진 이야기를<br> 공유하세요.</p>
@@ -202,9 +171,7 @@
             </div>
             <div class="col">
                 <div class="card shadow-lg">
-                    <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target"
-                         src="https://a0.muscache.com/im/pictures/eca85a07-8fad-4648-a4a4-b4c9283fdd65.jpg?aki_policy=x_large"
-                         data-original-uri="https://a0.muscache.com/im/pictures/eca85a07-8fad-4648-a4a4-b4c9283fdd65.jpg?aki_policy=x_large">
+                    <img src="https://a0.muscache.com/im/pictures/eca85a07-8fad-4648-a4a4-b4c9283fdd65.jpg?aki_policy=x_large">
                     <div class="card-body">
                         <h3 class="card-title">식음료</h3>
                         <p class="card-text">식도락 투어, 쿠킹 클래스, 식사 체험 등<br>다양한 체험을 호스팅하세요.</p>
@@ -213,9 +180,7 @@
             </div>
             <div class="col">
                 <div class="card shadow-lg">
-                    <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target"
-                         src="https://a0.muscache.com/im/pictures/1ecf2c03-5b86-4af3-a194-c18764eafbb3.jpg?aki_policy=x_large"
-                         data-original-uri="https://a0.muscache.com/im/pictures/1ecf2c03-5b86-4af3-a194-c18764eafbb3.jpg?aki_policy=x_large">
+                    <img src="https://a0.muscache.com/im/pictures/1ecf2c03-5b86-4af3-a194-c18764eafbb3.jpg?aki_policy=x_large">
                     <div class="card-body">
                         <h3 class="card-title">자연 및 야외 활동</h3>
                         <p class="card-text">자연 속 하이킹, 수상 스포츠, 산악 활동 등<br>다양한 체험을 진행해 보세요.</p>
@@ -235,10 +200,7 @@
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
                 <div class="col">
                     <div class="card shadow-lg">
-                        <img class="_6tbg2q" aria-hidden="true" elementtiming="LCP-target"
-                             src="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/bltc5b5fba2bdc0a264/getting-paid-optimized.jpg"
-                             data-original-uri="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/bltc5b5fba2bdc0a264/getting-paid-optimized.jpg"
-                             style="object-fit: cover; vertical-align: bottom;">
+                        <img src="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/bltc5b5fba2bdc0a264/getting-paid-optimized.jpg">
                         <div class="card-body">
                             <input type="button" class="btn btn-light card-title" data-bs-toggle="modal"
                                    data-bs-target="#Modal1" value="대금 수령">
@@ -266,11 +228,6 @@
                                             대금이 실제로 계좌에 입금되기까지 걸리는 시간은 선택하신 대금 수령 방법 및 은행 휴무일에 따라 다릅니다. 또한, 최소 대금 수령액을
                                             설정했거나 장기 숙박을 호스팅하는 경우, 대금 수령이 더 오래 걸리거나 다른 일정이 적용될 수 있습니다.
                                         </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                                Close
-                                            </button>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -279,10 +236,7 @@
                 </div>
                 <div class="col">
                     <div class="card shadow-lg">
-                        <img class="_6tbg2q" aria-hidden="true" elementtiming="LCP-target"
-                             src="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/blt657a7e0ce479dcf1/managing-your-experience-optimized.jpg"
-                             data-original-uri="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/blt657a7e0ce479dcf1/managing-your-experience-optimized.jpg"
-                             style="object-fit: cover; vertical-align: bottom;">
+                        <img src="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/blt657a7e0ce479dcf1/managing-your-experience-optimized.jpg">
                         <div class="card-body">
                             <input type="button" class="btn btn-light card-title" data-bs-toggle="modal"
                                    data-bs-target="#Modal2" value="체험 관리하기">
@@ -314,11 +268,6 @@
                                             공동 호스트 역할을 그만두려는 경우, 체험 페이지에서 본인을 삭제할 수 있습니다. 그러면 더 이상 해당 체험을 호스팅하거나 관리할 수는
                                             없지만 사이트 계정은 그대로 유지됩니다.
                                         </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                                Close
-                                            </button>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -327,10 +276,7 @@
                 </div>
                 <div class="col">
                     <div class="card shadow-lg">
-                        <img class="_6tbg2q" aria-hidden="true" elementtiming="LCP-target"
-                             src="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/blt4f32d08e271c7ba5/changes-and-cancellations-optimized.jpg"
-                             data-original-uri="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/blt4f32d08e271c7ba5/changes-and-cancellations-optimized.jpg"
-                             style="object-fit: cover; vertical-align: bottom;">
+                        <img src="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/blt4f32d08e271c7ba5/changes-and-cancellations-optimized.jpg">
                         <div class="card-body">
                             <input type="button" class="btn btn-light card-title" data-bs-toggle="modal"
                                    data-bs-target="#Modal3" value="예약 변경 및 취소">
@@ -363,11 +309,6 @@
                                             공동 호스트 역할을 그만두려는 경우, 체험 페이지에서 본인을 삭제할 수 있습니다. 그러면 더 이상 해당 체험을 호스팅하거나 관리할 수는
                                             없지만 사이트 계정은 그대로 유지됩니다.
                                         </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                                Close
-                                            </button>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -376,10 +317,7 @@
                 </div>
                 <div class="col">
                     <div class="card shadow-lg">
-                        <img class="_6tbg2q" aria-hidden="true" elementtiming="LCP-target"
-                             src="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/bltbe0500ef75ea2ee7/how-cohosting-works-optimized.jpg"
-                             data-original-uri="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/bltbe0500ef75ea2ee7/how-cohosting-works-optimized.jpg"
-                             style="object-fit: cover; vertical-align: bottom;">
+                        <img src="https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/bltbe0500ef75ea2ee7/how-cohosting-works-optimized.jpg">
                         <div class="card-body">
                             <input type="button" class="btn btn-light card-title" data-bs-toggle="modal"
                                    data-bs-target="#Modal4" value="공동 호스팅 진행 방식">
@@ -411,11 +349,6 @@
                                             공동 호스트 역할을 그만두려는 경우, 체험 페이지에서 본인을 삭제할 수 있습니다. 그러면 더 이상 해당 체험을 호스팅하거나 관리할 수는
                                             없지만 사이트 계정은 그대로 유지됩니다.
                                         </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                                                Close
-                                            </button>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -434,32 +367,40 @@
         <p>호스팅에 유용한 자료와 정보, 호스트와 게스트에 대한 연중무휴 고객 지원 서비스, 체험 홍보 등 다양한 지원을 제공합니다.</p>
     </div>
     <div class="container py-4">
-        <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="p-5 mb-4">
             <div class="container-fluid py-5">
                 <div class="parent">
                     <div class="child">
-                        <div class="items quarter img70 cities workbox">
-                            <img src="//a0.muscache.com/airbnb/static/packages/assets/frontend/explore-core/images/icon-uc-alarm.e0a2b02fa7d1e956cd4135847fc0cda1.gif">
+                        <div class="workbox">
+                            <div class="items quarter img80 cities">
+                                <img src="//a0.muscache.com/airbnb/static/packages/assets/frontend/explore-core/images/icon-uc-alarm.e0a2b02fa7d1e956cd4135847fc0cda1.gif">
+                            </div>
                         </div>
-                        <span class="font_bold">해야 할 일</span>
+                        <span class="font_bold work">해야 할 일</span>
                     </div>
                     <div class="child">
-                        <div class="items quarter img70 cities planebox">
-                            <img src="//a0.muscache.com/airbnb/static/packages/assets/frontend/explore-core/images/icon-uc-calendar.ace59291b2904181320cb34108a24537.gif">
+                        <div class="planebox">
+                            <div class="items quarter img80 cities">
+                                <img src="//a0.muscache.com/airbnb/static/packages/assets/frontend/explore-core/images/icon-uc-calendar.ace59291b2904181320cb34108a24537.gif">
+                            </div>
                         </div>
-                        <span class="font_bold">일정 관리</span>
+                        <span class="font_bold plane">일정 관리</span>
                     </div>
                     <div class="child">
-                        <div class="items quarter img70 cities paybox">
-                            <img src="//a0.muscache.com/airbnb/static/packages/assets/frontend/explore-core/images/icon-uc-money-saved.0d988c4ec128a1a11fdc5c499940dec8.gif">
+                        <div class="paybox">
+                            <div class="items quarter img80 cities">
+                                <img src="//a0.muscache.com/airbnb/static/packages/assets/frontend/explore-core/images/icon-uc-money-saved.0d988c4ec128a1a11fdc5c499940dec8.gif">
+                            </div>
                         </div>
-                        <span class="font_bold">결제</span>
+                        <span class="font_bold pay">결제</span>
                     </div>
                     <div class="child">
-                        <div class="items quarter img70 cities tipbox">
-                            <img src="//a0.muscache.com/airbnb/static/packages/assets/frontend/explore-core/images/icon-uc-graph.3f8bd411622845e624b9be5ba9631168.gif">
+                        <div class="tipbox">
+                            <div class="items quarter img80 cities">
+                                <img src="//a0.muscache.com/airbnb/static/packages/assets/frontend/explore-core/images/icon-uc-graph.3f8bd411622845e624b9be5ba9631168.gif">
+                            </div>
                         </div>
-                        <span class="font_bold">호스팅 팁</span>
+                        <span class="font_bold tip">호스팅 팁</span>
                     </div>
                 </div>
                 <h1 class="display-5 fw-bold">호스팅에 최적화된 도구</h1>
@@ -483,22 +424,13 @@
                 <div class="h-100 p-5 bg-light border rounded-3">
                     <ul class="items third world">
                         <li>
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
-                                 elementtiming="LCP-target"
-                                 src="https://a0.muscache.com/im/pictures/3a775aa8-1242-4343-bd3e-70104b1b9a3c.jpg?aki_policy=x_large"
-                                 data-original-uri="https://a0.muscache.com/im/pictures/3a775aa8-1242-4343-bd3e-70104b1b9a3c.jpg?aki_policy=x_large">
+                            <img src="https://a0.muscache.com/im/pictures/3a775aa8-1242-4343-bd3e-70104b1b9a3c.jpg?aki_policy=x_large">
                         </li>
                         <li>
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
-                                 elementtiming="LCP-target"
-                                 src="https://a0.muscache.com/im/pictures/b4c1f176-6cfb-496e-aca2-83e139963502.jpg?aki_policy=x_large"
-                                 data-original-uri="https://a0.muscache.com/im/pictures/b4c1f176-6cfb-496e-aca2-83e139963502.jpg?aki_policy=x_large">
+                            <img src="https://a0.muscache.com/im/pictures/b4c1f176-6cfb-496e-aca2-83e139963502.jpg?aki_policy=x_large">
                         </li>
                         <li>
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
-                                 elementtiming="LCP-target"
-                                 src="https://a0.muscache.com/im/pictures/53682240-aa14-4690-9df2-14b521e9c884.jpg?aki_policy=x_large"
-                                 data-original-uri="https://a0.muscache.com/im/pictures/53682240-aa14-4690-9df2-14b521e9c884.jpg?aki_policy=x_large">
+                            <img src="https://a0.muscache.com/im/pictures/53682240-aa14-4690-9df2-14b521e9c884.jpg?aki_policy=x_large">
                         </li>
                     </ul>
                     <h4>호스트의 성장을 돕는 사이트의 지원</h4>

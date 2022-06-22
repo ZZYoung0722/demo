@@ -12,22 +12,9 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="css/bootstrap-icons.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&amp;display=swap"
-          rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-            crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <link href="/resources/css/style.css" rel="stylesheet">
 
 </head>
@@ -49,7 +36,7 @@
 
 <div class="modal fade" id="jeonju" tabindex="-1" aria-labelledby="jeonjuLabel" aria-hidden="true">
     <div class="modal-dialog">
-        <div class="modal-content"style="border-radius: 1rem;">
+        <div class="modal-content" style="border-radius: 1rem;">
             <div class="modal-header">
                 <h2 class="modal-title" id="jeonjuLabel">Review</h2>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -138,13 +125,14 @@
             <div class="col-md-6 write">
                 <h2 class="featurette-heading">전주한옥마을</h2>
                 <p class="lead">전주 한옥마을은 전주 풍남동 일대에 700여 채의 한옥이 군락을 이루고 있는
-                국내 최대 규모의 전통 한옥촌이며, 전국 유일의 도심 한옥군입니다.
-                1910년 조정되기 시작한 우리나라 근대 주거문화 발달과정의 중요한 공간으로, 경기전, 오목대, 향교 등
-                중요 문화재와 20여개의 문화시설이 산재되어 있으며, 한옥, 한식, 한지, 한소리, 한복, 한방 등 韓스타일이 집약된
-                대한민국 대표 여행지입니다.</p>
+                    국내 최대 규모의 전통 한옥촌이며, 전국 유일의 도심 한옥군입니다.
+                    1910년 조정되기 시작한 우리나라 근대 주거문화 발달과정의 중요한 공간으로, 경기전, 오목대, 향교 등
+                    중요 문화재와 20여개의 문화시설이 산재되어 있으며, 한옥, 한식, 한지, 한소리, 한복, 한방 등 韓스타일이 집약된
+                    대한민국 대표 여행지입니다.</p>
             </div>
             <div class="col-md-5 experpic">
-                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target" src="/resources/img/trip4.jpg">
+                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
+                     src="/resources/img/trip4.jpg">
             </div>
         </div>
 
@@ -156,7 +144,8 @@
                     경기전의 경역은 정전(正殿)과 조경묘(肇慶廟)로 나뉜다.</p>
             </div>
             <div class="col-md-5 experpic">
-                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA3MDJfMTgx%2FMDAxNTkzNjE1ODI4ODA0.2V8ocSzx8boJXvCH4NolxssMlHn1L5ZGib26y60H3NIg.GZLTne6CAqFa28sVQASK4TcxeA1vbFkvWGpVfIDNP7cg.JPEG.lsy5088%2F20200511_154500.jpg%231000x562">
+                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
+                     src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDA3MDJfMTgx%2FMDAxNTkzNjE1ODI4ODA0.2V8ocSzx8boJXvCH4NolxssMlHn1L5ZGib26y60H3NIg.GZLTne6CAqFa28sVQASK4TcxeA1vbFkvWGpVfIDNP7cg.JPEG.lsy5088%2F20200511_154500.jpg%231000x562">
             </div>
         </div>
 
@@ -164,11 +153,12 @@
             <div class="col-md-6 write">
                 <h2 class="featurette-heading">남부시장</h2>
                 <p class="lead">전주는 시장의 발상지(1473)이고, 남부시장은 그때부터 지금까지 계승된 한국의 유일무이한 역사적 시장이다.
-                남부시장은 한국 전통시장의 유래와 비슷한 역사를 가지고 있는 전라북도의 대표 시장입니다.
-                2015년 글로벌명품시장육성사업을 통해 한국의 대표 관광시장에서 세계의 관광시장으로 도약하고 전라북도를 대표하는 전통시장입니다.</p>
+                    남부시장은 한국 전통시장의 유래와 비슷한 역사를 가지고 있는 전라북도의 대표 시장입니다.
+                    2015년 글로벌명품시장육성사업을 통해 한국의 대표 관광시장에서 세계의 관광시장으로 도약하고 전라북도를 대표하는 전통시장입니다.</p>
             </div>
             <div class="col-md-5 experpic">
-                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxNzEyMDVfMjky%2FMDAxNTEyMzk5ODgxNTA5.pTEIYoMAHlwvG0fl5Yk2MQ5H0tzhWspfuXQSkz3zfhgg.Y9JjEvHYzp51l6L03hhjOrlGmXqjwWhWHGpDDBqiT9og.JPEG.marketagency%2F2.jpg%23740x494">
+                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
+                     src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxNzEyMDVfMjky%2FMDAxNTEyMzk5ODgxNTA5.pTEIYoMAHlwvG0fl5Yk2MQ5H0tzhWspfuXQSkz3zfhgg.Y9JjEvHYzp51l6L03hhjOrlGmXqjwWhWHGpDDBqiT9og.JPEG.marketagency%2F2.jpg%23740x494">
             </div>
         </div>
 
@@ -176,11 +166,12 @@
             <div class="col-md-6 write">
                 <h2 class="featurette-heading">오목대 이목대</h2>
                 <p class="lead">한벽당 전주향교의 북쪽 4차선 노변, 벼랑같이 솟은 언덕에 세워진 오목대는 고려 말 우왕 6년에 이성계가 운봉 황산에서 왜군을
-                무찌르고 돌아가던 중 조상인 목조가 살았던 이 곳에 들러 승전을 자축한 곳으로, 그 후 고종 황제가 친필로 쓴 태조고황 제주필유지비를 세웠다.
-                여기서 육교를 건너서 이목대가 있는데, 천주교의 성지 치명자산이 있는 승암산 발치에 위치한다.</p>
+                    무찌르고 돌아가던 중 조상인 목조가 살았던 이 곳에 들러 승전을 자축한 곳으로, 그 후 고종 황제가 친필로 쓴 태조고황 제주필유지비를 세웠다.
+                    여기서 육교를 건너서 이목대가 있는데, 천주교의 성지 치명자산이 있는 승암산 발치에 위치한다.</p>
             </div>
             <div class="col-md-5 experpic">
-                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target" src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=f8b4fff8-e15f-46f9-9967-ee24c555af90">
+                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
+                     src="https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=f8b4fff8-e15f-46f9-9967-ee24c555af90">
             </div>
         </div>
 
@@ -188,11 +179,12 @@
             <div class="col-md-6 write">
                 <h2 class="featurette-heading">전주동물원</h2>
                 <p class="lead">수달, 반달가슴곰 등 천연기념물로 지정된 동물을 비롯한 100여종 600여 마리의 동물들이 사는 동물원.
-                각 동물의 특성에 맞는 전문적인 환경을 제공하는 생태 동물원으로, 각 동물에 관련한 설명을 배치해두어 아이의 교육을 목적으로
-                방문하기 좋다.</p>
+                    각 동물의 특성에 맞는 전문적인 환경을 제공하는 생태 동물원으로, 각 동물에 관련한 설명을 배치해두어 아이의 교육을 목적으로
+                    방문하기 좋다.</p>
             </div>
             <div class="col-md-5 experpic">
-                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target" src="https://img.newspim.com/news//2019/05/01/1905011503126890.jpg">
+                <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
+                     src="https://img.newspim.com/news//2019/05/01/1905011503126890.jpg">
             </div>
         </div>
     </div>

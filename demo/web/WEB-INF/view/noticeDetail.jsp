@@ -8,32 +8,15 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>공지사항 상세보기</title>
+    <title>noticedetail</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <script type="text/javascript" src="/js/bootstrap.js"></script>
-    <%--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">--%>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
-    <style>
-        .noticedetail{
-            margin-top: 80px;
-        }
-
-        .content {
-            display: block;
-            overflow: hidden;
-            width: 100%;
-            height: 2.7rem;
-            padding: 0.6rem;
-            font-size: 1.2rem;
-            resize: none;
-        }
-    </style>
+    <link href="/resources/css/style.css" rel="stylesheet">
 
 </head>
 <body>
@@ -58,7 +41,8 @@
                 <br>
                 <div class="form-group row">
                     <label for="content" class="col-md-2">내용</label>
-                    <textarea id="content" name="content" class="form-control content" readonly="readonly" cols="50"
+                    <textarea id="content" name="content" class="form-control notice-content" readonly="readonly"
+                              cols="50"
                               rows="10">${dto.content}</textarea>
                 </div>
                 <br>
@@ -86,13 +70,12 @@
             alert("삭제하시겠습니까?");
         }
 
-        var txtArea = $(".content");
+        var txtArea = $(".notice-content");
         if (txtArea) {
-            txtArea.each(function(){
+            txtArea.each(function () {
                 $(this).height(this.scrollHeight);
             });
         }
-
 
 
     })

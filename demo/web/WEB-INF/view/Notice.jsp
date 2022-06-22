@@ -12,57 +12,11 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <script type="text/javascript" src="/js/bootstrap.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- 부가적인 테마 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-    <!-- 제이쿼리 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
-    <style type="text/css">
-        #writingBtn {
-            width: 100px;
-        }
-
-        .a {
-            text-decoration: none;
-        }
-
-        .a:hover {
-            color: #ffb03b;
-        }
-
-        .notice {
-            text-align: center;
-            margin-top: 80px;
-        }
-
-        .pagination {
-            display: inline-block;
-        }
-
-        .pagination a {
-            color: black;
-            float: left;
-            padding: 8px 16px;
-            text-decoration: none;
-            border-radius: 50%;
-        }
-
-        .page-item.pageactive .page-link {
-            z-index: 1;
-            color: #555;
-            /*font-weight:bold;*/
-            border-color: #ccc;
-        }
-
-        .pagination a:hover:not(.active) {
-            background-color: lightblue;
-        }
-    </style>
+    <link href="/resources/css/style.css" rel="stylesheet">
 
 </head>
 <body>
@@ -114,7 +68,7 @@
             <c:forEach var="list" items="${list}" varStatus="loop">
                 <tr>
                     <td>${total - (pagination.rowsPerPage * (pagination.currentPageNo - 1)) - loop.count + 1}</td>
-                    <td><a class="a" href="detail?no=${list.noticeNo}">${list.title}</a></td>
+                    <td><a class="notice-title" href="detail?no=${list.noticeNo}">${list.title}</a></td>
                     <td><fmt:formatDate value="${list.noticeDate}"/></td>
                 </tr>
             </c:forEach>

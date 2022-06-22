@@ -12,22 +12,9 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="css/bootstrap-icons.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&amp;display=swap"
-          rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-            crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <link href="/resources/css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -145,7 +132,8 @@
             <p class="lead">경주 월성과 서라벌의 남쪽을 잇는 관문 역할을 했던 월정교이다. 월성 남쪽의 남천 위에 놓인
                 석축 목조 교량이 멋스러운 자태를 선사한다. 월정교는 삼국사기에서 그 기록을 찾을 수 있는 천년의 다리이다.
                 "경덕왕 19년, 궁궐 남쪽 문천에 월정교, 춘양교 두 다리를 놓았다."는 기록이 있다.</p>
-            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#lego">월정교</button>
+            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#lego">월정교
+            </button>
             <div class="modal fade" id="lego" tabindex="-1" aria-labelledby="legoLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -154,7 +142,8 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target" src="https://www.gyeongju.go.kr/design/tour2019/img/sub/tMonth_2022/220602_7.jpg">
+                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
+                                 src="https://www.gyeongju.go.kr/design/tour2019/img/sub/tMonth_2022/220602_7.jpg">
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -170,7 +159,9 @@
             <p class="lead">경주야경 제1의 명소라는 타이틀이 아깝지 않은 동궁과월지는 '안압지'라는 이름이 더 익숙할 수도 있다.
                 조선시대 폐허가 된 이곳에서 기러기와 오리 무리가 있는 연못이라 하여 '안압지'라 불렀는데,
                 원래 이곳은 신라시대 왕자들이 기거하던 별궁이 있던 자리다. 그래서 2011년 '동궁과월지'라는 제 이름을 찾았다.</p>
-            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#seorak">동궁과월지</button>
+            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#seorak">
+                동궁과월지
+            </button>
             <div class="modal fade" id="seorak" tabindex="-1" aria-labelledby="seorakLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -179,7 +170,8 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target" src="https://www.gyeongju.go.kr/upload/content/thumb/20200317/A9E0A9F412B84EC68D1893C36D01E942.jpg">
+                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
+                                 src="https://www.gyeongju.go.kr/upload/content/thumb/20200317/A9E0A9F412B84EC68D1893C36D01E942.jpg">
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -189,7 +181,8 @@
             </div>
         </div>
     </div>
-</div><br>
+</div>
+<br>
 <div class="row align-items-md-stretch">
     <div class="col-md-6">
         <div class="h-100 p-5 bg-light border rounded-3">
@@ -198,7 +191,9 @@
                 즉 이상향을 구현하고자 했던 신라인들의 정신세계가 잘 드러나 있는 곳이다. 삼국유사』에는 김대성이 전생의 부모를 위해서
                 석굴암을, 현생의 부모를 위해서 불국사를 지었다고 전해진다. 그러나 그가 목숨을 다할 때까지 짓지 못하여 그 후 나라에서
                 완성하여 나라의 복을 비는 절로 삼게 되었다.</p>
-            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#pasture">불국사</button>
+            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#pasture">
+                불국사
+            </button>
             <div class="modal fade" id="pasture" tabindex="-1" aria-labelledby="pastureLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -207,7 +202,8 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target" src="https://upload.wikimedia.org/wikipedia/commons/3/32/%EA%B2%BD%EC%A3%BC_%EB%B6%88%EA%B5%AD%EC%82%AC.jpg">
+                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
+                                 src="https://upload.wikimedia.org/wikipedia/commons/3/32/%EA%B2%BD%EC%A3%BC_%EB%B6%88%EA%B5%AD%EC%82%AC.jpg">
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -223,7 +219,9 @@
             <p class="lead">석굴암은 신라 경덕왕 10년(751)에 당시 대상이었던 김대성이 창건을 시작하여 혜공왕 10년(774)에 완성하였으며,
                 건립 당시에는 석불사라고 불렀다. 경덕왕은 신라 중기의 임금으로 그의 재위기간(742~765) 동안 신라의 불교예술이 전성기를 이루게 되는데,
                 석굴암 외에도 불국사, 다보탑, 삼층석탑, 황룡사종 등 많은 문화재들이 이때 만들어졌다.</p>
-            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#island">석굴암</button>
+            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#island">
+                석굴암
+            </button>
             <div class="modal fade" id="island" tabindex="-1" aria-labelledby="islandLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -232,7 +230,8 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target" src="https://www.heritage.go.kr/unisearch/images/national_treasure/thumb/2021042208550900.jpg">
+                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
+                                 src="https://www.heritage.go.kr/unisearch/images/national_treasure/thumb/2021042208550900.jpg">
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -242,14 +241,17 @@
             </div>
         </div>
     </div>
-</div><br>
+</div>
+<br>
 <div class="row align-items-md-stretch">
     <div class="col-md-6">
         <div class="h-100 p-5 bg-light border rounded-3">
             <h2>건천 편백나무숲</h2>
             <p class="lead">경주 건천으로 가면 피톤치드 듬뿍 안아올 수 있는 힐링 숲길이 있다. 송선리 단석산 자락에 자리한 '건천 편백나무 숲내음길'이다.
                 시원스레 줄기 뻗은 편백나무가 빽빽이 들어서 있다. 500여 미터의 산책로에 나무 데크가 설치되어 있고, 정자도 2곳 마련되어 머물기 좋다.</p>
-            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#rock">편백나무숲</button>
+            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#rock">
+                편백나무숲
+            </button>
             <div class="modal fade" id="rock" tabindex="-1" aria-labelledby="rockLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -258,7 +260,8 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target" src="https://www.gyeongju.go.kr/design/tour2019/img/sub/pick1_img1-2.jpg">
+                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
+                                 src="https://www.gyeongju.go.kr/design/tour2019/img/sub/pick1_img1-2.jpg">
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -277,7 +280,9 @@
                 첨성대는 몸소 하늘의 움직임을 담고 있다. 위는 둥글고 아래는 네모진 첨성대의 모양은 하늘과 땅을 뜻한다.
                 첨성대를 구성하는 365개 내외의 돌은 1년의 날수를 상징하고, 돌단과 꼭대기 정자석까지 총 29단과30단이 되는 것은 음력 한달의 날수를 뜻한다.
                 가운데 창문을 기준으로 위쪽12단과 아래쪽12단은 1년 12달, 24절기를 상징한다. 천 오백년 간 한 자리를 지키며 신라의 역사를 새긴 첨성대에서, 오늘 우리의 역사를 담는다.</p>
-            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#templestay">첨성대</button>
+            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#templestay">
+                첨성대
+            </button>
             <div class="modal fade" id="templestay" tabindex="-1" aria-labelledby="templestayLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -286,7 +291,8 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true" elementtiming="LCP-target" src="http://www.k-heritage.tv/jnrepo/mig/upload/itm/contents/10965/%EC%B2%A8%EC%84%B1%EB%8C%80_MG_9960%20(2).jpg">
+                            <img class="_91slf2a" style="object-fit:cover" aria-hidden="true"
+                                 src="http://www.k-heritage.tv/jnrepo/mig/upload/itm/contents/10965/%EC%B2%A8%EC%84%B1%EB%8C%80_MG_9960%20(2).jpg">
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

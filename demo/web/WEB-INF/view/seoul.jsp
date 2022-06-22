@@ -12,22 +12,9 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="css/bootstrap-icons.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&amp;display=swap"
-          rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-            crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <link href="/resources/css/style.css" rel="stylesheet">
 
 </head>
@@ -48,7 +35,7 @@
 
 <div class="modal fade" id="seoul" tabindex="-1" aria-labelledby="seoulLabel" aria-hidden="true">
     <div class="modal-dialog">
-        <div class="modal-content"style="border-radius: 1rem;">
+        <div class="modal-content" style="border-radius: 1rem;">
             <div class="modal-header">
                 <h2 class="modal-title" id="seoulLabel">Review</h2>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -182,7 +169,7 @@
                 전통한옥과 비교할 때 비록 온전히 품격을 갖추지 못했지만, 북촌한옥에는 한옥의 구성과 아름다움이 응축되어 있다.</p>
         </div>
         <div>
-            <img src="https://content.r9cdn.net/rimg/dimg/79/5c/2a4a56c0-lm-169100-169b609d730.jpg?crop=true&width=568&height=320&xhint=1937&yhint=1193"
+            <img src="https://ldb-phinf.pstatic.net/20140407_227/1396856015628qm4q0_JPEG/%BC%AD%BF%EF_%BA%CF%C3%CC%C7%D1%BF%C1%B8%B6%C0%BB_4.jpg?type=m500_500"
                  class="town">
         </div>
     </div>

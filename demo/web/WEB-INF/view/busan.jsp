@@ -12,22 +12,9 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="css/bootstrap-icons.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&amp;display=swap"
-          rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-            crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <link href="/resources/css/style.css" rel="stylesheet">
 
 </head>
@@ -187,8 +174,8 @@
         <div class="my-3 py-3">
             <h2 class="display-5">태종대</h2>
             <p class="lead">초록으로 우거진 싱그러운 숲길을 거닐며 푸른 바다를 한눈에 바라볼 수 있는곳.
-            오랜 세월 파도에 깎여 각양각색의 신비를 가지게 된 바위해안이 그 수려함을 자랑하는 곳.
-            태종대는 신라의 태종무열왕이 이곳의 경치에 반해 활쏘기를 즐기며 쉬어갔다 하여 유래된 이름이라 한다.</p>
+                오랜 세월 파도에 깎여 각양각색의 신비를 가지게 된 바위해안이 그 수려함을 자랑하는 곳.
+                태종대는 신라의 태종무열왕이 이곳의 경치에 반해 활쏘기를 즐기며 쉬어갔다 하여 유래된 이름이라 한다.</p>
         </div>
         <div>
             <img src="https://www.visitbusan.net/uploadImgs/files/cntnts/20191222180842708_wufrotr" class="lotte">
@@ -201,8 +188,8 @@
         <div class="my-3 p-3">
             <h2 class="display-5">오륙도</h2>
             <p class="lead">부산에 속한 다양한 섬들 가운데서도 아름답기로 손꼽히는 오륙도는 남구 용호동에 속한 바위섬이다.
-            8천만년 전, 화산활동으로 만들어진 암석이라는 지질학적 가치를 인정받아 부산국가지질공원으로 지정되었다.
-            더불어 보호대상 해양생물이 살고 있는 해양보호구역이자 국가지정문화재이기도 하다.</p>
+                8천만년 전, 화산활동으로 만들어진 암석이라는 지질학적 가치를 인정받아 부산국가지질공원으로 지정되었다.
+                더불어 보호대상 해양생물이 살고 있는 해양보호구역이자 국가지정문화재이기도 하다.</p>
         </div>
         <div>
             <img src="https://www.visitbusan.net/uploadImgs/files/cntnts/20191225164924070_wufrotr" class="river">
@@ -225,7 +212,7 @@
         <div class="my-3 p-3">
             <h2 class="display-5">범어사</h2>
             <p class="lead">부산 금정구 범어사는 해인사. 통도사와 함께 영남의 3대 사찰로 꼽힌다.<br>
-            신라 문무왕 때 건축됏으며 역사적으로도 많은 고승을 배출한 수행사찰로 유명하다.</p>
+                신라 문무왕 때 건축됏으며 역사적으로도 많은 고승을 배출한 수행사찰로 유명하다.</p>
         </div>
         <div>
             <img src="https://www.visitbusan.net/uploadImgs/files/cntnts/20191230190106794_oen" class="ddp">

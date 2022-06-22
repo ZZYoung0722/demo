@@ -12,39 +12,11 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <script type="text/javascript" src="/js/bootstrap.js"></script>
-    <!-- 부가적인 테마 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-    <!-- 제이쿼리 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
-    <style type="text/css">
-        #outer {
-            width: 100%;
-        }
-
-        #inner {
-            width: 700px;
-            margin: auto;
-            padding: 100px 0;
-        }
-
-        h3 {
-            text-align: center;
-        }
-
-        .form-group {
-            margin: 20px 0;
-        }
-
-        .form-group label {
-            width: 170px;
-            text-align: center;
-        }
-    </style>
+    <link href="/resources/css/style.css" rel="stylesheet">
 
 </head>
 <body>
@@ -53,9 +25,10 @@
     <%@ include file="nav.jsp" %>
     <div id="inner">
         <div class="panel panel-default">
-            <div class="panel-heading">
+            <div class="panel-heading signup">
                 <h3 class="panel-title">회원가입</h3>
             </div>
+            <br><br>
             <div class="panel-body">
                 <div class="form-group row">
                     <label for="userName" class="col-md-2">이름</label>
@@ -96,10 +69,10 @@
                     <input type="text" id="userAddr" name="userAddr" required="required" class="form-control col-md-2"
                            style="width: 300px; margin-right: 8px">
                 </div>
-                <div style="text-align: center;">
-                    <button type="button" id="signupBtn" class="btn btn-outline-secondary">회원가입</button>
-                    <button type="button" id="cancelBtn" class="btn btn-outline-danger">취소</button>
-                </div>
+            </div>
+            <div style="text-align: center;">
+                <button type="button" id="signupBtn" class="btn btn-outline-secondary">회원가입</button>
+                <button type="button" id="cancelBtn" class="btn btn-outline-danger">취소</button>
             </div>
         </div>
 

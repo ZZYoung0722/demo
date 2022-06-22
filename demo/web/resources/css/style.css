@@ -1,5 +1,4 @@
 /*메인 페이지*/
-
 #hero {
     width: 100%;
     height: 100vh;
@@ -60,58 +59,6 @@
     color: #fff;
 }
 
-#hero .carousel-inner .carousel-item {
-    transition-property: opacity;
-    background-position: center top;
-}
-
-#hero .carousel-inner .carousel-item,
-#hero .carousel-inner .active.carousel-item-start,
-#hero .carousel-inner .active.carousel-item-end {
-    opacity: 0;
-}
-
-#hero .carousel-inner .active,
-#hero .carousel-inner .carousel-item-next.carousel-item-start,
-#hero .carousel-inner .carousel-item-prev.carousel-item-end {
-    opacity: 1;
-    transition: 0.5s;
-}
-
-#hero .carousel-inner .carousel-item-next,
-#hero .carousel-inner .carousel-item-prev,
-#hero .carousel-inner .active.carousel-item-start,
-#hero .carousel-inner .active.carousel-item-end {
-    left: 0;
-    transform: translate3d(0, 0, 0);
-}
-
-#hero .carousel-control-next-icon, #hero .carousel-control-prev-icon {
-    background: none;
-    font-size: 30px;
-    line-height: 0;
-    width: auto;
-    height: auto;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50px;
-    transition: 0.3s;
-    color: rgba(255, 255, 255, 0.5);
-    width: 54px;
-    height: 54px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#hero .carousel-control-next-icon:hover, #hero .carousel-control-prev-icon:hover {
-    background: rgba(255, 255, 255, 0.3);
-    color: rgba(255, 255, 255, 0.8);
-}
-
-#hero .carousel-indicators li {
-    cursor: pointer;
-}
-
 #hero .btn-menu, #hero .btn-book {
     font-weight: 600;
     font-size: 13px;
@@ -131,13 +78,10 @@
 
 #hero .btn-menu:hover, #hero .btn-book:hover {
     background: #ffb03b;
-    color: #fff;
 }
 
-@media (max-width: 768px) {
-    #hero h2 {
-        font-size: 28px;
-    }
+.Butt {
+    text-decoration: none;
 }
 
 @media (min-width: 1024px) {
@@ -150,18 +94,16 @@
     }
 }
 
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .padding300 {
     padding: 0 300px;
 }
 
 .margin50 {
     margin: 50px 0;
+}
+
+.font_bold {
+    font-weight: bold;
 }
 
 .cities li {
@@ -191,16 +133,6 @@ img {
     width: 70px;
 }
 
-.items {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px 0;
-}
-
-.items.third > li {
-    margin: 0 0px;
-}
-
 .cities a {
     text-decoration: none;
     color: #000000;
@@ -210,46 +142,44 @@ img {
     color: #ffb03b;
 }
 
-/*Best3*/
-.Best3 .box {
+.best3 {
+    padding: 100px;
+}
+
+.best3 .box {
     padding: 50px 30px;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 6px 5px 0px #D6D2CD;
     transition: all ease-in-out 0.3s;
     height: 100%;
 }
 
-.Best3 .section-title h2 {
+.best3 .section-title h2 {
     font-size: 45px;
     font-weight: 600;
 }
 
-.Best3 .box h4 {
+.best3 .box h4 {
     font-size: 24px;
     font-weight: 600;
     padding: 0;
     margin: 20px 0;
-    color: #6c665c;
 }
 
-.Best3 .box p {
+.best3 .box p {
     color: #aaaaaa;
     font-size: 15px;
     margin: 0;
     padding: 0;
 }
 
-.Best3 .box:hover {
+.best3 .box:hover {
     background: #ffb03b;
     padding: 30px 30px 70px 30px;
-    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+    box-shadow: 4px 6px 5px 0px #C5CCCC;
 }
 
-.Best3 .box:hover span, .Best3 .box:hover h4, .Best3 .box:hover p, .box:hover h6 {
+.best3 .box:hover span, .best3 .box:hover h4, .best3 .box:hover p, .box:hover h6 {
     color: #fff;
-}
-
-.Best3 .box:hover .price {
-    color: black;
 }
 
 .price {
@@ -262,14 +192,8 @@ img {
     text-align: center;
 }
 
-/*여행은 살아보는거야*/
-.quarter a {
-    text-decoration: none;
-    color: #000000;
-}
-
-.quarter a:hover {
-    color: #ffb03b;
+.best3 .box:hover .price {
+    color: black;
 }
 
 .font45 {
@@ -278,11 +202,19 @@ img {
     padding: 30px;
 }
 
+.trip a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.trip a:hover {
+    color: #ffb03b;
+}
+
 .trip li {
     display: block;
 }
 
-/*주변음식점*/
 .food .section-title h2 {
     font-size: 45px;
     font-weight: 600;
@@ -294,30 +226,13 @@ img {
     position: relative;
 }
 
-.food::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.8);
-    z-index: 9;
-}
-
-.food .container {
-    position: relative;
-    z-index: 10;
-}
-
 .food .restaurant {
     text-align: center;
     margin-bottom: 80px;
+    margin-top: 15px;
     position: relative;
-}
-
-.food .restaurant .pic {
-    overflow: hidden;
+    transition: color 0.3s;
+    color: #7a7368;
 }
 
 .food .restaurant .restaurant-info {
@@ -327,10 +242,7 @@ img {
     right: 20px;
     background: #fff;
     padding: 20px 0;
-    color: #433f39;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
+    box-shadow: 10px 8px 5px 0px #767A77;
 }
 
 .food .restaurant h4 {
@@ -340,7 +252,6 @@ img {
     color: #6c665c;
     position: relative;
     padding-bottom: 10px;
-    font-family: "Poppins", sans-serif;
 }
 
 .food .restaurant h4::after {
@@ -356,51 +267,20 @@ img {
 
 .food .restaurant span {
     font-style: italic;
-    display: block;
     font-size: 13px;
 }
 
-.food .restaurant {
-    margin-top: 15px;
+.container .event h2 {
+    font-size: 45px;
+    font-weight: 600;
 }
 
-.food .restaurant {
-    transition: color 0.3s;
-    color: #7a7368;
-}
-
-.food .restaurant a:hover {
-    color: #ffb03b;
-}
-
-.food .member .social i {
-    font-size: 16px;
-    margin: 0 2px;
-}
-
-@media (max-width: 992px) {
-    .food .restaurant {
-        margin-bottom: 110px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .food {
-        background-attachment: fixed;
-    }
-}
-
-/*news&event*/
-.pro {
+.event-name {
     text-decoration: none;
     color: #000000;
 }
 
-.Butt {
-    text-decoration: none;
-}
-
-.pro:hover {
+.event-name:hover {
     color: #ffb03b;
 }
 
@@ -413,22 +293,48 @@ img {
     overflow: hidden;
 }
 
-.imge {
+.event-imge {
     max-width: 100%;
-    transition: all 0.2s linear;
+    transition: all 0.3s linear;
 }
 
-.container .event h2 {
-    font-size: 45px;
-    font-weight: 600;
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.container .event h1 {
-    font-size: 70px;
-    font-weight: 800;
+/*숙박*/
+.list {
+    width: 50%;
+    box-sizing: border-box;
+    float: right;
 }
 
-/*체험 페이지*/
+#map {
+    width: 50%;
+    height: 85.5%;
+    float: left;
+}
+
+#search {
+    margin: auto;
+}
+
+/*체험*/
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.15;
+}
+
+video {
+    width: 100%;
+}
 
 .title {
     padding: 200px;
@@ -447,27 +353,12 @@ img {
     margin-top: 40px;
 }
 
-/*content*/
 .section-content b {
     font-size: 30px;
 }
 
 .section-content p {
     font-size: 20px;
-}
-
-/*배경 이미지*/
-.BgImage {
-    background-image: url('https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/blt3f0e84b006a0cfd9/62339331d8ca0c3e4caaa094/image1.jpg?crop=100p,84.47p,x0,y5.78p&width=1050&height=591&auto=webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 500px;
-}
-
-/*세상을~, 수백만명~*/
-.padding5080 {
-    padding: 50px 80px;
 }
 
 .black-background {
@@ -479,17 +370,29 @@ img {
     color: white;
 }
 
+.padding5080 {
+    padding: 50px 80px;
+}
+
 .font32 {
     font-size: 32px;
     padding: 30px;
+}
+
+.font14 {
+    font-size: 14px;
 }
 
 .font18 {
     font-size: 18px;
 }
 
-.font14 {
-    font-size: 14px;
+.BgImage {
+    background-image: url('https://images.contentstack.io/v3/assets/bltb428ce5d46f8efd8/blt3f0e84b006a0cfd9/62339331d8ca0c3e4caaa094/image1.jpg?crop=100p,84.47p,x0,y5.78p&width=1050&height=591&auto=webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
 }
 
 .third > * {
@@ -517,19 +420,16 @@ img {
     color: #ffb03b;
 }
 
+.world b:hover {
+    color: #ffb03b;
+}
+
 .world li {
     display: block;
 }
 
 .world b {
     font-size: 20px;
-}
-
-/*experpic*/
-.experpic img {
-    width: 450px;
-    height: 555px;
-    object-fit: cover;
 }
 
 .exper {
@@ -540,27 +440,96 @@ img {
     margin-top: 150px;
 }
 
-/*help*/
+.experpic img {
+    width: 450px;
+    height: 555px;
+    object-fit: cover;
+}
+
 .help .section-title h2 {
     font-size: 45px;
     font-weight: 600;
 }
 
 .help {
-    padding: 100px;
+    padding: 80px;
     margin-bottom: 30px;
-    margin-left: 50px;
 }
 
-.cover h2{
-    font-size: 44px;
+.parent {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.child {
+    padding-right: 30px;
+    padding-left: 130px;
+}
+
+.img80 img {
+    width: 80px;
+}
+
+.workbox {
+    border: 2px solid;
+    color: red;
+    height: 90px;
+    width: 90px;
+    padding-left: 10px;
+    border-radius: 30%;
+}
+
+.work {
+    margin-left: 10px;
+}
+
+.planebox {
+    border: 2px solid;
+    color: aqua;
+    height: 90px;
+    width: 90px;
+    padding-left: 10px;
+    border-radius: 30%;
+}
+
+.plane {
+    margin-left: 10px;
+}
+
+.paybox {
+    border: 2px solid;
+    color: gold;
+    height: 90px;
+    width: 90px;
+    padding-left: 10px;
+    border-radius: 30%;
+}
+
+.pay {
+    margin-left: 32px;
+}
+
+.tipbox {
+    border: 2px solid;
+    color: aquamarine;
+    height: 90px;
+    width: 90px;
+    padding-left: 10px;
+    border-radius: 30%;
+}
+
+.tip {
+    margin-left: 11px;
+}
+
+.cover h2 {
+    font-size: 50px;
 }
 
 .cover h1 {
-    font-size: 55px;
+    font-size: 70px;
 }
 
-/*체험 호스트 절차*/
 .host {
     padding: 80px;
     margin-bottom: 30px;
@@ -585,12 +554,12 @@ img {
 .host .section-title h2 {
     font-size: 45px;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .host .box h4 {
     font-size: 24px;
     font-weight: 600;
-    padding: 0;
     margin: 20px 0;
     color: #6c665c;
 }
@@ -598,8 +567,6 @@ img {
 .host .box p {
     color: #aaaaaa;
     font-size: 15px;
-    margin: 0;
-    padding: 0;
 }
 
 .host .box:hover {
@@ -612,65 +579,149 @@ img {
     color: #fff;
 }
 
-/*체험 페이지 배경 영상*/
-.bg-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
+/*공지사항*/
+#writingBtn {
+    width: 100px;
+}
+
+.notice-title {
+    text-decoration: none;
+}
+
+.notice-title:hover {
+    color: #ffb03b;
+}
+
+.notice {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    /*color: black;*/
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.page-item.pageactive .page-link {
+    z-index: 1;
+    color: #555;
+    border-color: #ccc;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: lightblue;
+}
+
+/*공지사항상세보기*/
+.noticedetail {
+    margin-top: 80px;
+}
+
+.notice-content {
+    display: block;
+    overflow: hidden;
     width: 100%;
-    z-index: -1;
-    opacity: 0.15;
+    height: 2.7rem;
+    padding: 0.6rem;
+    font-size: 1.2rem;
+    resize: none;
 }
 
-video {
+/*공지사항수정*/
+.noticeupdate {
+    margin-top: 100px;
+}
+
+.update-content {
+    display: block;
+    width: 100%;
+    height: 2.7rem;
+    padding: 0.6rem;
+    font-size: 1.2rem;
+    resize: none;
+}
+
+/*공지사항 작성*/
+.noticeinsert {
+    margin-top: 80px;
+}
+
+.noticewrite textarea {
+    resize: none;
+}
+
+/*로그인*/
+#outer {
     width: 100%;
 }
 
-.workbox {
-    border: 2px solid;
-    color: red;
-    height: 70px;
-    width: 70px;
+#inner {
+    width: 1100px;
+    margin: auto;
+    padding: 100px 0;
 }
 
-.planebox {
-    border: 2px solid;
-    color: aqua;
-    height: 70px;
-    width: 70px;
+#main {
+    margin-left: 25%;
 }
 
-.paybox {
-    border: 2px solid;
-    color: gold;
-    height: 70px;
-    width: 70px;
+#login-title {
+    margin-left: 1%;
+    font-size: 40px;
+    margin-top: 180px;
 }
 
-.tipbox {
-    border: 2px solid;
-    color: aquamarine;
-    height: 70px;
-    width: 70px;
+#content {
+    margin-top: 15px;
 }
 
-.parent {
-    display: flex;
-
+#loginBtn {
+    width: 400px;
+    height: 50px;
+    margin-top: 10px;
 }
 
-.child {
-    padding-right: 30px;
-    padding-left: 150px;
-
+/*회원가입*/
+#outer {
+    width: 100%;
 }
 
-/*seoul*/
+#inner {
+    width: 700px;
+    margin: auto;
+    padding: 100px 0;
+}
+
+.panel {
+    margin-top: 60px;
+}
+
+.signup h3 {
+    text-align: center;
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+.form-group label {
+    width: 170px;
+    text-align: center;
+}
+
+/*seoul, busan, incheon, daegu*/
 .flex-equal > * {
     flex: 1;
 }
 
+/*넓은화면 스타일링*/
 @media (min-width: 768px) {
     .flex-md-equal > * {
         flex: 1;
@@ -683,9 +734,7 @@ video {
     border-radius: 21px;
 }
 
-
-
-/*체험 장점*/
+/*experHost, experHosting, experPay, experRegistration, online, pilotOperation*/
 .display-4 {
     font-size: 2.5rem;
 }
@@ -714,7 +763,6 @@ video {
     font-size: 20px;
 }
 
-
 .blog-post-title {
     margin-bottom: .25rem;
     font-size: 2.5rem;
@@ -731,11 +779,3 @@ video {
 .hightlight li {
     font-size: 19px;
 }
-
-
-
-
-
-
-
-

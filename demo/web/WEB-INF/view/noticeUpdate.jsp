@@ -12,28 +12,11 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <script type="text/javascript" src="/js/bootstrap.js"></script>
-    <%--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">--%>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
-    <style>
-        .noticeupdate {
-            margin-top: 100px;
-        }
-
-        .content {
-            display: block;
-            overflow: hidden;
-            width: 100%;
-            height: 2.7rem;
-            padding: 0.6rem;
-            font-size: 1.2rem;
-            resize: none;
-        }
-    </style>
+    <link href="/resources/css/style.css" rel="stylesheet">
 
 </head>
 <body>
@@ -47,17 +30,19 @@
             </div>
             <div class="panel-body">
                 <form action="/update?no=${dto.noticeNo}" method="post" name="update">
-                <input type="hidden" name="noticeNo" value="${dto.noticeNo}">
+                    <input type="hidden" name="noticeNo" value="${dto.noticeNo}">
                     <br>
                     <div class="form-group row">
                         <label for="title" class="col-md-2">제목</label>
-                        <input type="text" name="title" id="title" value="${dto.title}" maxlength="30" class="form-control"
-                               style="width:500px;" >
+                        <input type="text" name="title" id="title" value="${dto.title}" maxlength="30"
+                               class="form-control"
+                               style="width:500px;">
                     </div>
                     <br>
-                    <div class="form-group row">
+                    <div class="form-group row noticewrite">
                         <label for="content" class="col-md-2">내용</label>
-                        <textarea id="content" name="content" class="form-control content" cols="50" rows="10">${dto.content}</textarea>
+                        <textarea id="content" name="content" class="form-control update-content" cols="50"
+                                  rows="10">${dto.content}</textarea>
                     </div>
                     <br>
                     <div style="text-align: center;">
@@ -81,9 +66,9 @@
             window.location.href = "/noticelist"
         }
 
-        var txtArea = $(".content");
+        var txtArea = $(".update-content");
         if (txtArea) {
-            txtArea.each(function(){
+            txtArea.each(function () {
                 $(this).height(this.scrollHeight);
             });
         }

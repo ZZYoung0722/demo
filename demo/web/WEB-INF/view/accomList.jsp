@@ -15,41 +15,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-            crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <style>
-        .list {
-            width: 50%;
-            float: left;
-            box-sizing: border-box;
-            float: right;
-        }
-
-        #map {
-            width: 50%;
-            height: 85.5%;
-            float: left;
-            position: sticky;
-        }
-
-        #search {
-            margin: auto;
-            position: relative;
-            z-index: 10;
-        }
-
-        .card-img-top {
-            height: 15rem;
-            object-fit: cover;
-        }
-
-    </style>
+    <link href="/resources/css/style.css" rel="stylesheet">
 
 </head>
 <body>
@@ -117,20 +84,6 @@
         src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a71e33e6909a61dbb04de7d82451c92f&libraries=services,clusterer,drawing"></script>
 
 <script>
-    $('.open-button').click(function(){
-        $('.search').addClass('active');
-        $('.overlay').removeClass('hidden');
-        $('input').focus(); // If there are multiple inputs on the page you might want to use an ID
-    });
-
-    $('.overlay').click(function() {
-        $('.search').removeClass('active');
-        $(this).addClass('hidden');
-    });
-
-
-
-
     var mapContainer = document.getElementById('map'),
         mapOption = {
             center: new kakao.maps.LatLng(37.5597, 126.8309),
@@ -155,6 +108,8 @@
             // 지도 중심좌표를 접속위치로 변경합니다
             map.setCenter(locPosition);
 
+            //등록 이벤트 발생
+            kakao.maps.event.trigger(map, 'idle');
         });
     }
 
@@ -199,7 +154,7 @@
                     str += '</tr>';
                     $tbody.append(str);*/
 
-                    str += '<div class="card">';
+                    str += '<div class="card border-warning">';
                     str += '<div class="card-body">';
                     str += '<h5 class="card-title" style="text-align: center">지도안에 숙소가 존재하지 않습니다.</h5>';
                     str += '</div>';
@@ -230,12 +185,12 @@
     }*/
 
     function printAccomList(accom) {
-        var testName = accom.accomName;
+        /*var testName = accom.accomName;*/
         var str = '';
         str += '<div class="col-sm-4">';
-        str += '<div class="card" style="height: 400px;">';
+        str += '<div class="card border-warning" style="height: 395.9px;">';
         str += '<div class="card-body">';
-        str += '<div id="' + testName + '"' + 'class="carousel slide" data-bs-ride="carousel">';
+        str += '<div id="' + accom.accomName + '"' + 'class="carousel slide carousel-fade" data-bs-ride="carousel">';
         str += '<div class="carousel-inner">';
 
         for (var i = 0; i < accom.accomImg.length; i++) {
@@ -251,11 +206,11 @@
 
         str += '</div>';
         str += '</div>';
-        str += '<button id="' + testName + '_prev' + '" class="carousel-control-prev" type="button" data-bs-target="' + testName + '" data-bs-slide="prev">';
+        str += '<button id="' + accom.accomName + '_prev' + '" class="carousel-control-prev" type="button" data-bs-target="' + accom.accomName + '" data-bs-slide="prev">';
         str += '<span class="carousel-control-prev-icon" aria-hidden="true"></span>';
         str += '<span class="visually-hidden">Previous</span>';
         str += '</button>';
-        str += '<button id="' + testName + '_next' + '" class="carousel-control-next" type="button" data-bs-target="' + testName + '" data-bs-slide="next">';
+        str += '<button id="' + accom.accomName + '_next' + '" class="carousel-control-next" type="button" data-bs-target="' + accom.accomName + '" data-bs-slide="next">';
         str += '<span class="carousel-control-next-icon" aria-hidden="true"></span>';
         str += '<span class="visually-hidden">Next</span>';
         str += '</button>';
@@ -267,27 +222,24 @@
         str += '</div>';
         $row.append(str);
 
-        $('#' + testName).carousel({
-            // 슬리아딩 자동 순환 지연 시간
-            // false면 자동 순환하지 않는다.
-            interval: 3000,
-            // hover를 설정하면 마우스를 가져대면 자동 순환이 멈춘다.
-            pause: "hover",
+        $('#' + accom.accomName).carousel({
+            // 슬라이딩 자동 순환 지연 시간
+            interval: false,
             // 순환 설정, true면 1 -> 2가면 다시 1로 돌아가서 반복
             wrap: true,
         });
 
         // 이미지 슬라이드 전 페이지 이동
-        $('#' + testName + '_prev').on("click", function () {
-            $('#' + testName).carousel('prev');
+        $('#' + accom.accomName + '_prev').on("click", function () {
+            $('#' + accom.accomName).carousel('prev');
         });
         // 이미지 슬라이드 다음 페이지 이동
-        $('#' + testName + '_next').on("click", function () {
-            $('#' + testName).carousel('next');
+        $('#' + accom.accomName + '_next').on("click", function () {
+            $('#' + accom.accomName).carousel('next');
         });
     }
 
-    kakao.maps.event.addListener(map, 'bounds_changed', function () {
+    kakao.maps.event.addListener(map, 'idle', function () {
 
         // 지도 영역정보를 얻어옵니다
         var bounds = map.getBounds();
@@ -302,6 +254,22 @@
 
     });
 
+    // kakao.maps.event.addListener(map, 'zoom_changed', function () {
+    //
+    //     // 지도 영역정보를 얻어옵니다
+    //     var bounds = map.getBounds();
+    //
+    //     // 영역정보의 남서쪽 정보를 얻어옵니다
+    //     var swLatlng = bounds.getSouthWest();
+    //
+    //     // 영역정보의 북동쪽 정보를 얻어옵니다
+    //     var neLatlng = bounds.getNorthEast();
+    //
+    //     mapListByExtent(swLatlng, neLatlng);
+    //
+    // });
+
+    //키워드로 장소 검색
     function searchClick() {
         var keyword = $('#keyword').val();
 
