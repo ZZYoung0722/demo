@@ -357,6 +357,7 @@ img {
 #container {
     height: 85.5%;
     width: 50%;
+    overflow: hidden;
 }
 
 #container.view_roadview #mapWrapper {
@@ -371,8 +372,8 @@ img {
 
 #roadviewControl {
     position: relative;
-    top: 5px;
-    left: 5px;
+    top: 2px;
+    left: 807px;
     width: 42px;
     height: 42px;
     z-index: 1;
@@ -855,7 +856,7 @@ video {
 
 .pagination {
     display: block;
-    margin-left: 550px;
+    margin-left: 500px;
 }
 
 .pagination a {
