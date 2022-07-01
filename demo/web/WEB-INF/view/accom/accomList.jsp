@@ -21,7 +21,7 @@
 </head>
 <body>
 
-<%@ include file="nav.jsp" %>
+<%@ include file="../nav.jsp" %>
 
 <div class="input-group mb-3" id="search" style="width: 500px; margin-top: 80px;">
     <input id="keyword" type="search" class="form-control" placeholder="Search" aria-describedby="button-addon2">
@@ -113,9 +113,10 @@
         });
     });
 
-    //마커 담을 배열
+    //키워드 목록 마커 담을 배열
     var markers = [];
 
+    //로드뷰
     var overlayOn = false,
         container = document.getElementById('container'),
         mapWrapper = document.getElementById('mapWrapper'),
@@ -125,12 +126,64 @@
     var mapCenter = new kakao.maps.LatLng(37.5597, 126.8309),
         mapOption = {
             center: mapCenter,
-            level: 5,
+            level: 13,
             mapTypeId: kakao.maps.MapTypeId.ROADMAP
         };
 
     // 지도를 생성한다
     var map = new kakao.maps.Map(mapContainer, mapOption);
+
+    //마커 클러스터러
+    var clusterer = new kakao.maps.MarkerClusterer({
+        map: map,
+        averageCenter: true,
+        mainLevel: 10,
+        /* calculator: [5, 10],
+         texts: getTexts,
+         styles: [
+             {
+                 width: '40px', height: '40px',
+                 background: 'orange',
+                 borderRadius: '20px',
+                 color: '#000',
+                 textAlign: 'center',
+                 fontWeight: 'bold',
+                 lineHeight: '41px'
+             },
+             {
+                 width: '50px', height: '50px',
+                 background: 'yellow',
+                 borderRadius: '25px',
+                 color: '#000',
+                 textAlign: 'center',
+                 fontWeight: 'bold',
+                 lineHeight: '51px'
+             },
+             {
+                 width: '60px', height: '60px',
+                 background: 'green',
+                 borderRadius: '30px',
+                 color: '#000',
+                 textAlign: 'center',
+                 fontWeight: 'bold',
+                 lineHeight: '61px'
+             }
+         ]*/
+
+    });
+
+    /*// 클러스터 내부에 삽입할 문자열 생성 함수입니다
+    function getTexts(count) {
+
+        // 한 클러스터 객체가 포함하는 마커의 개수에 따라 다른 텍스트 값을 표시합니다
+        if (count < 5) {
+            return '주';
+        } else if (count < 10) {
+            return '노';
+        } else {
+            return '초';
+        }
+    }*/
 
     // 로드뷰 객체를 생성합니다
     var rv = new kakao.maps.Roadview(rvContainer);
@@ -154,17 +207,6 @@
         }
     });
 
-    /*// 로드뷰를 표시할 div
-    var rvContainer = document.getElementById('roadview');
-
-    var rv = new kakao.maps.Roadview(rvContainer); // 로드뷰 객체 생성
-    var rc = new kakao.maps.RoadviewClient(); // 좌표를 통한 로드뷰의 panoid를 추출하기 위한 로드뷰 help객체 생성
-    var rvPosition = new kakao.maps.LatLng(33.450335213582655 , 126.57022069762772);
-
-    rc.getNearestPanoId(rvPosition, 50, function(panoid) {
-        rv.setPanoId(panoid, rvPosition);//좌표에 근접한 panoId를 통해 로드뷰를 실행합니다.
-    });*/
-
     // 마커 이미지를 생성합니다
     var roadmarkImage = new kakao.maps.MarkerImage(
         'https://t1.daumcdn.net/localimg/localimages/07/2018/pc/roadview_minimap_wk_2018.png',
@@ -180,7 +222,7 @@
         }
     );
 
-    // 드래그가 가능한 마커를 생성합니다
+    // 드래그가 가능한 마커를 생성합니다 로드뷰
     var roadMarker = new kakao.maps.Marker({
         image: roadmarkImage,
         position: mapCenter,
@@ -342,6 +384,12 @@
 
     //마커 생성
     function createMark(locations) {
+        //클러스터러 마커배열
+        var clusMarkers = [];
+
+        //클러스터러 지우기
+        clusterer.clear();
+
         var imageSrc = "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";
         // 마커 이미지의 이미지 크기 입니다
         var imageSize = new kakao.maps.Size(24, 35);
@@ -359,12 +407,13 @@
             var marker = new kakao.maps.Marker({
                 map: map,
                 position: new kakao.maps.LatLng(lat, lon),
-                image: markerImage
+                image: markerImage,
             });
+            marker.customData = locations[i];
 
             marker.setMap(map);
 
-            //infowindow 호텔명
+            /*//infowindow 호텔명
             (function (marker, title) {
                 kakao.maps.event.addListener(marker, 'mouseover', function () {
                     displayInfowindow(marker, title);
@@ -373,8 +422,16 @@
                 kakao.maps.event.addListener(marker, 'mouseout', function () {
                     infowindow.close();
                 });
-            })(marker, locations[i].accomName);
+            })(marker, locations[i].accomName);*/
+
+            //클러스터러 마커 저장하는 변수에 넣음
+            clusMarkers.push(marker);
         }
+
+        //클러스터러에 마커들을 추가
+        clusterer.addMarkers(clusMarkers);
+
+        return clusMarkers;
     }
 
     /*var $tbody = $('.list').find('tbody');*/
@@ -412,7 +469,8 @@
                         locations.push(data[i]);
                         printAccomList(data[i]);
                     }
-                    createMark(locations);
+                    var markerList = createMark(locations);
+                    createOverlay(markerList);
                 }
             },
             error: function (err) {
@@ -430,6 +488,47 @@
         $tbody.append(str);
     }*/
 
+    function createOverlay(markerList) {
+        // 마커 위에 커스텀오버레이를 표시합니다
+        // 마커를 중심으로 커스텀 오버레이를 표시하기위해 CSS를 이용해 위치를 설정했습니다
+        for (var i = 0; i < markerList.length; i++) {
+            var marker = markerList[i];
+            var overlay = new kakao.maps.CustomOverlay({
+                // content: content,
+                position: marker.getPosition()
+            });
+
+            var content = printOverlayContent(marker.customData);
+
+            overlay.setContent(content);
+            // 마커를 클릭했을 때 커스텀 오버레이를 표시합니다
+            kakao.maps.event.addListener(marker, 'click', function() {
+                debugger;
+                $(this)[0].setMap(map);
+            });
+        }
+    }
+
+    function printOverlayContent(location){
+        var content = "";
+        content += '<div class="wrap">';
+        content += '<div class="info">';
+        content += '<div class="title">' + location.accomName;
+        content += '<div class="close" onclick="closeOverlay()" title="닫기"></div>';
+        content += '</div>';
+        content += '<div class="desc">';
+        content += '<div class="ellipsis">' + location.accomLocation + '</div>';
+        content += '</div>';
+        content += '</div>';
+        content += '</div>';
+
+        return content;
+    }
+
+    // 커스텀 오버레이를 닫기 위해 호출되는 함수입니다
+    function closeOverlay(locations) {
+        overlay.setMap(null);
+    }
     function printAccomList(accom) {
         /*var testName = accom.accomName;*/
         var str = '';
@@ -483,6 +582,7 @@
         $('#' + accom.accomName + '_next').on("click", function () {
             $('#' + accom.accomName).carousel('next');
         });
+
     }
 
     kakao.maps.event.addListener(map, 'idle', function () {
@@ -570,9 +670,8 @@
 
     }
 
-    // 검색 결과 목록과 마커를 표출하는 함수입니다
+    //키워드 검색 결과 목록과 마커를 표출하는 함수입니다
     function displayPlaces(places) {
-
         var listEl = document.getElementById('placesList'),
             menuEl = document.getElementById('menu_wrap'),
             fragment = document.createDocumentFragment(),

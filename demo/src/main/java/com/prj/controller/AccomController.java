@@ -32,7 +32,7 @@ public class AccomController {
     //회원가입 화면
     @RequestMapping("/signupform")
     public String signUpform() {
-        return "signUp";
+        return "user/signUp";
     }
 
     @RequestMapping("/ex")
@@ -43,109 +43,109 @@ public class AccomController {
     //체험
     @RequestMapping("/experience")
     public String experience() {
-        return "experience";
+        return "experience/experience";
     }
 
     //체험호스팅 장점
     @RequestMapping("/experHosting")
     public String experHosting() {
-        return "experHosting";
+        return "experience/experHosting";
     }
 
     //체험 등록
     @RequestMapping("/experRegistration")
     public String experRegistration() {
-        return "experRegistration";
+        return "experience/experRegistration";
     }
 
     //체험 요금
     @RequestMapping("/experPay")
     public String experPay() {
-        return "experPay";
+        return "experience/experPay";
     }
 
     //체험 호스트
     @RequestMapping("/experHost")
     public String experHost() {
-        return "experHost";
+        return "experience/experHost";
     }
 
     //체험 호스팅하기
     @RequestMapping("/pilotOperation")
     public String pilotOperation() {
-        return "pilotOperation";
+        return "experience/pilotOperation";
     }
 
     //온라인 체험 호스팅하기
     @RequestMapping("/online")
     public String online() {
-        return "online";
+        return "experience/online";
     }
 
     //seoul
     @RequestMapping("/seoul")
     public String seoul() {
-        return "seoul";
+        return "themePark/seoul";
     }
 
     //daegu
     @RequestMapping("/daegu")
     public String daegu() {
-        return "daegu";
+        return "themePark/daegu";
     }
 
     //busan
     @RequestMapping("/busan")
     public String busan() {
-        return "busan";
+        return "themePark/busan";
     }
 
     //jeonju
     @RequestMapping("/jeonju")
     public String jeonju() {
-        return "jeonju";
+        return "themePark/jeonju";
     }
 
     //jeju
     @RequestMapping("/jeju")
     public String jeju() {
-        return "jeju";
+        return "themePark/jeju";
     }
 
     //incheon
     @RequestMapping("/incheon")
     public String incheon() {
-        return "incheon";
+        return "themePark/incheon";
     }
 
     //gyeongju
     @RequestMapping("/gyeongju")
     public String gyeongju() {
-        return "gyeongju";
+        return "themePark/gyeongju";
     }
 
     //gangwon
     @RequestMapping("/gangwon")
     public String gangwon() {
-        return "gangwon";
+        return "themePark/gangwon";
     }
 
     //로그인 화면
     @RequestMapping("/loginform")
     public String loginform() {
-        return "login";
+        return "user/login";
     }
 
-    //로그인 화면
+    //공지사항 화면
     @RequestMapping("/notice")
     public String notice() {
-        return "Notice";
+        return "notice/Notice";
     }
 
     //공지사항 등록 화면
     @RequestMapping("/registrationform")
     public String registrationform() {
-        return "noticeInsert";
+        return "notice/noticeInsert";
     }
 
     /*//숙소리스트 화면
@@ -245,7 +245,7 @@ public class AccomController {
         model.addAttribute("pagination", pagination);
         model.addAttribute("list",list);
 
-        return "Notice";
+        return "notice/Notice";
     }
 
     //공지사항 등록
@@ -262,7 +262,7 @@ public class AccomController {
         model.addAttribute("dto", dto);
 
         //System.out.println(dto);
-        return "noticeDetail";
+        return "notice/noticeDetail";
     }
 
     //공지사항 수정/삭제 페이지
@@ -271,7 +271,7 @@ public class AccomController {
         NoticeDto dto = accomService.detail(no);
         model.addAttribute("dto", dto);
 
-        return "noticeUpdate";
+        return "notice/noticeUpdate";
     }
 
     //공지사항 수정
@@ -299,7 +299,7 @@ public class AccomController {
 
         model.addAttribute("list", list);
 
-        return "accomList";
+        return "accom/accomList";
     }
 
     //지도에 영역별 마커 띄우기

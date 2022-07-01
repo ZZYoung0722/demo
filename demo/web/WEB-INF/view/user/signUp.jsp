@@ -22,7 +22,7 @@
 <body>
 
 <div id="outer">
-    <%@ include file="nav.jsp" %>
+    <%@ include file="../nav.jsp" %>
     <div id="inner">
         <div class="panel panel-default">
             <div class="panel-heading signup">

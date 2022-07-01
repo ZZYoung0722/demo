@@ -20,7 +20,7 @@
 
 </head>
 <body>
-<%@ include file="nav.jsp" %>
+<%@ include file="../nav.jsp" %>
 <br>
 <div class="notice">
     <h1>공지사항</h1>

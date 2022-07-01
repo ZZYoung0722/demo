@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>seoul</title>
+    <title>busan</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -19,13 +19,14 @@
 
 </head>
 <body>
-<%@ include file="nav.jsp" %>
+<%@ include file="../nav.jsp" %>
 
 <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
     <div class="col-md-5 p-lg-5 mx-auto my-5">
-        <h1 class="display-4 fw-normal">서울 테마파크</h1>
-        <p class="lead fw-normal">서울특별시는 대한민국의 수도이자 최대 도시이며 최고 도시다.</p>
-        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#seoul">
+        <h1 class="display-4 fw-normal">부산 테마파크</h1>
+        <p class="lead fw-normal">대한민국 제2의 도시이자, 대한민국 최초의 직할시。광역시이고 국내 최대국제무역항이 있는 제1의 항구도시, 경상권 최대도시,제1의 해양교통과 제2의 항공교통
+            김헤국제공항 타이틀 등을 보유한 도시이기도 하다.</p>
+        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#busan">
             Review
         </button>
     </div>
@@ -33,16 +34,16 @@
     <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
 </div>
 
-<div class="modal fade" id="seoul" tabindex="-1" aria-labelledby="seoulLabel" aria-hidden="true">
+<div class="modal fade" id="busan" tabindex="-1" aria-labelledby="busanLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content" style="border-radius: 1rem;">
             <div class="modal-header">
-                <h2 class="modal-title" id="seoulLabel">Review</h2>
+                <h2 class="modal-title" id="busanLabel">Review</h2>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="d-flex flex-wrap align-items-center w-100 mt-2">
-                    <h6 class="reviews-text mb-0 me-3">3.5/5.0</h6>
+                    <h6 class="reviews-text mb-0 me-3">3.0/5.0</h6>
                     <div class="reviews-stars" style="text-align: center;">
                         <i class="bi bi-star-fill" style="color: gold">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -62,10 +63,10 @@
                                 <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                             </svg>
                         </i>
-                        <i class="bi bi-star-half" style="color: gold">
+                        <i class="bi bi-star" style="color: gold">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                 class="bi bi-star-half" viewBox="0 0 16 16">
-                                <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                                 class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
                             </svg>
                         </i>
                         <i class="bi bi-star" style="color: gold">
@@ -86,49 +87,49 @@
                 <div class="writer">
                     <h3>이름</h3>
                     <i>
-                        <p>남산타워!!</p>
+                        <p>송도용궁구름다리!!</p>
                     </i>
                 </div>
                 <div class="writer">
                     <h3>이름</h3>
                     <i>
-                        <p>경복궁!!!</p>
+                        <p>해운대해수욕장!!!</p>
                     </i>
                 </div>
                 <div class="writer">
                     <h3>이름</h3>
                     <i>
-                        <p>북촌한옥마을!!!!</p>
+                        <p>감천문화마을!!!!</p>
                     </i>
                 </div>
                 <div class="writer">
                     <h3>이름</h3>
                     <i>
-                        <p>롯데월드!!!!!</p>
+                        <p>태종대!!!!!</p>
                     </i>
                 </div>
                 <div class="writer">
                     <h3>이름</h3>
                     <i>
-                        <p>광장시장!!!!!!</p>
+                        <p>오륙도!!!!!!</p>
                     </i>
                 </div>
                 <div class="writer">
                     <h3>이름</h3>
                     <i>
-                        <p>청계천!!!!!!!</p>
+                        <p>해동용궁사!!!!!!!</p>
                     </i>
                 </div>
                 <div class="writer">
                     <h3>이름</h3>
                     <i>
-                        <p>동대문디자인플라자!!!!!!!!</p>
+                        <p>범어사!!!!!!!!</p>
                     </i>
                 </div>
                 <div class="writer">
                     <h3>이름</h3>
                     <i>
-                        <p>광화문!!!!!!!!!</p>
+                        <p>깡통시장!!!!!!!!!</p>
                     </i>
                 </div>
             </div>
@@ -140,23 +141,20 @@
 <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
     <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
         <div class="my-3 py-3">
-            <h2 class="display-5">경복궁</h2>
-            <p class="lead">조선 왕조의 법궁이다. <br>이름에는 '새 왕조가 큰 복을 누려 번영할 것'이라는 의미가 담겨 있다.</p><br>
+            <h2 class="display-5">송도용궁구름다리</h2>
+            <p class="lead">송도해수욕장 동쪽 송림공원에서 거북섬을 연결했던 추억 속 "송도구름다리"가 암남공원에서 동섬을 잇는 현대판 "송도용궁구름다리"로 재탄생했다.</p>
         </div>
         <div>
-            <img src="http://cdn.news.eugenes.co.kr/news/photo/201608/2245_4430_324.jpg" class="palace">
+            <img src="https://www.visitbusan.net/uploadImgs/files/cntnts/20200717114921495_oen" class="palace">
         </div>
     </div>
     <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
         <div class="my-3 p-3">
-            <h2 class="display-5">남산서울타워</h2>
-            <p class="lead">
-                대한민국 대표 랜드마크 <br>
-                효율적인 방송전파 송수신과 한국의 전통미를 살린 관광 전망시설의 기능을 겸비한 국내 최초의 종합전파탑으로 방송문화와 관광산업의 미래를 위해 건립되었습니다.</p>
+            <h2 class="display-5">해운대해수욕장</h2>
+            <p class="lead">대한민국 부산광역시 해운대구 중동과 우동에 걸쳐서 위치한 해수욕장이다.</p><br>
         </div>
         <div>
-            <img src="https://korean.visitseoul.net/comm/getImage?srvcId=MEDIA&parentSn=24595&fileTy=MEDIA&fileNo=1"
-                 class="tower">
+            <img src="https://www.visitbusan.net/uploadImgs/files/cntnts/20191229153530528_ttiel" class="tower">
         </div>
     </div>
 </div>
@@ -164,23 +162,23 @@
 <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
     <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
         <div class="my-3 p-3">
-            <h2 class="display-5">북촌한옥마을</h2>
-            <p class="lead">종로의 북쪽마을 도심을 흐르는 청계천과 600년 선조의 숨결이 살아숨쉬는 곳.<br>
-                전통한옥과 비교할 때 비록 온전히 품격을 갖추지 못했지만, 북촌한옥에는 한옥의 구성과 아름다움이 응축되어 있다.</p>
+            <h2 class="display-5">감천문화마을</h2>
+            <p class="lead">한국전쟁 당시 감천마을까지 오게 된 피란민들이 머물 곳이 없어 산비탈을 개간한 것이 그 시작이었다.
+                2009년 마을미술프로젝트에 선정되면서 학생과 작가, 주민들이 합심해 마을을 꾸몄고, 이후 부산의 대표 관광명소로 거듭나게 되었다.</p>
         </div>
         <div>
-            <img src="https://ldb-phinf.pstatic.net/20140407_227/1396856015628qm4q0_JPEG/%BC%AD%BF%EF_%BA%CF%C3%CC%C7%D1%BF%C1%B8%B6%C0%BB_4.jpg?type=m500_500"
-                 class="town">
+            <img src="https://www.visitbusan.net/uploadImgs/files/cntnts/20191229142305192_oen" class="town">
         </div>
     </div>
     <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
         <div class="my-3 py-3">
-            <h2 class="display-5">롯데월드</h2>
-            <p class="lead">롯데월드 어드벤처는 현재 존재하는 테마파크 중에서 페라리 월드 다음으로 세계 최대 규모를 가진 실내 테마파크다.</p><br>
+            <h2 class="display-5">태종대</h2>
+            <p class="lead">초록으로 우거진 싱그러운 숲길을 거닐며 푸른 바다를 한눈에 바라볼 수 있는곳.
+                오랜 세월 파도에 깎여 각양각색의 신비를 가지게 된 바위해안이 그 수려함을 자랑하는 곳.
+                태종대는 신라의 태종무열왕이 이곳의 경치에 반해 활쏘기를 즐기며 쉬어갔다 하여 유래된 이름이라 한다.</p>
         </div>
         <div>
-            <img src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220607_152%2F1654589099269gUzuR_PNG%2F%25BF%25A9%25B8%25A7%25C3%25E0%25C1%25A6.PNG"
-                 class="lotte">
+            <img src="https://www.visitbusan.net/uploadImgs/files/cntnts/20191222180842708_wufrotr" class="lotte">
         </div>
     </div>
 </div>
@@ -188,23 +186,23 @@
 <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
     <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
         <div class="my-3 p-3">
-            <h2 class="display-5">청계천</h2>
-            <p class="lead">서울의 도시개발 역사를 상징하는 하천으로도 유명하다.<br>
-                서울 내의 모든 물이 여기에 모여 동쪽으로 흐르다가 왕십리 밖 살곶이다리 근처에서 중랑천과 합쳐 서쪽으로 흐름을 바꾸어 한강으로 빠진다.</p>
+            <h2 class="display-5">오륙도</h2>
+            <p class="lead">부산에 속한 다양한 섬들 가운데서도 아름답기로 손꼽히는 오륙도는 남구 용호동에 속한 바위섬이다.
+                8천만년 전, 화산활동으로 만들어진 암석이라는 지질학적 가치를 인정받아 부산국가지질공원으로 지정되었다.
+                더불어 보호대상 해양생물이 살고 있는 해양보호구역이자 국가지정문화재이기도 하다.</p>
         </div>
         <div>
-            <img src="https://www.sisul.or.kr/open_content/cheonggye/images/visual_mb.jpg" class="river">
+            <img src="https://www.visitbusan.net/uploadImgs/files/cntnts/20191225164924070_wufrotr" class="river">
         </div>
     </div>
     <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
         <div class="my-3 py-3">
-            <h2 class="display-5">광장시장</h2>
-            <p class="lead">서울 최대 규모의 재래시장이자, 대한민국 최초의 전통 거래 시장이다.<br>
-                광장이라는 이름의 유래는 청계천 3,4가에 있던 광교와 장교로 광장시장의 위치가 이 두 다리 사이에 있다고 하여 붙여졌다.</p>
+            <h2 class="display-5">해동용궁사</h2>
+            <p class="lead">부산 기장의 시랑리 해안에 위치한 해동용궁사는 정암화상(晸庵和尙)이 바닷가에서 용을 타고<br>
+                승천하는 관세음보살을 꿈에 보았다는 이야기에서 이름이 유래되었다.</p><br><br>
         </div>
         <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStr6L3yD5uRAJE2KkRO0qV4vuA8N2Lc7fpLw&usqp=CAU"
-                 class="market">
+            <img src="https://www.visitbusan.net/uploadImgs/files/cntnts/20191222190831105_oen" class="market">
         </div>
     </div>
 </div>
@@ -212,23 +210,21 @@
 <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
     <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
         <div class="my-3 p-3">
-            <h2 class="display-5">DDP 동대문디자인플라자</h2>
-            <p class="lead">서울특별시 중구의 전시장 및 쇼핑몰.<br>
-                영국의 건축가 자하 하디드가 설계했다. 홈페이지에 따르면 세계 최대 규모의 3차원 비정형 건축물이라고 한다.</p>
+            <h2 class="display-5">범어사</h2>
+            <p class="lead">부산 금정구 범어사는 해인사. 통도사와 함께 영남의 3대 사찰로 꼽힌다.<br>
+                신라 문무왕 때 건축됏으며 역사적으로도 많은 고승을 배출한 수행사찰로 유명하다.</p>
         </div>
         <div>
-            <img src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20170526_171%2F1495772011947hzUIv_JPEG%2FDDP1_%25281%2529.jpg"
-                 class="ddp">
+            <img src="https://www.visitbusan.net/uploadImgs/files/cntnts/20191230190106794_oen" class="ddp">
         </div>
     </div>
     <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
         <div class="my-3 py-3">
-            <h2 class="display-5">광화문</h2>
-            <p class="lead">경복궁의 남쪽에 있는 정문이고, '임금의 큰 덕이 온 나라를 비춘다'는 의미이다.<br>
-                조선 태조 4년에 건립됨. 임진왜란 때 소실되었다가 고종 1년 대원군 때 재건됨. 현재의 광화문은 1968년 12월에 복원된 것임.</p>
+            <h2 class="display-5">깡통시장</h2>
+            <p class="lead">국제시장, 자갈치시장과 함께 부산을 대표하는 시장 중 하나이다.</p><br>
         </div>
         <div>
-            <img src="https://ldb-phinf.pstatic.net/20140407_247/1396856055211xTVu7_JPEG/%BC%AD%BF%EF_%B1%A4%C8%AD%B9%AE_4.jpg?type=m500_500"
+            <img src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20170228_77%2F1488249921205G9x7H_JPEG%2F186178517539663_0.jpeg"
                  class="door">
         </div>
     </div>

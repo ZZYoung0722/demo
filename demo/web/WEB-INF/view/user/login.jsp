@@ -22,7 +22,7 @@
 <body>
 
 <div id="outer">
-    <%@ include file="nav.jsp" %>
+    <%@ include file="../nav.jsp" %>
     <div id="inner">
         <div id="main">
             <div id="login-title">

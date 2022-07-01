@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>공지사항 수정</title>
+    <title>공지사항 등록</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -20,34 +20,31 @@
 
 </head>
 <body>
-<%@ include file="nav.jsp" %>
+<%@ include file="../nav.jsp" %>
+<br><br>
 
 <div class="container">
     <div class="panel-group">
         <div class="panel panel-default">
-            <div class="panel-heading noticeupdate">
-                <h1> 공지사항 수정 </h1>
+            <div class="panel-heading noticeinsert">
+                <h1> 공지사항 등록 </h1>
             </div>
             <div class="panel-body">
-                <form action="/update?no=${dto.noticeNo}" method="post" name="update">
-                    <input type="hidden" name="noticeNo" value="${dto.noticeNo}">
-                    <br>
+                <form action="/registration" method="post">
                     <div class="form-group row">
                         <label for="title" class="col-md-2">제목</label>
-                        <input type="text" name="title" id="title" value="${dto.title}" maxlength="30"
-                               class="form-control"
-                               style="width:500px;">
+                        <input type="text" name="title" id="title" maxlength="30" class="form-control"
+                               style="width:500px;" required="required"/>
                     </div>
                     <br>
                     <div class="form-group row noticewrite">
                         <label for="content" class="col-md-2">내용</label>
-                        <textarea id="content" name="content" class="form-control update-content" cols="50"
-                                  rows="10">${dto.content}</textarea>
+                        <textarea id="content" name="content" class="form-control" cols="50" rows="10"
+                                  required="required"></textarea>
                     </div>
                     <br>
                     <div style="text-align: center;">
-                        <input type="submit" class="btn btn-secondary" value="완료">
-                        <input type="reset" class="btn btn-secondary" value="리셋">
+                        <input type="submit" id="registration" class="btn btn-secondary" value="등록">
                         <input type="button" id="cancelBtn" class="btn btn-danger" value="취소">
                     </div>
                 </form>
@@ -59,6 +56,8 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $("#cancelBtn").click(cancelnotice);
+        $("#registration").click(insertnotice);
+        $("#content").onkeyup(adjustHeight);
 
 
         //취소 클릭시 리스트페이지로 이동
@@ -66,11 +65,20 @@
             window.location.href = "/noticelist"
         }
 
-        var txtArea = $(".update-content");
-        if (txtArea) {
-            txtArea.each(function () {
-                $(this).height(this.scrollHeight);
-            });
+        //등록
+        function insertnotice() {
+            if ($("#writer").val() == "" || $("#title").val() == "" || $("#content").val() == "") {
+                alert("항목을 모두 입력하세요.");
+                return;
+            }
+        }
+
+        //textarea 자동조절
+        function adjustHeight() {
+            var textEle = $('textarea');
+            textEle[0].style.height = 'auto';
+            var textEleHeight = textEle.prop('scrollHeight');
+            textEle.css('height', textEleHeight);
         }
     })
 

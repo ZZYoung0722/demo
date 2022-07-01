@@ -19,7 +19,7 @@
 
 </head>
 <body>
-<%@ include file="nav.jsp" %>
+<%@ include file="../nav.jsp" %>
 
 <main class="container">
     <div class="p-4 p-md-5 mb-4 rounded bg-light advantage">

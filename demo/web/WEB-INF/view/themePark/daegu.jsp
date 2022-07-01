@@ -19,7 +19,7 @@
 
 </head>
 <body>
-<%@ include file="nav.jsp" %>
+<%@ include file="../nav.jsp" %>
 
 <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
     <div class="col-md-5 p-lg-5 mx-auto my-5">
@@ -145,7 +145,7 @@
                 우방타워랜드를 기억하고 있다.</p><br>
         </div>
         <div>
-            <img src="https://w.namu.la/s/0ff33ac5cc7fa7083d4c2e85bd078ceb40c36139cd03a99ad9f64f578841a21e617c9724cfd790166d89e17c77f9f2cd582c3b4161fa51bf610c8b0a8270466e84214a106a171d0a28f99fbb1db8b9ed8462e1ac3ed69779f453155f7f2e4c54e6ea5f96e10cdf7093c71ceb0b66f403"
+            <img src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMjA2MjZfMTUg%2FMDAxNjU2MjEyODgxMDU0.br795C0GixvnGEepuJS7_lsAAaGSGYrcYNBwSgwUHuYg.D6UfRXMLGVy0qErjkqUave3BWcZtd6zZt8r5dmYdN9wg.JPEG%2Fupload_06d666f40d5dcc319bc864c3d50d487d.jpeg"
                  class="palace">
         </div>
     </div>

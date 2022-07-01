@@ -19,7 +19,7 @@
 
 </head>
 <body>
-<%@ include file="nav.jsp" %>
+<%@ include file="../nav.jsp" %>
 
 <div class="bg-video">
     <video class="bg-video__content" autoplay muted loop>
