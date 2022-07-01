@@ -116,6 +116,8 @@
     //키워드 목록 마커 담을 배열
     var markers = [];
 
+    var overlayList = [];
+
     //로드뷰
     var overlayOn = false,
         container = document.getElementById('container'),
@@ -449,6 +451,9 @@
                 /*$('.list').find('tbody tr').remove();*/
                 /* $tbody.empty();*/
                 $row.empty();
+                overlayList.forEach(function (overlay) {
+                    overlay.setMap(null);
+                })
 
                 if (data.length == 0) {
                     var str = '';
@@ -495,17 +500,21 @@
             var marker = markerList[i];
             var overlay = new kakao.maps.CustomOverlay({
                 // content: content,
-                position: marker.getPosition()
+                position: marker.getPosition(),
             });
+            overlay.name = marker.customData.accomName;
+
+            overlayList.push(overlay);
 
             var content = printOverlayContent(marker.customData);
 
             overlay.setContent(content);
             // 마커를 클릭했을 때 커스텀 오버레이를 표시합니다
-            kakao.maps.event.addListener(marker, 'click', function() {
-                debugger;
-                $(this)[0].setMap(map);
-            });
+            kakao.maps.event.addListener(marker, 'click', function(o) {
+                return function() {
+                    o.setMap(map);
+                }
+            }(overlay));
         }
     }
 
@@ -514,7 +523,7 @@
         content += '<div class="wrap">';
         content += '<div class="info">';
         content += '<div class="title">' + location.accomName;
-        content += '<div class="close" onclick="closeOverlay()" title="닫기"></div>';
+        content += '<button class="close overlay-close" title="닫기"></button>';
         content += '</div>';
         content += '<div class="desc">';
         content += '<div class="ellipsis">' + location.accomLocation + '</div>';
@@ -526,9 +535,18 @@
     }
 
     // 커스텀 오버레이를 닫기 위해 호출되는 함수입니다
-    function closeOverlay(locations) {
-        overlay.setMap(null);
-    }
+    $('#map').on('click', '.overlay-close', function () {
+        var name = $(this).parent().text();
+
+        for (var i = 0; i < overlayList.length; i++) {
+            var overlay = overlayList[i];
+            if(overlay.name == name){
+                overlay.setMap(null);
+            }
+        }
+    });
+
+    //호텔리스트
     function printAccomList(accom) {
         /*var testName = accom.accomName;*/
         var str = '';
